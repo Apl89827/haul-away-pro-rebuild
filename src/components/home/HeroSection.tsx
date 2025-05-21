@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 const HeroSection = () => {
   return (
     <div className="relative w-full min-h-[90vh] flex items-center">
-      <div className="absolute inset-0 bg-gradient-to-r from-brand-darkBlue/90 to-brand-blue/70 z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-brand-darkBlue/80 to-brand-blue/60 z-10"></div>
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: "url('/lovable-uploads/e9fb3e64-31d1-470c-8a69-daca627daa12.png')" }}
@@ -39,19 +39,19 @@ const HeroSection = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div className="flex flex-col items-center">
               <span className="font-semibold text-lg text-brand-blue">15+ Years</span>
-              <span className="text-sm">Experience</span>
+              <span className="text-sm text-gray-700">Experience</span>
             </div>
             <div className="flex flex-col items-center">
               <span className="font-semibold text-lg text-brand-blue">Licensed & Insured</span>
-              <span className="text-sm">For Your Peace of Mind</span>
+              <span className="text-sm text-gray-700">For Your Peace of Mind</span>
             </div>
             <div className="flex flex-col items-center">
               <span className="font-semibold text-lg text-brand-blue">Free Estimates</span>
-              <span className="text-sm">No Obligation</span>
+              <span className="text-sm text-gray-700">No Obligation</span>
             </div>
             <div className="flex flex-col items-center">
               <span className="font-semibold text-lg text-brand-blue">Same Day Service</span>
-              <span className="text-sm">Often Available</span>
+              <span className="text-sm text-gray-700">Often Available</span>
             </div>
           </div>
         </div>

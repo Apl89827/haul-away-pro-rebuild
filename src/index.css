@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
 
 @tailwind base;
@@ -8,32 +9,32 @@
 @layer base {
   :root {
     --background: 210 50% 98%;
-    --foreground: 210 50% 15%;
+    --foreground: 220 60% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 50% 15%;
+    --card-foreground: 220 60% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 50% 15%;
+    --popover-foreground: 220 60% 15%;
 
-    --primary: 210 60% 35%;
+    --primary: 220 85% 22%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 120 55% 50%;
+    --secondary: 140 55% 44%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 210 30% 95%;
-    --muted-foreground: 210 30% 40%;
+    --muted-foreground: 220 30% 40%;
 
     --accent: 210 30% 95%;
-    --accent-foreground: 210 50% 15%;
+    --accent-foreground: 220 60% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 210 30% 90%;
     --input: 210 30% 90%;
-    --ring: 210 60% 35%;
+    --ring: 220 85% 22%;
 
     --radius: 0.5rem;
   }

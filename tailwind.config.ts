@@ -64,10 +64,10 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				brand: {
-					blue: '#1E5B94',       // Primary brand color
-					green: '#4CAF50',      // Secondary brand color for eco-friendly emphasis
+					blue: '#0A2463',       // Darker blue from logo
+					green: '#3AAA35',      // Green from logo
 					lightBlue: '#E6F3FF',  // Light blue for backgrounds
-					darkBlue: '#0B3B6B',   // Darker blue for text/accents
+					darkBlue: '#061439',   // Darker blue for text/accents
 					gray: '#F5F7FA'        // Light gray for sections
 				}
 			},

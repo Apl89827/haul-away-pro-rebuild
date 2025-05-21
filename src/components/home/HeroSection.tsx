@@ -1,11 +1,12 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
   return (
     <div className="relative w-full min-h-[90vh] flex items-center">
-      <div className="absolute inset-0 bg-gradient-to-r from-brand-darkBlue/80 to-brand-blue/60 z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-brand-darkBlue/90 to-brand-blue/70 z-10"></div>
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: "url('/lovable-uploads/e9fb3e64-31d1-470c-8a69-daca627daa12.png')" }}
@@ -21,8 +22,11 @@ const HeroSection = () => {
             we handle it all with eco-friendly solutions and transparent pricing.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button className="btn-primary text-lg">Get Your Free Estimate</Button>
-            <Button variant="outline" className="bg-white/20 text-white border-white hover:bg-white/30 text-lg">
+            <Button size="lg" className="bg-brand-green hover:bg-brand-green/90 text-white text-lg">
+              Get Your Free Estimate
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+            <Button variant="outline" size="lg" className="bg-white/20 text-white border-white hover:bg-white/30 text-lg">
               Learn More
             </Button>
           </div>

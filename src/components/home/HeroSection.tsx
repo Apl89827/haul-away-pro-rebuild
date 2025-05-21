@@ -1,0 +1,59 @@
+
+import React from "react";
+import { Button } from "@/components/ui/button";
+
+const HeroSection = () => {
+  return (
+    <div className="relative w-full min-h-[90vh] flex items-center">
+      <div className="absolute inset-0 bg-gradient-to-r from-brand-darkBlue/80 to-brand-blue/60 z-10"></div>
+      <div 
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=7952&q=80')" }}
+      ></div>
+      
+      <div className="container-custom relative z-20 mt-16">
+        <div className="max-w-3xl animate-fade-in">
+          <h1 className="heading-xl text-white mb-6">
+            Cincinnati's Top-Rated Junk Removal Service – Fast, Fair, & Friendly!
+          </h1>
+          <p className="text-xl text-white/90 mb-8">
+            From furniture to appliances, yard waste to estate cleanouts - 
+            we handle it all with eco-friendly solutions and transparent pricing.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button className="btn-primary text-lg">Get Your Free Estimate</Button>
+            <Button variant="outline" className="bg-white/20 text-white border-white hover:bg-white/30 text-lg">
+              Learn More
+            </Button>
+          </div>
+        </div>
+      </div>
+      
+      {/* Trust Bar - Visible on larger screens */}
+      <div className="absolute bottom-0 left-0 right-0 bg-white/95 py-4 hidden md:block">
+        <div className="container-custom">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div className="flex flex-col items-center">
+              <span className="font-semibold text-lg text-brand-blue">15+ Years</span>
+              <span className="text-sm">Experience</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <span className="font-semibold text-lg text-brand-blue">Licensed & Insured</span>
+              <span className="text-sm">For Your Peace of Mind</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <span className="font-semibold text-lg text-brand-blue">Free Estimates</span>
+              <span className="text-sm">No Obligation</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <span className="font-semibold text-lg text-brand-blue">Same Day Service</span>
+              <span className="text-sm">Often Available</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default HeroSection;

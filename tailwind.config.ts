@@ -64,10 +64,10 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				brand: {
-					blue: '#0A2463',       // Darker blue from logo
-					green: '#3AAA35',      // Green from logo
+					blue: '#103E6D',       // Updated to match original site blue
+					green: '#009933',      // Updated to match original site green
 					lightBlue: '#E6F3FF',  // Light blue for backgrounds
-					darkBlue: '#061439',   // Darker blue for text/accents
+					darkBlue: '#072b4c',   // Darker blue for text/accents
 					gray: '#F5F7FA'        // Light gray for sections
 				}
 			},

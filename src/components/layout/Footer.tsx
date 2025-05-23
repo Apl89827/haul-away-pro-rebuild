@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { Phone, Mail, Home, Clock } from "lucide-react";
+import { Phone, Mail, Clock } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -40,12 +40,12 @@ const Footer = () => {
             <ul className="space-y-2 text-white/80">
               <li>
                 <Link to="/" className="hover:text-white transition-colors">
-                  Home
+                  How It Works
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="hover:text-white transition-colors">
-                  Services
+                  What We Take
                 </Link>
               </li>
               <li>
@@ -54,8 +54,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="hover:text-white transition-colors">
-                  About Us
+                <Link to="/service-areas" className="hover:text-white transition-colors">
+                  Service Areas
                 </Link>
               </li>
               <li>
@@ -104,15 +104,11 @@ const Footer = () => {
             <ul className="space-y-4 text-white/80">
               <li className="flex items-start gap-3">
                 <Phone className="h-5 w-5 mt-0.5 text-brand-green" />
-                <span>(513) 555-1234</span>
+                <span>(513) 876-2858</span>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="h-5 w-5 mt-0.5 text-brand-green" />
-                <span>info@haulawayprocincy.com</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Home className="h-5 w-5 mt-0.5 text-brand-green" />
-                <span>123 Main Street<br />Cincinnati, OH 45202</span>
+                <span>info@haulawaypro.com</span>
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="h-5 w-5 mt-0.5 text-brand-green" />

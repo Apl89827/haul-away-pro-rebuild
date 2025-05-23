@@ -22,7 +22,7 @@ const ServiceAreasSection = () => {
     <section className="section bg-brand-lightBlue">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-10">
-          <h2 className="heading-lg mb-4">Service Areas</h2>
+          <h2 className="heading-lg mb-4 text-brand-blue">Service Areas</h2>
           <p className="text-lg text-gray-600">
             We proudly serve the Greater Cincinnati area and surrounding communities.
           </p>

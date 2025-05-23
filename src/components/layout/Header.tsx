@@ -34,16 +34,16 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
           <Link to="/" className="font-medium hover:text-brand-blue transition-colors">
-            Home
+            How It Works
           </Link>
           <Link to="/services" className="font-medium hover:text-brand-blue transition-colors">
-            Services
+            What We Take
           </Link>
           <Link to="/pricing" className="font-medium hover:text-brand-blue transition-colors">
             Pricing
           </Link>
-          <Link to="/about" className="font-medium hover:text-brand-blue transition-colors">
-            About Us
+          <Link to="/service-areas" className="font-medium hover:text-brand-blue transition-colors">
+            Service Areas
           </Link>
           <Link to="/contact" className="font-medium hover:text-brand-blue transition-colors">
             Contact
@@ -51,9 +51,9 @@ const Header = () => {
         </nav>
         
         <div className="hidden md:flex items-center gap-6">
-          <a href="tel:5135551234" className="flex items-center gap-2 font-medium text-brand-blue hover:text-brand-darkBlue transition-colors">
+          <a href="tel:5138762858" className="flex items-center gap-2 font-medium text-brand-blue hover:text-brand-darkBlue transition-colors">
             <Phone className="h-4 w-4" />
-            (513) 555-1234
+            (513) 876-2858
           </a>
           <Button className="btn-primary">Get Free Quote</Button>
         </div>
@@ -98,14 +98,14 @@ const Header = () => {
               className="py-2 font-medium hover:text-brand-blue transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Home
+              How It Works
             </Link>
             <Link
               to="/services"
               className="py-2 font-medium hover:text-brand-blue transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Services
+              What We Take
             </Link>
             <Link
               to="/pricing"
@@ -115,11 +115,11 @@ const Header = () => {
               Pricing
             </Link>
             <Link
-              to="/about"
+              to="/service-areas"
               className="py-2 font-medium hover:text-brand-blue transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              About Us
+              Service Areas
             </Link>
             <Link
               to="/contact"
@@ -130,11 +130,11 @@ const Header = () => {
             </Link>
             <div className="flex flex-col gap-4 pt-4 border-t">
               <a
-                href="tel:5135551234"
+                href="tel:5138762858"
                 className="flex items-center gap-2 font-medium text-brand-blue"
               >
                 <Phone className="h-4 w-4" />
-                (513) 555-1234
+                (513) 876-2858
               </a>
               <Button className="btn-primary w-full">Get Free Quote</Button>
             </div>

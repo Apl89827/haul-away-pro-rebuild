@@ -55,7 +55,7 @@ const Header = () => {
             <Phone className="h-4 w-4" />
             (513) 876-2858
           </a>
-          <Button className="btn-primary">Get Free Quote</Button>
+          <Button className="btn-primary">Check Availability</Button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -136,7 +136,7 @@ const Header = () => {
                 <Phone className="h-4 w-4" />
                 (513) 876-2858
               </a>
-              <Button className="btn-primary w-full">Get Free Quote</Button>
+              <Button className="btn-primary w-full">Check Availability</Button>
             </div>
           </div>
         </div>

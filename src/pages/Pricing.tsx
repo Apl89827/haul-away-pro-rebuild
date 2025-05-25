@@ -3,159 +3,197 @@ import React from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, Clock, Shield, Truck, Phone } from 'lucide-react';
 
 const PricingPage = () => {
-  const pricingOptions = [
+  const benefits = [
     {
-      title: "Small Load",
-      description: "For small items or single piece removal",
-      price: "$99-$149",
-      items: [
-        "Single furniture items",
-        "Small appliance removal",
-        "Partial garage cleanout",
-        "Small e-waste disposal",
-        "Yard debris (small amount)"
-      ]
+      icon: <Clock className="h-8 w-8 text-brand-green" />,
+      title: "Same Day Service",
+      description: "Call before 12pm and we'll come today"
     },
     {
-      title: "Medium Load",
-      description: "For approximately 1/4 truck load",
-      price: "$229-$329",
-      items: [
-        "Multiple furniture items",
-        "Single room cleanout",
-        "Medium appliance removal",
-        "Office equipment disposal",
-        "Deck/fence removal (partial)"
-      ],
-      popular: true
+      icon: <Shield className="h-8 w-8 text-brand-green" />,
+      title: "Fully Insured",
+      description: "Complete peace of mind with every service"
     },
     {
-      title: "Large Load",
-      description: "For approximately 1/2 truck load",
-      price: "$379-$529",
-      items: [
-        "Full room cleanout",
-        "Multiple appliance removal",
-        "Basement cleanout",
-        "Garage cleanout",
-        "Heavy yard debris removal"
-      ]
-    },
-    {
-      title: "Full Load",
-      description: "For full truck load",
-      price: "$549-$649",
-      items: [
-        "Complete home cleanout",
-        "Full basement/garage junk removal",
-        "Construction debris removal",
-        "Complete renovation waste",
-        "Estate cleanout services"
-      ]
+      icon: <Truck className="h-8 w-8 text-brand-green" />,
+      title: "We Load Everything",
+      description: "You point, we load. It's that simple"
     }
+  ];
+
+  const pricingFactors = [
+    "Volume of items being removed",
+    "Type of materials (some items have disposal fees)",
+    "Difficulty of removal (stairs, tight spaces, etc.)",
+    "Location and accessibility"
+  ];
+
+  const whatWeInclude = [
+    "Labor and loading",
+    "Transportation",
+    "Responsible disposal and recycling",
+    "Cleanup and sweeping",
+    "All taxes and fees"
   ];
 
   return (
     <>
       <Header />
       <main>
-        {/* Pricing Hero Section */}
-        <section className="pt-32 pb-16 bg-brand-lightBlue">
+        {/* Hero Section */}
+        <section className="pt-32 pb-16 bg-gradient-to-b from-brand-lightBlue to-white">
           <div className="container-custom text-center">
-            <h1 className="heading-xl mb-4 text-brand-blue">Simple, Transparent Pricing</h1>
-            <p className="text-xl max-w-3xl mx-auto text-gray-600">
-              No hidden fees. Our pricing is based on volume - you only pay for the space your items take up in our truck.
+            <h1 className="heading-xl mb-6 text-brand-blue">Transparent, No-Surprise Pricing</h1>
+            <p className="text-xl max-w-3xl mx-auto text-gray-600 mb-8">
+              We provide upfront pricing before we start. You approve the price, then we haul it away.
             </p>
+            <Button className="btn-primary text-lg px-8 py-4">Check Availability Now</Button>
           </div>
         </section>
 
-        {/* Pricing Tiers */}
+        {/* How Our Pricing Works */}
         <section className="section bg-white">
           <div className="container-custom">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {pricingOptions.map((option) => (
-                <div 
-                  key={option.title} 
-                  className={`rounded-lg overflow-hidden border transition-all ${
-                    option.popular 
-                      ? 'border-brand-green shadow-lg scale-105 md:scale-105' 
-                      : 'border-gray-200'
-                  }`}
-                >
-                  {option.popular && (
-                    <div className="bg-brand-green text-white text-center py-2 font-medium">
-                      Most Popular
-                    </div>
-                  )}
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">{option.title}</h3>
-                    <p className="text-gray-600 mb-4">{option.description}</p>
-                    <div className="mb-6">
-                      <span className="text-3xl font-bold text-brand-blue">{option.price}</span>
-                    </div>
-                    <ul className="space-y-3 mb-6">
-                      {option.items.map((item) => (
-                        <li key={item} className="flex items-start">
-                          <CheckCircle className="h-5 w-5 text-brand-green mr-2 shrink-0 mt-0.5" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <Button className="w-full btn-primary">Get Quote</Button>
-                  </div>
+            <h2 className="heading-lg text-center mb-4">How Our Pricing Works</h2>
+            <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+              Our pricing is based on how much space your items take up in our truck. We'll give you a free, no-obligation estimate on-site.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+              <div className="text-center">
+                <div className="bg-brand-blue w-20 h-20 rounded-full flex items-center justify-center text-white font-bold text-2xl mx-auto mb-6">1</div>
+                <h3 className="heading-md mb-4">Point to Your Junk</h3>
+                <p className="text-gray-600">Simply show us what you want removed. Our friendly team will assess the volume and provide an upfront estimate.</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-brand-blue w-20 h-20 rounded-full flex items-center justify-center text-white font-bold text-2xl mx-auto mb-6">2</div>
+                <h3 className="heading-md mb-4">Get Your Price</h3>
+                <p className="text-gray-600">We'll give you an all-inclusive price on the spot. No hidden fees, no surprises. You approve before we start.</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-brand-blue w-20 h-20 rounded-full flex items-center justify-center text-white font-bold text-2xl mx-auto mb-6">3</div>
+                <h3 className="heading-md mb-4">Watch It Disappear</h3>
+                <p className="text-gray-600">Sit back and relax while our professional crew loads everything into our truck and hauls it away.</p>
+              </div>
+            </div>
+
+            {/* Benefits Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {benefits.map((benefit, index) => (
+                <div key={index} className="text-center p-6 bg-gray-50 rounded-lg">
+                  <div className="flex justify-center mb-4">{benefit.icon}</div>
+                  <h3 className="heading-sm mb-3">{benefit.title}</h3>
+                  <p className="text-gray-600">{benefit.description}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* How Pricing Works */}
+        {/* What Affects Your Price */}
         <section className="section bg-gray-50">
           <div className="container-custom">
-            <h2 className="heading-lg text-center mb-12">How Our Pricing Works</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="bg-brand-blue w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">1</div>
-                <h3 className="heading-sm mb-3">We Provide a Quote</h3>
-                <p className="text-gray-600">Our team will give you a free, no-obligation quote based on the volume of items you need removed.</p>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="heading-lg mb-6">What Affects Your Price?</h2>
+                <p className="text-lg text-gray-600 mb-6">
+                  Our pricing is fair and transparent. Here's what we consider when providing your estimate:
+                </p>
+                <ul className="space-y-4">
+                  {pricingFactors.map((factor, index) => (
+                    <li key={index} className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-brand-green mr-3 shrink-0 mt-1" />
+                      <span className="text-gray-700">{factor}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <div className="text-center">
-                <div className="bg-brand-blue w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">2</div>
-                <h3 className="heading-sm mb-3">You Approve the Price</h3>
-                <p className="text-gray-600">Once you approve our upfront price, we'll schedule your junk removal at a time that works for you.</p>
-              </div>
-              <div className="text-center">
-                <div className="bg-brand-blue w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">3</div>
-                <h3 className="heading-sm mb-3">We Haul it Away</h3>
-                <p className="text-gray-600">Our professional team removes your unwanted items quickly and responsibly disposes of them.</p>
+              <div className="bg-white p-8 rounded-lg shadow-lg">
+                <h3 className="heading-md mb-4 text-center">What's Included in Every Service</h3>
+                <ul className="space-y-3 mb-6">
+                  {whatWeInclude.map((item, index) => (
+                    <li key={index} className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-brand-green mr-3 shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Button className="w-full btn-primary">Check Availability</Button>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Frequently Asked Questions */}
+        {/* Minimum Charge Section */}
         <section className="section bg-white">
+          <div className="container-custom text-center">
+            <h2 className="heading-lg mb-6">Simple, Straightforward Pricing</h2>
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-brand-lightBlue p-8 rounded-lg mb-8">
+                <h3 className="text-2xl font-bold text-brand-blue mb-4">Our Minimum Service</h3>
+                <p className="text-lg text-gray-700 mb-4">
+                  Starting at just $99, our minimum service covers small loads and single items. 
+                  This includes our travel time, professional service, and responsible disposal.
+                </p>
+                <p className="text-gray-600">
+                  Perfect for: Single furniture pieces, small appliances, or a few boxes of items.
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="text-left">
+                  <h4 className="text-xl font-semibold mb-4">Why Choose Volume-Based Pricing?</h4>
+                  <ul className="space-y-3">
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-brand-green mr-3 shrink-0 mt-0.5" />
+                      <span>You only pay for the space you use</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-brand-green mr-3 shrink-0 mt-0.5" />
+                      <span>No hidden fees or surprise charges</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-brand-green mr-3 shrink-0 mt-0.5" />
+                      <span>Fair pricing for jobs of any size</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="text-left">
+                  <h4 className="text-xl font-semibold mb-4">Ready to Get Started?</h4>
+                  <p className="text-gray-600 mb-4">
+                    Our team is standing by to provide you with a free, no-obligation estimate. 
+                    Most jobs can be completed the same day!
+                  </p>
+                  <Button className="btn-primary">Check Availability Now</Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="section bg-gray-50">
           <div className="container-custom">
-            <h2 className="heading-lg text-center mb-8">Pricing FAQ</h2>
+            <h2 className="heading-lg text-center mb-8">Pricing Questions?</h2>
             <div className="max-w-3xl mx-auto space-y-6">
-              <div className="border border-gray-200 rounded-lg p-6">
-                <h3 className="heading-sm mb-2">What factors affect the price?</h3>
-                <p className="text-gray-600">The cost depends primarily on the volume of items being removed. Other factors may include item type, disposal fees for certain materials, and difficulty of removal.</p>
+              <div className="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 className="text-xl font-semibold mb-3">Is there really no hourly charge?</h3>
+                <p className="text-gray-600">That's right! We don't charge by the hour. Our price is based solely on the volume of items you need removed, so you know exactly what you'll pay upfront.</p>
               </div>
-              <div className="border border-gray-200 rounded-lg p-6">
-                <h3 className="heading-sm mb-2">Do you offer any discounts?</h3>
-                <p className="text-gray-600">We offer special discounts for seniors, military, and recurring customers. Just mention your eligibility when requesting a quote.</p>
+              <div className="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 className="text-xl font-semibold mb-3">What if my estimate changes?</h3>
+                <p className="text-gray-600">If you add or remove items after your initial estimate, we'll adjust the price accordingly and get your approval before proceeding. No surprises!</p>
               </div>
-              <div className="border border-gray-200 rounded-lg p-6">
-                <h3 className="heading-sm mb-2">Is there a minimum charge?</h3>
-                <p className="text-gray-600">Yes, our minimum charge is $99 for very small items. This covers our travel time, labor, and proper disposal costs.</p>
+              <div className="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 className="text-xl font-semibold mb-3">Do you offer senior or military discounts?</h3>
+                <p className="text-gray-600">Yes! We're proud to offer special discounts for seniors and military personnel. Just mention your eligibility when you call.</p>
               </div>
-              <div className="border border-gray-200 rounded-lg p-6">
-                <h3 className="heading-sm mb-2">Are there any hidden fees?</h3>
-                <p className="text-gray-600">No, the price we quote is the price you pay. We will inform you upfront if there are any special disposal fees for items like electronics or hazardous materials.</p>
+              <div className="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 className="text-xl font-semibold mb-3">What payment methods do you accept?</h3>
+                <p className="text-gray-600">We accept all major credit cards, cash, and checks. Payment is due upon completion of the service.</p>
               </div>
             </div>
           </div>
@@ -164,16 +202,14 @@ const PricingPage = () => {
         {/* Call to Action */}
         <section className="section bg-brand-blue text-white">
           <div className="container-custom text-center">
-            <h2 className="heading-lg text-white mb-4">Ready to Get Started?</h2>
+            <h2 className="heading-lg text-white mb-4">Ready to Clear the Clutter?</h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Contact us today for a free, no-obligation quote on your junk removal needs.
+              Get your free, no-obligation estimate today. Most jobs completed same day!
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button className="bg-white text-brand-blue hover:bg-gray-100 font-medium py-3 px-6">Get a Free Quote</Button>
+              <Button className="bg-white text-brand-blue hover:bg-gray-100 font-medium py-3 px-6">Check Availability</Button>
               <Button className="bg-brand-green hover:bg-brand-green/90 text-white font-medium py-3 px-6">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                </svg>
+                <Phone className="h-5 w-5 mr-2" />
                 Call (513) 876-2858
               </Button>
             </div>

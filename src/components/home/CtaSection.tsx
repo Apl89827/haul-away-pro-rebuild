@@ -12,19 +12,19 @@ const CtaSection = () => {
             Ready to Clear the Clutter?
           </h2>
           <p className="text-xl text-white/90 mb-8">
-            Get a free estimate for your junk removal project and experience our 
+            Check availability for your junk removal project and experience our 
             fast, friendly, and fair service.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button className="btn-secondary text-lg">
-              Get Your Free Estimate
+              Check Availability
             </Button>
             <a 
-              href="tel:5135551234" 
+              href="tel:5138762858" 
               className="inline-flex items-center justify-center gap-2 bg-white text-brand-blue font-semibold py-3 px-6 rounded-md hover:bg-white/90 transition-colors"
             >
               <Phone className="h-4 w-4" />
-              Call (513) 555-1234
+              Call (513) 876-2858
             </a>
           </div>
         </div>

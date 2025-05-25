@@ -23,7 +23,7 @@ const HeroSection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" className="bg-brand-green hover:bg-brand-green/90 text-white text-lg">
-              Get Your Free Estimate
+              Check Availability
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button variant="outline" size="lg" className="bg-white/20 text-white border-white hover:bg-white/30 text-lg">

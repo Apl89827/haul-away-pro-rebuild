@@ -119,6 +119,11 @@ const Footer = () => {
                 </span>
               </li>
             </ul>
+            <div className="mt-6">
+              <Button className="bg-brand-green hover:bg-brand-green/90 text-white w-full">
+                Check Availability
+              </Button>
+            </div>
           </div>
         </div>
         

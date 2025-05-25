@@ -1,56 +1,78 @@
+
 import React from "react";
+import { Link } from "react-router-dom";
 import { CheckCircle, Phone } from "lucide-react";
 
 const ServiceAreasList = () => {
-  const serviceAreas = {
-    "Primary Service Areas": [
-      "Cincinnati",
-      "Blue Ash", 
-      "Mason",
-      "West Chester",
-      "Fairfield",
-      "Hamilton",
-      "Springdale",
-      "Forest Park",
-      "Sharonville",
-      "Evendale"
-    ],
-    "Extended Service Areas": [
-      "Loveland",
-      "Lebanon",
-      "Monroe",
-      "Trenton",
-      "Oxford",
-      "Middletown",
-      "Franklin",
-      "Springboro",
-      "Centerville",
-      "Kettering"
-    ],
-    "Butler County": [
-      "Fairfield",
-      "Hamilton", 
-      "Oxford",
-      "Monroe",
-      "Trenton",
-      "Middletown",
-      "Franklin",
-      "West Chester",
-      "Mason",
-      "Lebanon"
-    ],
-    "Warren County": [
-      "Mason",
-      "Lebanon",
-      "Springboro",
-      "Franklin",
-      "Centerville",
-      "Miamisburg",
-      "Kettering",
-      "Beavercreek",
-      "Xenia",
-      "Bellbrook"
-    ]
+  const cincinnatiNeighborhoods = [
+    "Over-the-Rhine",
+    "Downtown Cincinnati", 
+    "The Banks",
+    "Newport",
+    "Covington",
+    "Hyde Park",
+    "Oakley",
+    "Mount Adams",
+    "Clifton",
+    "Walnut Hills",
+    "Mount Auburn",
+    "Corryville",
+    "University of Cincinnati",
+    "Northside",
+    "Camp Washington",
+    "Queensgate",
+    "West End",
+    "East Walnut Hills",
+    "Evanston",
+    "Avondale",
+    "Bond Hill",
+    "Roselawn",
+    "Golf Manor",
+    "Pleasant Ridge",
+    "Kennedy Heights",
+    "Silverton",
+    "Deer Park",
+    "Blue Ash",
+    "Montgomery",
+    "Symmes Township",
+    "Anderson Township",
+    "Mariemont",
+    "Terrace Park",
+    "Indian Hill",
+    "Madeira",
+    "Wyoming",
+    "Lockland",
+    "Elmwood Place",
+    "Saint Bernard",
+    "Norwood",
+    "Cheviot",
+    "Delhi Township",
+    "Green Township",
+    "Colerain Township",
+    "Springfield Township",
+    "Finneytown",
+    "Forest Park",
+    "Springdale",
+    "Sharonville",
+    "Evendale"
+  ];
+
+  const nearbyAreas = [
+    "Mason",
+    "West Chester",
+    "Fairfield", 
+    "Hamilton",
+    "Loveland",
+    "Milford",
+    "Kenwood",
+    "Sycamore Township",
+    "Deerfield Township"
+  ];
+
+  const formatNeighborhoodSlug = (neighborhood: string) => {
+    return neighborhood.toLowerCase()
+      .replace(/\s+/g, '-')
+      .replace(/[^a-z0-9-]/g, '');
   };
 
   return (
@@ -59,25 +81,43 @@ const ServiceAreasList = () => {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="heading-lg mb-4">Areas We Serve</h2>
           <p className="text-lg text-gray-600">
-            We provide comprehensive junk removal services throughout the Greater Cincinnati area. 
-            Don't see your city listed? Call us - we may still be able to help!
+            We provide comprehensive junk removal services throughout Cincinnati and surrounding neighborhoods. 
+            Click on any area below to learn more about our services in that location.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {Object.entries(serviceAreas).map(([category, cities]) => (
-            <div key={category} className="bg-brand-gray rounded-lg p-6">
-              <h3 className="heading-sm mb-4 text-brand-darkBlue">{category}</h3>
-              <ul className="space-y-2">
-                {cities.map((city, index) => (
-                  <li key={index} className="flex items-center gap-2 text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-brand-green flex-shrink-0" />
-                    {city}
-                  </li>
-                ))}
-              </ul>
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="bg-brand-gray rounded-lg p-6">
+            <h3 className="heading-sm mb-4 text-brand-darkBlue">Cincinnati Neighborhoods</h3>
+            <div className="grid grid-cols-1 gap-2">
+              {cincinnatiNeighborhoods.map((neighborhood) => (
+                <Link
+                  key={neighborhood}
+                  to={`/junk-removal-${formatNeighborhoodSlug(neighborhood)}`}
+                  className="flex items-center gap-2 text-gray-700 hover:text-brand-blue hover:bg-white p-2 rounded transition-colors"
+                >
+                  <CheckCircle className="w-4 h-4 text-brand-green flex-shrink-0" />
+                  {neighborhood}
+                </Link>
+              ))}
             </div>
-          ))}
+          </div>
+
+          <div className="bg-brand-gray rounded-lg p-6">
+            <h3 className="heading-sm mb-4 text-brand-darkBlue">Nearby Areas</h3>
+            <div className="grid grid-cols-1 gap-2">
+              {nearbyAreas.map((area) => (
+                <Link
+                  key={area}
+                  to={`/junk-removal-${formatNeighborhoodSlug(area)}`}
+                  className="flex items-center gap-2 text-gray-700 hover:text-brand-blue hover:bg-white p-2 rounded transition-colors"
+                >
+                  <CheckCircle className="w-4 h-4 text-brand-green flex-shrink-0" />
+                  {area}
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
 
         <div className="mt-12 text-center bg-brand-lightBlue rounded-lg p-8">

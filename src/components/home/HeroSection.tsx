@@ -11,6 +11,9 @@ const HeroSection = () => {
         style={{ backgroundImage: "url('/lovable-uploads/e9fb3e64-31d1-470c-8a69-daca627daa12.png')" }}
       ></div>
       
+      {/* Gradient overlay - only covers the main content area, not the trust bar */}
+      <div className="absolute inset-0 bg-gradient-to-r from-brand-darkBlue/80 to-brand-blue/60 z-10" style={{ bottom: '80px' }}></div>
+      
       <div className="container-custom relative z-20 mt-16">
         <div className="max-w-3xl animate-fade-in">
           <h1 className="heading-xl text-white mb-6">
@@ -35,7 +38,7 @@ const HeroSection = () => {
       </div>
       
       {/* Trust Bar - Visible on larger screens */}
-      <div className="absolute bottom-0 left-0 right-0 bg-white/95 py-4 hidden md:block">
+      <div className="absolute bottom-0 left-0 right-0 bg-white/95 py-4 hidden md:block z-30">
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div className="flex flex-col items-center">

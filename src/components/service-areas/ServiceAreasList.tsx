@@ -1,6 +1,5 @@
-
 import React from "react";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, Phone } from "lucide-react";
 
 const ServiceAreasList = () => {
   const serviceAreas = {

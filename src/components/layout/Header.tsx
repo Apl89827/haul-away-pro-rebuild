@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone } from "lucide-react";
@@ -32,7 +33,7 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <Link to="/" className="font-medium hover:text-brand-blue transition-colors">
+          <Link to="/how-it-works" className="font-medium hover:text-brand-blue transition-colors">
             How It Works
           </Link>
           <Link to="/services" className="font-medium hover:text-brand-blue transition-colors">
@@ -95,7 +96,7 @@ const Header = () => {
         <div className="md:hidden bg-white border-t py-4">
           <div className="container-custom flex flex-col gap-4">
             <Link
-              to="/"
+              to="/how-it-works"
               className="py-2 font-medium hover:text-brand-blue transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >

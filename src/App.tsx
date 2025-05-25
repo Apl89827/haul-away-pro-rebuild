@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Pricing from "./pages/Pricing";
 import Booking from "./pages/Booking";
 import Services from "./pages/Services";
+import HowItWorks from "./pages/HowItWorks";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -19,6 +20,7 @@ const App = () => (
       <Sonner />
       <Routes>
         <Route path="/" element={<Index />} />
+        <Route path="/how-it-works" element={<HowItWorks />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/booking" element={<Booking />} />
         <Route path="/services" element={<Services />} />

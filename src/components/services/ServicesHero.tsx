@@ -7,8 +7,8 @@ const ServicesHero = () => {
     <section className="bg-gradient-to-b from-brand-blue to-brand-darkBlue py-20 mt-16">
       <div className="container-custom">
         <div className="max-w-4xl mx-auto text-center text-white">
-          <h1 className="heading-xl mb-6">What We Take</h1>
-          <p className="text-xl mb-8 leading-relaxed">
+          <h1 className="heading-xl mb-6 text-white font-bold drop-shadow-lg">What We Take</h1>
+          <p className="text-xl mb-8 leading-relaxed text-gray-100">
             From single items to complete property cleanouts, HaulAway Pro handles it all. 
             We make junk removal simple with our comprehensive service that covers almost everything you need gone.
           </p>

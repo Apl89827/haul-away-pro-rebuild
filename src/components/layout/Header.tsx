@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone } from "lucide-react";
@@ -55,7 +54,9 @@ const Header = () => {
             <Phone className="h-4 w-4" />
             (513) 876-2858
           </a>
-          <Button className="btn-primary">Check Availability</Button>
+          <Link to="/booking">
+            <Button className="btn-primary">Check Availability</Button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -136,7 +137,9 @@ const Header = () => {
                 <Phone className="h-4 w-4" />
                 (513) 876-2858
               </a>
-              <Button className="btn-primary w-full">Check Availability</Button>
+              <Link to="/booking">
+                <Button className="btn-primary w-full">Check Availability</Button>
+              </Link>
             </div>
           </div>
         </div>

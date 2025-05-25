@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { Link } from "react-router-dom";
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
@@ -50,7 +50,9 @@ const PricingPage = () => {
             <p className="text-xl max-w-3xl mx-auto text-gray-600 mb-8">
               We provide upfront pricing before we start. You approve the price, then we haul it away.
             </p>
-            <Button className="btn-primary text-lg px-8 py-4">Check Availability Now</Button>
+            <Link to="/booking">
+              <Button className="btn-primary text-lg px-8 py-4">Check Availability Now</Button>
+            </Link>
           </div>
         </section>
 
@@ -121,7 +123,9 @@ const PricingPage = () => {
                     </li>
                   ))}
                 </ul>
-                <Button className="w-full btn-primary">Check Availability</Button>
+                <Link to="/booking">
+                  <Button className="w-full btn-primary">Check Availability</Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -167,7 +171,9 @@ const PricingPage = () => {
                     Our team is standing by to provide you with a free, no-obligation estimate. 
                     Most jobs can be completed the same day!
                   </p>
-                  <Button className="btn-primary">Check Availability Now</Button>
+                  <Link to="/booking">
+                    <Button className="btn-primary">Check Availability Now</Button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -207,7 +213,9 @@ const PricingPage = () => {
               Get your free, no-obligation estimate today. Most jobs completed same day!
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button className="bg-white text-brand-blue hover:bg-gray-100 font-medium py-3 px-6">Check Availability</Button>
+              <Link to="/booking">
+                <Button className="bg-white text-brand-blue hover:bg-gray-100 font-medium py-3 px-6">Check Availability</Button>
+              </Link>
               <Button className="bg-brand-green hover:bg-brand-green/90 text-white font-medium py-3 px-6">
                 <Phone className="h-5 w-5 mr-2" />
                 Call (513) 876-2858

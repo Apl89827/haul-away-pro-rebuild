@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { Phone, Mail, Clock } from "lucide-react";
@@ -120,9 +121,11 @@ const Footer = () => {
               </li>
             </ul>
             <div className="mt-6">
-              <Button className="bg-brand-green hover:bg-brand-green/90 text-white w-full">
-                Check Availability
-              </Button>
+              <Link to="/booking">
+                <Button className="bg-brand-green hover:bg-brand-green/90 text-white w-full">
+                  Check Availability
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

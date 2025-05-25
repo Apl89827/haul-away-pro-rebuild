@@ -1,5 +1,6 @@
 
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -22,10 +23,12 @@ const HeroSection = () => {
             we handle it all with eco-friendly solutions and transparent pricing.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="bg-brand-green hover:bg-brand-green/90 text-white text-lg">
-              Check Availability
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <Link to="/booking">
+              <Button size="lg" className="bg-brand-green hover:bg-brand-green/90 text-white text-lg">
+                Check Availability
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
             <Button variant="outline" size="lg" className="bg-white/20 text-white border-white hover:bg-white/30 text-lg">
               Learn More
             </Button>

@@ -2,15 +2,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import OptimizedImage from "@/components/ui/optimized-image";
 import { ArrowRight, Phone, Star } from "lucide-react";
 
 const HeroSection = () => {
   return (
     <div className="relative w-full min-h-[90vh] flex items-center overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center transform scale-105 animate-[zoom_20s_ease-in-out_infinite_alternate]"
-        style={{ backgroundImage: "url('/lovable-uploads/e9fb3e64-31d1-470c-8a69-daca627daa12.png')" }}
-      ></div>
+      <OptimizedImage
+        src="/lovable-uploads/e9fb3e64-31d1-470c-8a69-daca627daa12.png"
+        alt="Professional junk removal service in Cincinnati"
+        className="absolute inset-0 object-cover transform scale-105 animate-[zoom_20s_ease-in-out_infinite_alternate]"
+        priority={true}
+        width={1920}
+        height={1080}
+      />
       
       {/* Enhanced gradient overlay with animation */}
       <div className="absolute inset-0 bg-gradient-to-r from-brand-darkBlue/90 via-brand-blue/70 to-brand-darkBlue/80 z-10 animate-pulse-slow" style={{ bottom: '80px' }}></div>

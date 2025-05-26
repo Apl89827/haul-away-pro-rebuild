@@ -25,11 +25,11 @@ const Header = () => {
       }`}
     >
       <div className="container-custom flex justify-between items-center">
-        <Link to="/" className="flex items-center group">
+        <Link to="/" className="flex items-center">
           <img 
             src="/lovable-uploads/4e32cc5f-6030-4353-b20e-54e583de4c3d.png" 
             alt="HaulAway Pro Logo" 
-            className={`transition-all duration-300 group-hover:scale-105 ${
+            className={`transition-all duration-300 hover:scale-105 ${
               isScrolled ? "h-10 md:h-12" : "h-12 md:h-16"
             }`}
           />

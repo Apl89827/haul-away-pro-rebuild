@@ -2,17 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone } from "lucide-react";
-
 const HeroSection = () => {
-  return (
-    <div className="relative w-full min-h-[85vh] md:min-h-[90vh] flex items-center">
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ 
-          backgroundImage: "url('/lovable-uploads/e9fb3e64-31d1-470c-8a69-daca627daa12.png')",
-          backgroundPosition: "center 30%"
-        }}
-      ></div>
+  return <div className="relative w-full min-h-[85vh] md:min-h-[90vh] flex items-center">
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: "url('/lovable-uploads/e9fb3e64-31d1-470c-8a69-daca627daa12.png')",
+      backgroundPosition: "center 30%"
+    }}></div>
       
       {/* Optimized gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-brand-darkBlue/85 to-brand-blue/70 z-10"></div>
@@ -35,11 +30,8 @@ const HeroSection = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <a 
-              href="tel:5138762858" 
-              className="w-full sm:w-auto"
-            >
-              <Button className="btn-secondary w-full sm:w-auto min-h-[48px] text-lg">
+            <a href="tel:5138762858" className="w-full sm:w-auto">
+              <Button className="btn-secondary w-full sm:w-auto min-h-[48px] text-lg text-slate-50 bg-green-600 hover:bg-green-500">
                 <Phone className="mr-2 h-5 w-5" />
                 Call Now
               </Button>
@@ -71,8 +63,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default HeroSection;

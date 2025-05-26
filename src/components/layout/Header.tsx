@@ -73,9 +73,12 @@ const Header = () => {
               <Phone className="h-4 w-4" />
               <span className="hidden lg:inline">(513) 876-2858</span>
             </a>
-            <Link to="/booking">
-              <Button className="btn-primary text-sm lg:text-base">Check Availability</Button>
-            </Link>
+            <a href="tel:5138762858">
+              <Button className="btn-secondary text-sm lg:text-base">
+                <Phone className="mr-2 h-4 w-4" />
+                Call Now
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}

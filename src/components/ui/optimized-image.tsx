@@ -22,6 +22,7 @@ const OptimizedImage: React.FC<OptimizedImageProps> = ({
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isInView, setIsInView] = useState(priority);
+  const [hasError, setHasError] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
@@ -44,24 +45,41 @@ const OptimizedImage: React.FC<OptimizedImageProps> = ({
     return () => observer.disconnect();
   }, [priority]);
 
+  const handleLoad = () => {
+    setIsLoaded(true);
+    setHasError(false);
+  };
+
+  const handleError = () => {
+    setHasError(true);
+    setIsLoaded(false);
+  };
+
   return (
     <div 
       ref={imgRef}
       className={`relative overflow-hidden ${className}`}
       style={{ width, height }}
     >
-      {!isLoaded && (
-        <div className="absolute inset-0 bg-gray-200 animate-pulse rounded" />
+      {!isLoaded && !hasError && (
+        <div className="absolute inset-0 bg-gray-200 animate-pulse" />
       )}
       
-      {isInView && (
+      {hasError && (
+        <div className="absolute inset-0 bg-gray-300 flex items-center justify-center">
+          <span className="text-gray-500 text-sm">Image unavailable</span>
+        </div>
+      )}
+      
+      {isInView && !hasError && (
         <img
           src={src}
           alt={alt}
-          className={`transition-opacity duration-300 ${
+          className={`w-full h-full object-cover transition-opacity duration-500 ${
             isLoaded ? 'opacity-100' : 'opacity-0'
-          } ${className}`}
-          onLoad={() => setIsLoaded(true)}
+          }`}
+          onLoad={handleLoad}
+          onError={handleError}
           loading={priority ? 'eager' : 'lazy'}
           decoding="async"
           width={width}

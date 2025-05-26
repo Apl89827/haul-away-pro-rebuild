@@ -56,6 +56,9 @@ const Header = () => {
             <Link to="/services" className="font-medium hover:text-brand-blue transition-colors">
               Services
             </Link>
+            <Link to="/projects" className="font-medium hover:text-brand-blue transition-colors">
+              Projects
+            </Link>
             <Link to="/pricing" className="font-medium hover:text-brand-blue transition-colors">
               Pricing
             </Link>
@@ -134,6 +137,13 @@ const Header = () => {
                 onClick={closeMobileMenu}
               >
                 Services
+              </Link>
+              <Link
+                to="/projects"
+                className="mobile-menu-item"
+                onClick={closeMobileMenu}
+              >
+                Projects
               </Link>
               <Link
                 to="/pricing"

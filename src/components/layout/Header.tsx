@@ -29,9 +29,10 @@ const Header = () => {
           <img 
             src="/lovable-uploads/4e32cc5f-6030-4353-b20e-54e583de4c3d.png" 
             alt="HaulAway Pro Logo" 
-            className={`transition-all duration-300 hover:scale-105 ${
+            className={`transition-all duration-300 hover:scale-105 bg-transparent ${
               isScrolled ? "h-10 md:h-12" : "h-12 md:h-16"
             }`}
+            style={{ backgroundColor: 'transparent' }}
           />
         </Link>
 

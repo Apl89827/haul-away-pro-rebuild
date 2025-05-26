@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -9,32 +9,23 @@
   :root {
     --background: 210 50% 98%;
     --foreground: 220 60% 15%;
-
     --card: 0 0% 100%;
     --card-foreground: 220 60% 15%;
-
     --popover: 0 0% 100%;
     --popover-foreground: 220 60% 15%;
-
     --primary: 210 64% 25%;
     --primary-foreground: 0 0% 100%;
-
     --secondary: 150 70% 30%;
     --secondary-foreground: 0 0% 100%;
-
     --muted: 210 30% 95%;
     --muted-foreground: 220 30% 40%;
-
     --accent: 210 30% 95%;
     --accent-foreground: 220 60% 15%;
-
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
-
     --border: 210 30% 90%;
     --input: 210 30% 90%;
     --ring: 210 64% 25%;
-
     --radius: 0.5rem;
   }
 
@@ -42,8 +33,14 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground font-sans;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -57,34 +54,76 @@
   }
 
   .section {
-    @apply py-12 md:py-16 lg:py-20;
+    @apply py-8 md:py-12 lg:py-16;
   }
 
   .btn-primary {
-    @apply bg-brand-blue hover:bg-brand-darkBlue text-white font-medium py-3 px-6 rounded-md transition-colors duration-200 inline-flex items-center justify-center;
+    @apply bg-brand-blue hover:bg-brand-darkBlue text-white font-medium py-4 px-8 rounded-md transition-colors duration-200 inline-flex items-center justify-center min-h-[48px] text-lg;
   }
 
   .btn-secondary {
-    @apply bg-brand-green hover:bg-brand-green/90 text-white font-medium py-3 px-6 rounded-md transition-colors duration-200 inline-flex items-center justify-center;
+    @apply bg-brand-green hover:bg-brand-green/90 text-white font-medium py-4 px-8 rounded-md transition-colors duration-200 inline-flex items-center justify-center min-h-[48px] text-lg;
   }
   
   .heading-xl {
-    @apply text-3xl md:text-4xl lg:text-5xl font-bold;
+    @apply text-2xl md:text-3xl lg:text-4xl font-bold leading-tight;
   }
   
   .heading-lg {
-    @apply text-2xl md:text-3xl lg:text-4xl font-bold;
+    @apply text-xl md:text-2xl lg:text-3xl font-bold leading-tight;
   }
   
   .heading-md {
-    @apply text-xl md:text-2xl font-semibold;
+    @apply text-lg md:text-xl font-semibold;
   }
   
   .heading-sm {
-    @apply text-lg md:text-xl font-semibold;
+    @apply text-base md:text-lg font-semibold;
   }
 
   .card-shadow {
-    @apply shadow-md hover:shadow-lg transition-shadow duration-300;
+    @apply shadow-sm hover:shadow-md transition-shadow duration-200;
+  }
+
+  /* Mobile-optimized touch targets */
+  .touch-target {
+    @apply min-h-[48px] min-w-[48px] flex items-center justify-center;
+  }
+
+  /* Enhanced mobile menu */
+  .mobile-menu-item {
+    @apply py-4 px-4 text-lg font-medium border-b border-gray-100 last:border-b-0 transition-colors hover:bg-gray-50;
+  }
+}
+
+/* Mobile-first optimizations */
+@media (max-width: 768px) {
+  .section {
+    @apply py-6;
+  }
+  
+  .container-custom {
+    @apply px-3;
+  }
+  
+  .btn-primary, .btn-secondary {
+    @apply w-full py-4 text-base;
+  }
+  
+  .heading-xl {
+    @apply text-xl leading-tight;
+  }
+  
+  .heading-lg {
+    @apply text-lg;
+  }
+}
+
+/* Reduced motion for better performance */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

@@ -1,10 +1,13 @@
+
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -26,8 +29,11 @@ const Header = () => {
       document.body.style.overflow = 'unset';
     };
   }, [isMobileMenuOpen]);
+
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
-  return <>
+
+  return (
+    <>
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 bg-white ${isScrolled ? "shadow-md py-2" : "py-3"}`}>
         <div className="container-custom flex justify-between items-center">
           <Link to="/" className="flex items-center" onClick={closeMobileMenu}>
@@ -44,6 +50,9 @@ const Header = () => {
             </Link>
             <Link to="/projects" className="font-medium hover:text-brand-blue transition-colors">
               Projects
+            </Link>
+            <Link to="/service-areas" className="font-medium hover:text-brand-blue transition-colors">
+              Service Areas
             </Link>
             <Link to="/pricing" className="font-medium hover:text-brand-blue transition-colors">
               Pricing
@@ -75,7 +84,8 @@ const Header = () => {
       </header>
 
       {/* Mobile Menu Overlay */}
-      {isMobileMenuOpen && <>
+      {isMobileMenuOpen && (
+        <>
           <div className="fixed inset-0 bg-black/50 z-40 md:hidden" onClick={closeMobileMenu} />
           <div className="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white z-50 md:hidden shadow-xl">
             <div className="p-4 border-b flex justify-between items-center">
@@ -102,6 +112,9 @@ const Header = () => {
               <Link to="/projects" className="mobile-menu-item" onClick={closeMobileMenu}>
                 Projects
               </Link>
+              <Link to="/service-areas" className="mobile-menu-item" onClick={closeMobileMenu}>
+                Service Areas
+              </Link>
               <Link to="/pricing" className="mobile-menu-item" onClick={closeMobileMenu}>
                 Pricing
               </Link>
@@ -110,7 +123,10 @@ const Header = () => {
               </Link>
             </nav>
           </div>
-        </>}
-    </>;
+        </>
+      )}
+    </>
+  );
 };
+
 export default Header;

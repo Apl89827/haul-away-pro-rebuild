@@ -1,5 +1,6 @@
 
 import React from "react";
+import GoogleMapsMockup from "./GoogleMapsMockup";
 
 const ServiceAreasSection = () => {
   const areas = [
@@ -26,6 +27,11 @@ const ServiceAreasSection = () => {
           <p className="text-lg text-gray-600">
             We proudly serve the Greater Cincinnati area and surrounding communities.
           </p>
+        </div>
+
+        {/* Google Maps Mockup */}
+        <div className="mb-12 max-w-4xl mx-auto">
+          <GoogleMapsMockup />
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-8">

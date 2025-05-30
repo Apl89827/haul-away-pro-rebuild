@@ -3,8 +3,8 @@ import React from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ProjectsHero from "@/components/projects/ProjectsHero";
-import ProjectsGrid from "@/components/projects/ProjectsGrid";
 import ProjectsCtaSection from "@/components/projects/ProjectsCtaSection";
+import ProjectsGrid from "@/components/projects/ProjectsGrid";
 
 const Projects = () => {
   return (
@@ -12,8 +12,8 @@ const Projects = () => {
       <Header />
       <main>
         <ProjectsHero />
-        <ProjectsGrid />
         <ProjectsCtaSection />
+        <ProjectsGrid />
       </main>
       <Footer />
     </div>

@@ -78,8 +78,8 @@ const Accessibility = () => {
               </p>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <h3 className="text-lg font-semibold mb-2">Contact Information:</h3>
-                <p><strong>Phone:</strong> (513) 876-2858</p>
-                <p><strong>Email:</strong> info@haulawaypro.com</p>
+                <p><strong>Phone:</strong> (513) 712-8077</p>
+                <p><strong>Email:</strong> contact@haulawaypro.com</p>
                 <p><strong>Address:</strong> Greater Cincinnati Area, Ohio</p>
               </div>
             </section>

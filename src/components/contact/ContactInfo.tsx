@@ -22,7 +22,7 @@ const ContactInfo = () => {
             <Mail className="h-6 w-6 mt-1 text-brand-green" />
             <div>
               <h3 className="font-semibold mb-1">Email</h3>
-              <p className="text-white/90">info@haulawaypro.com</p>
+              <p className="text-white/90">contact@haulawaypro.com</p>
               <p className="text-sm text-white/70">We'll respond within 24 hours</p>
             </div>
           </div>

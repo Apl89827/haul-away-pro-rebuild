@@ -113,7 +113,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="h-5 w-5 mt-0.5 text-brand-green" />
-                <span>info@haulawaypro.com</span>
+                <span>contact@haulawaypro.com</span>
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="h-5 w-5 mt-0.5 text-brand-green" />

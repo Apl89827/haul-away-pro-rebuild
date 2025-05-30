@@ -64,11 +64,11 @@ const Header = () => {
           
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4 lg:gap-6">
-            <a href="tel:5138762858" className="flex items-center gap-2 font-medium text-brand-blue hover:text-brand-darkBlue transition-colors">
+            <a href="tel:5137128077" className="flex items-center gap-2 font-medium text-brand-blue hover:text-brand-darkBlue transition-colors">
               <Phone className="h-4 w-4" />
-              <span className="hidden lg:inline">(513) 876-2858</span>
+              <span className="hidden lg:inline">(513) 712-8077</span>
             </a>
-            <a href="tel:5138762858">
+            <a href="tel:5137128077">
               <Button className="btn-secondary text-sm lg:text-base bg-green-600 hover:bg-green-500">
                 <Phone className="mr-2 h-4 w-4" />
                 Call Now
@@ -99,9 +99,9 @@ const Header = () => {
               <Link to="/booking" className="mobile-menu-item bg-brand-green text-white font-semibold" onClick={closeMobileMenu}>
                 Check Availability
               </Link>
-              <a href="tel:5138762858" className="mobile-menu-item flex items-center gap-3 text-brand-blue font-semibold" onClick={closeMobileMenu}>
+              <a href="tel:5137128077" className="mobile-menu-item flex items-center gap-3 text-brand-blue font-semibold" onClick={closeMobileMenu}>
                 <Phone className="h-5 w-5" />
-                Call (513) 876-2858
+                Call (513) 712-8077
               </a>
               <Link to="/how-it-works" className="mobile-menu-item" onClick={closeMobileMenu}>
                 How It Works

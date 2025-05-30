@@ -27,11 +27,11 @@ const ServiceAreasHero = () => {
               </Button>
             </Link>
             <a 
-              href="tel:5138762858" 
+              href="tel:5137128077" 
               className="inline-flex items-center justify-center gap-2 bg-white border-2 border-brand-blue text-brand-blue font-semibold py-3 px-6 rounded-md hover:bg-brand-blue hover:text-white transition-colors"
             >
               <Phone className="h-4 w-4" />
-              Call (513) 876-2858
+              Call (513) 712-8077
             </a>
           </div>
         </div>

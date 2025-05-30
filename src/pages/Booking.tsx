@@ -38,7 +38,7 @@ const BookingPage = () => {
             
             {/* Prominent mobile CTA */}
             <div className="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto mb-6">
-              <a href="tel:5138762858" className="w-full sm:w-auto">
+              <a href="tel:5137128077" className="w-full sm:w-auto">
                 <Button className="btn-primary w-full">
                   <Phone className="mr-2 h-5 w-5" />
                   Call Now - Fast Booking

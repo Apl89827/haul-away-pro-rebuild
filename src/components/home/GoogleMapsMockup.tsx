@@ -30,8 +30,8 @@ const GoogleMapsMockup = () => {
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Phone className="w-4 h-4 text-brand-blue" />
-              <a href="tel:5138762858" className="text-brand-blue hover:underline">
-                (513) 876-2858
+              <a href="tel:5137128077" className="text-brand-blue hover:underline">
+                (513) 712-8077
               </a>
             </div>
           </div>

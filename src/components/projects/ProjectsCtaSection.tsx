@@ -24,9 +24,9 @@ const ProjectsCtaSection = () => {
             </Button>
           </Link>
           
-          <a href="tel:5138762858" className="flex items-center gap-2 text-brand-blue hover:text-brand-darkBlue transition-colors">
+          <a href="tel:5137128077" className="flex items-center gap-2 text-brand-blue hover:text-brand-darkBlue transition-colors">
             <Phone className="h-5 w-5" />
-            <span className="font-medium">Call (513) 876-2858</span>
+            <span className="font-medium">Call (513) 712-8077</span>
           </a>
         </div>
         

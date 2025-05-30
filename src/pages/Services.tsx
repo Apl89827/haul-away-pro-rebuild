@@ -4,9 +4,9 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import ServicesHero from '@/components/services/ServicesHero';
 import ServiceCategories from '@/components/services/ServiceCategories';
-import ServicesCtaSection from '@/components/services/ServicesCtaSection';
 import WhatWeDontTake from '@/components/services/WhatWeDontTake';
 import ServiceProcess from '@/components/services/ServiceProcess';
+import ServicesCtaSection from '@/components/services/ServicesCtaSection';
 
 const Services = () => {
   return (
@@ -15,9 +15,9 @@ const Services = () => {
       <main>
         <ServicesHero />
         <ServiceCategories />
-        <ServicesCtaSection />
         <WhatWeDontTake />
         <ServiceProcess />
+        <ServicesCtaSection />
       </main>
       <Footer />
     </>

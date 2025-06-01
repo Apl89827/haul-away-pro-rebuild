@@ -1,9 +1,14 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { Phone, Mail, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Footer = () => {
+  const handlePortalClick = () => {
+    window.open('https://client.housecallpro.com/customer_portal/request-link?token=136e206d919041d38f3b1a859943db4c', '_blank');
+  };
+
   return (
     <footer className="bg-brand-darkBlue text-white">
       <div className="container-custom py-12">
@@ -124,12 +129,18 @@ const Footer = () => {
                 </span>
               </li>
             </ul>
-            <div className="mt-6">
+            <div className="mt-6 space-y-3">
               <Link to="/booking">
                 <Button className="bg-brand-green hover:bg-brand-green/90 text-white w-full">
                   Check Availability
                 </Button>
               </Link>
+              <button 
+                onClick={handlePortalClick}
+                className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-full w-full transition-colors text-sm"
+              >
+                Customer Portal
+              </button>
             </div>
           </div>
         </div>

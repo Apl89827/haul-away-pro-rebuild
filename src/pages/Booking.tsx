@@ -5,6 +5,15 @@ import Footer from '@/components/layout/Footer';
 import { Clock, Shield, Truck, CheckCircle, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
+// Declare HCPWidget for TypeScript
+declare global {
+  interface Window {
+    HCPWidget: {
+      openModal: () => void;
+    };
+  }
+}
+
 const BookingPage = () => {
   const benefits = [
     {
@@ -23,6 +32,14 @@ const BookingPage = () => {
       description: "No lifting required"
     }
   ];
+
+  const handleBookingClick = () => {
+    if (window.HCPWidget) {
+      window.HCPWidget.openModal();
+    } else {
+      console.error('HouseCall Pro widget not loaded');
+    }
+  };
 
   return (
     <>
@@ -76,19 +93,20 @@ const BookingPage = () => {
               <div className="bg-white rounded-lg shadow-lg p-4 md:p-8">
                 <h2 className="heading-lg text-center mb-6 md:mb-8">Schedule Your Service</h2>
                 
-                {/* CRM Widget Placeholder - Optimized for mobile */}
-                <div className="min-h-[500px] md:min-h-[600px] bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center">
-                  <div className="text-center p-4">
-                    <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-4">
-                      Online Booking System
-                    </h3>
-                    <p className="text-gray-600 mb-4 text-sm md:text-base">
-                      Your CRM booking widget will be embedded here for seamless mobile booking experience.
-                    </p>
-                    <div className="bg-white p-4 rounded border text-xs md:text-sm text-gray-500">
-                      Mobile-optimized booking form placeholder
-                    </div>
-                  </div>
+                {/* HouseCall Pro Booking Widget */}
+                <div className="text-center">
+                  <button 
+                    data-token="67280a43a10a4cc685303d348632a559" 
+                    data-orgname="HaulAway-Pro" 
+                    className="btn-primary text-lg px-8 py-4 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+                    onClick={handleBookingClick}
+                  >
+                    Book Online Now
+                  </button>
+                  
+                  <p className="text-gray-600 mt-4 text-sm md:text-base">
+                    Click above to open our secure booking system and schedule your junk removal service.
+                  </p>
                 </div>
               </div>
             </div>

@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Star, ChevronLeft, ChevronRight } from "lucide-react";
+import { Star } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -8,51 +8,59 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { useGoogleReviews } from "@/hooks/useGoogleReviews";
 
 const GoogleReviewsCarousel = () => {
-  // These would typically come from Google My Business API or be manually curated
-  const googleReviews = [
+  // Your Google My Business Place ID - replace with your actual place ID
+  const PLACE_ID = "ChIJk6CXojYiQIgRs-TfYDA-5Ls"; // Example place ID - replace with yours
+  
+  // This should come from environment/secrets - for now using null until API key is provided
+  const GOOGLE_API_KEY = null; // Will be replaced with actual API key
+  
+  const { data: googleReviews, isLoading, error } = useGoogleReviews(PLACE_ID, GOOGLE_API_KEY);
+
+  // Fallback reviews for when API is not configured or fails
+  const fallbackReviews = [
     {
-      name: "Sarah K.",
-      location: "West Chester",
-      quote: "Fantastic service from start to finish! The team was on time, professional, and cleared away everything quickly. The price was exactly what they quoted - no surprises.",
+      author_name: "Sarah K.",
       rating: 5,
-      date: "2 weeks ago",
-      verified: true
+      text: "Fantastic service from start to finish! The team was on time, professional, and cleared away everything quickly. The price was exactly what they quoted - no surprises.",
+      relative_time_description: "2 weeks ago",
+      time: Date.now() - (14 * 24 * 60 * 60 * 1000)
     },
     {
-      name: "Mike D.",
-      location: "Mason", 
-      quote: "I needed an old refrigerator and some furniture removed ASAP. Haul Away Pro came the same day I called and took care of everything. Highly recommended!",
+      author_name: "Mike D.",
       rating: 5,
-      date: "1 month ago",
-      verified: true
+      text: "I needed an old refrigerator and some furniture removed ASAP. Haul Away Pro came the same day I called and took care of everything. Highly recommended!",
+      relative_time_description: "1 month ago",
+      time: Date.now() - (30 * 24 * 60 * 60 * 1000)
     },
     {
-      name: "Jennifer L.",
-      location: "Springdale",
-      quote: "We used Haul Away Pro for our estate cleanout and they were amazing. Compassionate, efficient, and they even helped us identify items that could be donated.",
+      author_name: "Jennifer L.",
       rating: 5,
-      date: "3 weeks ago",
-      verified: true
+      text: "We used Haul Away Pro for our estate cleanout and they were amazing. Compassionate, efficient, and they even helped us identify items that could be donated.",
+      relative_time_description: "3 weeks ago",
+      time: Date.now() - (21 * 24 * 60 * 60 * 1000)
     },
     {
-      name: "Robert T.",
-      location: "Blue Ash",
-      quote: "Professional crew, fair pricing, and they recycled what they could. Great communication throughout the process. Will definitely use them again.",
+      author_name: "Robert T.",
       rating: 5,
-      date: "1 week ago",
-      verified: true
+      text: "Professional crew, fair pricing, and they recycled what they could. Great communication throughout the process. Will definitely use them again.",
+      relative_time_description: "1 week ago",
+      time: Date.now() - (7 * 24 * 60 * 60 * 1000)
     },
     {
-      name: "Lisa M.",
-      location: "Fairfield",
-      quote: "Quick response time and excellent service. They handled our office cleanout efficiently and left the space spotless. Highly recommend!",
+      author_name: "Lisa M.",
       rating: 5,
-      date: "2 months ago",
-      verified: true
+      text: "Quick response time and excellent service. They handled our office cleanout efficiently and left the space spotless. Highly recommend!",
+      relative_time_description: "2 months ago",
+      time: Date.now() - (60 * 24 * 60 * 60 * 1000)
     }
   ];
+
+  // Use Google Reviews if available, otherwise fallback to static reviews
+  const reviewsToDisplay = googleReviews && googleReviews.length > 0 ? googleReviews : fallbackReviews;
+  const totalReviews = googleReviews?.length || fallbackReviews.length;
 
   const renderStars = (rating: number) => {
     return Array(rating)
@@ -61,6 +69,10 @@ const GoogleReviewsCarousel = () => {
         <Star key={index} className="h-4 w-4 fill-current text-yellow-500" />
       ));
   };
+
+  if (error) {
+    console.error('Google Reviews API Error:', error);
+  }
 
   return (
     <div className="max-w-5xl mx-auto">
@@ -74,31 +86,44 @@ const GoogleReviewsCarousel = () => {
           <span className="text-lg font-semibold">Google Reviews</span>
           <div className="flex items-center ml-2">
             {renderStars(5)}
-            <span className="ml-2 text-sm text-gray-600">5.0 ({googleReviews.length} reviews)</span>
+            <span className="ml-2 text-sm text-gray-600">
+              5.0 ({totalReviews} reviews)
+              {isLoading && " • Loading..."}
+            </span>
           </div>
         </div>
       </div>
 
       <Carousel className="w-full">
         <CarouselContent>
-          {googleReviews.map((review, index) => (
+          {reviewsToDisplay.map((review, index) => (
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
               <div className="bg-white border border-gray-200 rounded-lg p-6 card-shadow h-full">
                 <div className="flex justify-between items-start mb-2">
                   <div className="flex">
                     {renderStars(review.rating)}
                   </div>
-                  {review.verified && (
-                    <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">
-                      Verified
+                  {googleReviews && (
+                    <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">
+                      Live
                     </span>
                   )}
                 </div>
-                <p className="text-gray-700 mb-4 italic text-sm leading-relaxed">"{review.quote}"</p>
+                <p className="text-gray-700 mb-4 italic text-sm leading-relaxed">
+                  "{review.text}"
+                </p>
                 <div className="mt-auto">
-                  <p className="font-semibold text-sm">{review.name}</p>
-                  <p className="text-xs text-gray-500">{review.location}</p>
-                  <p className="text-xs text-gray-400 mt-1">{review.date}</p>
+                  <div className="flex items-center space-x-2 mb-1">
+                    {review.profile_photo_url && (
+                      <img 
+                        src={review.profile_photo_url} 
+                        alt={review.author_name}
+                        className="w-6 h-6 rounded-full"
+                      />
+                    )}
+                    <p className="font-semibold text-sm">{review.author_name}</p>
+                  </div>
+                  <p className="text-xs text-gray-400">{review.relative_time_description}</p>
                 </div>
               </div>
             </CarouselItem>

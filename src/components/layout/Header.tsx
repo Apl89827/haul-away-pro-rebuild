@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Phone, Menu, X } from "lucide-react";
+import { Phone, Menu, X, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
@@ -68,12 +68,12 @@ const Header = () => {
               <Phone className="h-4 w-4" />
               <span className="hidden lg:inline">(513) 712-8077</span>
             </a>
-            <a href="tel:5137128077">
+            <Link to="/booking">
               <Button className="btn-secondary text-sm lg:text-base bg-green-600 hover:bg-green-500">
-                <Phone className="mr-2 h-4 w-4" />
-                Call Now
+                <Calendar className="mr-2 h-4 w-4" />
+                Check Availability
               </Button>
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}

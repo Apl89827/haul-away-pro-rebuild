@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone } from "lucide-react";
+import { ArrowRight, Phone, Truck, FileText, Users, Clock } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -43,25 +43,32 @@ const HeroSection = () => {
         </div>
       </div>
       
-      {/* Mobile trust indicators */}
-      <div className="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm py-4 md:py-6 z-30">
+      {/* Enhanced trust indicators section */}
+      <div className="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm py-6 md:py-8 z-30">
         <div className="container-custom">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
-            <div>
-              <span className="font-bold text-brand-blue block text-lg md:text-xl">15+ Years</span>
-              <span className="text-gray-600 text-sm md:text-base">Experience</span>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <div className="flex flex-col items-center text-center p-4">
+              <div className="w-16 h-16 md:w-20 md:h-20 bg-brand-blue/10 rounded-full flex items-center justify-center mb-4">
+                <Clock className="w-8 h-8 md:w-10 md:h-10 text-brand-blue" />
+              </div>
+              <h3 className="font-bold text-brand-darkBlue text-lg md:text-xl mb-2">Same-day service</h3>
+              <p className="text-gray-600 text-sm md:text-base">Book today. We'll call before we arrive</p>
             </div>
-            <div>
-              <span className="font-bold text-brand-blue block text-lg md:text-xl">Licensed</span>
-              <span className="text-gray-600 text-sm md:text-base">& Insured</span>
+            
+            <div className="flex flex-col items-center text-center p-4">
+              <div className="w-16 h-16 md:w-20 md:h-20 bg-brand-green/10 rounded-full flex items-center justify-center mb-4">
+                <FileText className="w-8 h-8 md:w-10 md:h-10 text-brand-green" />
+              </div>
+              <h3 className="font-bold text-brand-darkBlue text-lg md:text-xl mb-2">Get a free estimate</h3>
+              <p className="text-gray-600 text-sm md:text-base">No hidden fees. No deposit. No obligation to continue</p>
             </div>
-            <div>
-              <span className="font-bold text-brand-blue block text-lg md:text-xl">Free</span>
-              <span className="text-gray-600 text-sm md:text-base">Estimates</span>
-            </div>
-            <div>
-              <span className="font-bold text-brand-blue block text-lg md:text-xl">Same Day</span>
-              <span className="text-gray-600 text-sm md:text-base">Service</span>
+            
+            <div className="flex flex-col items-center text-center p-4">
+              <div className="w-16 h-16 md:w-20 md:h-20 bg-brand-blue/10 rounded-full flex items-center justify-center mb-4">
+                <Users className="w-8 h-8 md:w-10 md:h-10 text-brand-blue" />
+              </div>
+              <h3 className="font-bold text-brand-darkBlue text-lg md:text-xl mb-2">Friendly, professional teams</h3>
+              <p className="text-gray-600 text-sm md:text-base">We'll take care of everything and sweep up when we're done</p>
             </div>
           </div>
         </div>

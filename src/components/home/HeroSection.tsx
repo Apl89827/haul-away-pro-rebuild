@@ -1,12 +1,9 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, Truck, FileText, Users, Clock } from "lucide-react";
-
 const HeroSection = () => {
-  return (
-    <div className="relative w-full min-h-[95vh] md:min-h-screen flex items-center">
+  return <div className="relative w-full min-h-[95vh] md:min-h-screen flex items-center">
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
       backgroundImage: "url('/lovable-uploads/e9fb3e64-31d1-470c-8a69-daca627daa12.png')",
       backgroundPosition: "center 30%"
@@ -17,10 +14,10 @@ const HeroSection = () => {
       
       <div className="container-custom relative z-20 pt-24 md:pt-20 pb-32 md:pb-40">
         <div className="max-w-3xl">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight text-white mb-8 md:mb-10">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-8 md:mb-10 xl:text-5xl">
             Cincinnati's #1 Junk Removal Service
           </h1>
-          <p className="text-xl md:text-2xl lg:text-3xl text-white/90 mb-10 md:mb-14 leading-relaxed">
+          <p className="text-xl md:text-2xl text-white/90 mb-10 md:mb-14 leading-relaxed lg:text-2xl">
             Fast, fair, and eco-friendly junk removal. From furniture to appliances - 
             we handle it all with transparent pricing.
           </p>
@@ -73,8 +70,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default HeroSection;

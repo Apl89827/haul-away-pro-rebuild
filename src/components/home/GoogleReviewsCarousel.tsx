@@ -114,7 +114,7 @@ const GoogleReviewsCarousel = () => {
                 </p>
                 <div className="mt-auto">
                   <div className="flex items-center space-x-2 mb-1">
-                    {review.profile_photo_url && (
+                    {"profile_photo_url" in review && review.profile_photo_url && (
                       <img 
                         src={review.profile_photo_url} 
                         alt={review.author_name}

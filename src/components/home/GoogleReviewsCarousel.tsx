@@ -69,9 +69,17 @@ const GoogleReviewsCarousel = () => {
 
   // Add debug logging
   React.useEffect(() => {
+    console.log('=== GOOGLE REVIEWS DEBUG ===');
+    console.log('Place ID:', PLACE_ID);
     console.log('Google Reviews data:', googleReviews);
     console.log('Loading state:', isLoading);
     console.log('Error state:', error);
+    if (error) {
+      console.log('Error message:', error.message);
+    }
+    console.log('Reviews to display count:', reviewsToDisplay.length);
+    console.log('Using fallback reviews:', !googleReviews || googleReviews.length === 0);
+    console.log('=============================');
   }, [googleReviews, isLoading, error]);
 
   return (
@@ -89,11 +97,23 @@ const GoogleReviewsCarousel = () => {
             <span className="ml-2 text-sm text-gray-600">
               5.0 ({totalReviews} reviews)
               {isLoading && " • Loading..."}
-              {error && " • Using cached reviews"}
+              {error && error.message.includes('Place not found') && " • Place ID issue"}
+              {error && !error.message.includes('Place not found') && " • Using cached reviews"}
             </span>
           </div>
         </div>
       </div>
+
+      {/* Debug information - remove this in production */}
+      {error && (
+        <div className="mb-4 p-3 bg-yellow-50 border border-yellow-200 rounded-lg text-sm">
+          <strong>Debug Info:</strong> {error.message}
+          <br />
+          <strong>Place ID:</strong> {PLACE_ID}
+          <br />
+          <em>Showing fallback reviews. Check console for more details.</em>
+        </div>
+      )}
 
       <Carousel className="w-full">
         <CarouselContent>

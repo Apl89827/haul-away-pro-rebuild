@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Star } from "lucide-react";
 import {
@@ -8,39 +9,12 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { useGoogleReviews } from "@/hooks/useGoogleReviews";
-import { supabase } from "@/integrations/supabase/client";
 
 const GoogleReviewsCarousel = () => {
   // Your Google My Business Place ID - replace with your actual place ID
   const PLACE_ID = "ChIJk6CXojYaa093:0xbe7b2fe630d2e4b3"; // Example place ID - replace with yours
   
-  // Get API key from Supabase secrets
-  const [googleApiKey, setGoogleApiKey] = React.useState<string | null>(null);
-  
-  React.useEffect(() => {
-    const getApiKey = async () => {
-      try {
-        const { data, error } = await supabase.functions.invoke('get-secret', {
-          body: { name: 'GOOGLE_PLACES_API_KEY' }
-        });
-        
-        if (error) {
-          console.error('Error fetching Google API key:', error);
-          return;
-        }
-        
-        if (data?.value) {
-          setGoogleApiKey(data.value);
-        }
-      } catch (error) {
-        console.error('Error getting API key:', error);
-      }
-    };
-    
-    getApiKey();
-  }, []);
-  
-  const { data: googleReviews, isLoading, error } = useGoogleReviews(PLACE_ID, googleApiKey);
+  const { data: googleReviews, isLoading, error } = useGoogleReviews(PLACE_ID);
 
   // Fallback reviews for when API is not configured or fails
   const fallbackReviews = [
@@ -93,17 +67,12 @@ const GoogleReviewsCarousel = () => {
       ));
   };
 
-  if (error) {
-    console.error('Google Reviews API Error:', error);
-  }
-
   // Add debug logging
   React.useEffect(() => {
-    console.log('Google API Key status:', googleApiKey ? 'Available' : 'Not available');
     console.log('Google Reviews data:', googleReviews);
     console.log('Loading state:', isLoading);
     console.log('Error state:', error);
-  }, [googleApiKey, googleReviews, isLoading, error]);
+  }, [googleReviews, isLoading, error]);
 
   return (
     <div className="max-w-5xl mx-auto">
@@ -120,7 +89,7 @@ const GoogleReviewsCarousel = () => {
             <span className="ml-2 text-sm text-gray-600">
               5.0 ({totalReviews} reviews)
               {isLoading && " • Loading..."}
-              {!googleApiKey && " • API key loading..."}
+              {error && " • Using cached reviews"}
             </span>
           </div>
         </div>

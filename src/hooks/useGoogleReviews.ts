@@ -1,5 +1,6 @@
 
 import { useQuery } from '@tanstack/react-query';
+import { supabase } from '@/integrations/supabase/client';
 
 interface GoogleReview {
   author_name: string;
@@ -12,38 +13,33 @@ interface GoogleReview {
   time: number;
 }
 
-interface PlaceDetailsResponse {
-  result: {
-    reviews: GoogleReview[];
-    rating: number;
-    user_ratings_total: number;
-  };
-  status: string;
+interface GoogleReviewsResponse {
+  reviews: GoogleReview[];
+  rating: number;
+  user_ratings_total: number;
 }
 
-const fetchGoogleReviews = async (placeId: string, apiKey: string): Promise<GoogleReview[]> => {
-  const response = await fetch(
-    `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=reviews,rating,user_ratings_total&key=${apiKey}`
-  );
+const fetchGoogleReviews = async (placeId: string): Promise<GoogleReview[]> => {
+  const { data, error } = await supabase.functions.invoke('fetch-google-reviews', {
+    body: { placeId }
+  });
   
-  if (!response.ok) {
-    throw new Error('Failed to fetch Google Reviews');
+  if (error) {
+    throw new Error(`Failed to fetch Google Reviews: ${error.message}`);
   }
   
-  const data: PlaceDetailsResponse = await response.json();
-  
-  if (data.status !== 'OK') {
-    throw new Error(`Google Places API error: ${data.status}`);
+  if (!data) {
+    throw new Error('No data received from Google Reviews API');
   }
   
-  return data.result.reviews || [];
+  return data.reviews || [];
 };
 
-export const useGoogleReviews = (placeId: string, apiKey: string | null) => {
+export const useGoogleReviews = (placeId: string) => {
   return useQuery({
     queryKey: ['googleReviews', placeId],
-    queryFn: () => fetchGoogleReviews(placeId, apiKey!),
-    enabled: !!apiKey && !!placeId,
+    queryFn: () => fetchGoogleReviews(placeId),
+    enabled: !!placeId,
     staleTime: 1000 * 60 * 30, // 30 minutes
     retry: 2,
   });

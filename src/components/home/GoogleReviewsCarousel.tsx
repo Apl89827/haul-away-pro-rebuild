@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Star } from "lucide-react";
 import {
@@ -9,15 +8,39 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { useGoogleReviews } from "@/hooks/useGoogleReviews";
+import { supabase } from "@/integrations/supabase/client";
 
 const GoogleReviewsCarousel = () => {
   // Your Google My Business Place ID - replace with your actual place ID
-  const PLACE_ID = "ChIJk6CXojYiQIgRs-TfYDA-5Ls"; // Example place ID - replace with yours
+  const PLACE_ID = "ChIJk6CXojYaa093:0xbe7b2fe630d2e4b3"; // Example place ID - replace with yours
   
-  // This should come from environment/secrets - for now using null until API key is provided
-  const GOOGLE_API_KEY = null; // Will be replaced with actual API key
+  // Get API key from Supabase secrets
+  const [googleApiKey, setGoogleApiKey] = React.useState<string | null>(null);
   
-  const { data: googleReviews, isLoading, error } = useGoogleReviews(PLACE_ID, GOOGLE_API_KEY);
+  React.useEffect(() => {
+    const getApiKey = async () => {
+      try {
+        const { data, error } = await supabase.functions.invoke('get-secret', {
+          body: { name: 'GOOGLE_PLACES_API_KEY' }
+        });
+        
+        if (error) {
+          console.error('Error fetching Google API key:', error);
+          return;
+        }
+        
+        if (data?.value) {
+          setGoogleApiKey(data.value);
+        }
+      } catch (error) {
+        console.error('Error getting API key:', error);
+      }
+    };
+    
+    getApiKey();
+  }, []);
+  
+  const { data: googleReviews, isLoading, error } = useGoogleReviews(PLACE_ID, googleApiKey);
 
   // Fallback reviews for when API is not configured or fails
   const fallbackReviews = [
@@ -74,6 +97,14 @@ const GoogleReviewsCarousel = () => {
     console.error('Google Reviews API Error:', error);
   }
 
+  // Add debug logging
+  React.useEffect(() => {
+    console.log('Google API Key status:', googleApiKey ? 'Available' : 'Not available');
+    console.log('Google Reviews data:', googleReviews);
+    console.log('Loading state:', isLoading);
+    console.log('Error state:', error);
+  }, [googleApiKey, googleReviews, isLoading, error]);
+
   return (
     <div className="max-w-5xl mx-auto">
       <div className="flex items-center justify-center mb-6">
@@ -89,6 +120,7 @@ const GoogleReviewsCarousel = () => {
             <span className="ml-2 text-sm text-gray-600">
               5.0 ({totalReviews} reviews)
               {isLoading && " • Loading..."}
+              {!googleApiKey && " • API key loading..."}
             </span>
           </div>
         </div>
@@ -103,7 +135,7 @@ const GoogleReviewsCarousel = () => {
                   <div className="flex">
                     {renderStars(review.rating)}
                   </div>
-                  {googleReviews && (
+                  {googleReviews && googleReviews.length > 0 && (
                     <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">
                       Live
                     </span>
@@ -114,9 +146,9 @@ const GoogleReviewsCarousel = () => {
                 </p>
                 <div className="mt-auto">
                   <div className="flex items-center space-x-2 mb-1">
-                    {googleReviews && 'profile_photo_url' in review && review.profile_photo_url && (
+                    {googleReviews && 'profile_photo_url' in review && (review as any).profile_photo_url && (
                       <img 
-                        src={review.profile_photo_url as string} 
+                        src={(review as any).profile_photo_url} 
                         alt={review.author_name}
                         className="w-6 h-6 rounded-full"
                       />

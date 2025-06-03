@@ -11,8 +11,8 @@ import {
 import { useGoogleReviews } from "@/hooks/useGoogleReviews";
 
 const GoogleReviewsCarousel = () => {
-  // Your Google My Business Place ID - replace with your actual place ID
-  const PLACE_ID = "ChIJk6CXojYaa093:0xbe7b2fe630d2e4b3"; // Example place ID - replace with yours
+  // Your Google My Business Place ID
+  const PLACE_ID = "ChIJk6AqOCbyxi0Rs-TSMOYve74";
   
   const { data: googleReviews, isLoading, error } = useGoogleReviews(PLACE_ID);
 

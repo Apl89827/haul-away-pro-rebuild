@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from "react-router-dom";
 import Header from '@/components/layout/Header';
@@ -216,10 +217,12 @@ const PricingPage = () => {
               <Link to="/booking">
                 <Button className="bg-white text-brand-blue hover:bg-gray-100 font-medium py-3 px-6">Check Availability</Button>
               </Link>
-              <Button className="bg-brand-green hover:bg-brand-green/90 text-white font-medium py-3 px-6">
-                <Phone className="h-5 w-5 mr-2" />
-                Call (513) 876-2858
-              </Button>
+              <a href="tel:5137128077">
+                <Button className="bg-brand-green hover:bg-brand-green/90 text-white font-medium py-3 px-6">
+                  <Phone className="h-5 w-5 mr-2" />
+                  Call (513) 712-8077
+                </Button>
+              </a>
             </div>
           </div>
         </section>

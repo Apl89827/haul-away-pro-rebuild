@@ -17,7 +17,12 @@ const ContactInfo = () => {
             <Phone className="h-6 w-6 mt-1 text-brand-green" />
             <div>
               <h3 className="font-semibold mb-1">Phone</h3>
-              <p className="text-white/90">(513) 712-8077</p>
+              <a 
+                href="tel:5137128077" 
+                className="text-white/90 hover:text-white transition-colors"
+              >
+                (513) 712-8077
+              </a>
               <p className="text-sm text-white/70">Call for immediate assistance</p>
             </div>
           </div>

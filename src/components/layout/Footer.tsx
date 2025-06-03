@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Phone, Mail, Clock } from "lucide-react";
@@ -128,9 +127,7 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <Clock className="h-5 w-5 mt-0.5 text-brand-green" />
                 <span>
-                  Mon-Fri: 8am-6pm<br />
-                  Sat: 9am-3pm<br />
-                  Sun: Closed
+                  Mon-Sun: 7am-9pm
                 </span>
               </li>
             </ul>

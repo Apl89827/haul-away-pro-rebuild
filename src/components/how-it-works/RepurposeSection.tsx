@@ -1,11 +1,10 @@
-
 import React from "react";
-import { HeartHandshake, Recycle2, Users, TreePine } from "lucide-react";
+import { HeartHandshake, Recycle, Users, TreePine } from "lucide-react";
 
 const RepurposeSection = () => {
   const impactStats = [
     {
-      icon: Recycle2,
+      icon: Recycle,
       number: "85%",
       label: "Items Donated or Recycled",
       description: "We keep most items out of landfills"
@@ -77,7 +76,7 @@ const RepurposeSection = () => {
 
               <div className="flex gap-4">
                 <div className="w-8 h-8 bg-brand-blue rounded-full flex items-center justify-center flex-shrink-0">
-                  <Recycle2 className="w-4 h-4 text-white" />
+                  <Recycle className="w-4 h-4 text-white" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-brand-darkBlue mb-2">Recycle Materials</h4>

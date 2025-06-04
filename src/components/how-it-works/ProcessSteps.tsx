@@ -33,7 +33,7 @@ const ProcessSteps = () => {
       icon: Truck,
       title: "We Haul Everything",
       description: "Our team does all the heavy lifting and loading.",
-      image: "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=400&h=300&fit=crop&crop=center", 
+      image: "/lovable-uploads/b1bdcd6d-fd1a-4b76-9d60-6bbec62a37e1.png", 
       details: [
         "From anywhere on property",
         "Fully insured team",
@@ -101,7 +101,9 @@ const ProcessSteps = () => {
                   <img 
                     src={step.image} 
                     alt={step.title}
-                    className="w-full h-80 object-cover rounded-lg shadow-lg"
+                    className={`w-full h-80 rounded-lg shadow-lg ${
+                      step.image.includes('lovable-uploads') ? 'object-contain bg-gray-50' : 'object-cover'
+                    }`}
                   />
                   <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-full w-12 h-12 flex items-center justify-center">
                     <step.icon className="w-6 h-6 text-brand-blue" />

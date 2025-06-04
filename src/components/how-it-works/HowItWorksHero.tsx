@@ -53,15 +53,15 @@ const HowItWorksHero = () => {
 
           {/* Right side - Hero Image */}
           <div className="relative">
-            <div className="bg-white rounded-lg shadow-lg p-8 text-center">
+            <div className="bg-white rounded-lg shadow-lg p-6 text-center">
               <img 
-                src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500&h=400&fit=crop&crop=center" 
-                alt="Professional junk removal team" 
-                className="w-full h-80 object-cover rounded-lg mb-6"
+                src="/lovable-uploads/50fa9c69-620f-460b-97e8-abcd9a3853b5.png" 
+                alt="HaulAway PRO professional junk removal truck - Same-day service in Greater Cincinnati" 
+                className="w-full h-80 object-contain rounded-lg mb-6 bg-gray-50"
               />
               <h3 className="heading-sm mb-2 text-brand-darkBlue">Professional & Reliable</h3>
               <p className="text-gray-600">
-                Our uniformed team arrives on time with modern equipment 
+                Our branded trucks and uniformed team arrive on time with modern equipment 
                 to handle any size job safely and efficiently.
               </p>
             </div>

@@ -15,6 +15,8 @@ const routesToPrerender = [
   '/how-it-works',
   '/pricing',
   '/booking',
+  '/booking-facebook',
+  '/booking-google',
   '/services',
   '/projects',
   '/service-areas',

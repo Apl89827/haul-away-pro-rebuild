@@ -8,6 +8,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import Pricing from "./pages/Pricing";
 import Booking from "./pages/Booking";
+import BookingFacebookPage from "./pages/BookingFacebook";
+import BookingGooglePage from "./pages/BookingGoogle";
 import Services from "./pages/Services";
 import Projects from "./pages/Projects";
 import HowItWorks from "./pages/HowItWorks";

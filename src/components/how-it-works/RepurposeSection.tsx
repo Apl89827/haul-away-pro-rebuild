@@ -1,4 +1,5 @@
 
+
 import React from "react";
 import { HeartHandshake, Recycle, Users, TreePine } from "lucide-react";
 
@@ -18,7 +19,7 @@ const RepurposeSection = () => {
     },
     {
       icon: TreePine,
-      number: "500+",
+      number: "50+",
       label: "Tons Diverted Annually", 
       description: "From landfills to better use"
     }
@@ -130,3 +131,4 @@ const RepurposeSection = () => {
 };
 
 export default RepurposeSection;
+

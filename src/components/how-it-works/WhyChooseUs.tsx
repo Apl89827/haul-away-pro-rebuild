@@ -26,7 +26,7 @@ const WhyChooseUs = () => {
       icon: Leaf,
       title: "Eco-Responsible",
       description: "Committed to donating and recycling to minimize environmental impact.",
-      stat: "85% Diverted"
+      stat: "50% Diverted"
     }
   ];
 

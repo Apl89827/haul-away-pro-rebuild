@@ -5,7 +5,7 @@ const RepurposeSection = () => {
   const impactStats = [
     {
       icon: Recycle,
-      number: "85%",
+      number: "Up to 50%",
       label: "Items Donated or Recycled",
       description: "We keep most items out of landfills"
     },

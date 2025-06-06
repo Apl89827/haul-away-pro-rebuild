@@ -1,3 +1,4 @@
+
 import React from "react";
 import { HeartHandshake, Recycle, Users, TreePine } from "lucide-react";
 
@@ -11,7 +12,7 @@ const RepurposeSection = () => {
     },
     {
       icon: Users,
-      number: "50+", 
+      number: "10+", 
       label: "Local Charity Partners",
       description: "Supporting Cincinnati communities"
     },

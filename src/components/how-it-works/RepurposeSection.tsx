@@ -1,3 +1,4 @@
+
 import React from "react";
 import { HeartHandshake, Recycle, Users, TreePine } from "lucide-react";
 
@@ -100,9 +101,9 @@ const RepurposeSection = () => {
           <div>
             <div className="bg-white rounded-lg p-8 card-shadow">
               <img 
-                alt="Donation and recycling center with organized items ready for donation" 
+                alt="HaulAway PRO professional junk removal truck ready for service" 
                 className="w-full h-48 object-cover rounded-lg mb-6" 
-                src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&h=300&fit=crop&crop=center" 
+                src="/lovable-uploads/260cb6b9-758f-4265-962e-0a54220b5ae9.png" 
               />
               
               <h4 className="heading-sm mb-4 text-brand-darkBlue">Our Donation Partners</h4>

@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import { HeartHandshake, Recycle, Users, TreePine } from "lucide-react";
 
@@ -26,12 +24,12 @@ const RepurposeSection = () => {
   ];
 
   const donationPartners = [
-    "Goodwill of Greater Cincinnati",
+    "Goodwill",
     "Salvation Army", 
-    "Habitat for Humanity ReStore",
-    "Local Schools & Community Centers",
-    "Cincinnati Food Bank",
-    "Women's Shelters"
+    "Habitat for Humanity",
+    "Matthew 25 Ministries",
+    "New Life Furniture Bank",
+    "St. Vincent de Paul"
   ];
 
   return (
@@ -131,4 +129,3 @@ const RepurposeSection = () => {
 };
 
 export default RepurposeSection;
-

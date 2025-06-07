@@ -21,6 +21,14 @@ import Terms from "./pages/Terms";
 import Accessibility from "./pages/Accessibility";
 import NotFound from "./pages/NotFound";
 
+// Service pages
+import FurnitureJunkRemoval from "./pages/services/FurnitureJunkRemoval";
+import ApplianceRemoval from "./pages/services/ApplianceRemoval";
+import ElectronicWasteRemoval from "./pages/services/ElectronicWasteRemoval";
+import OutdoorItemRemoval from "./pages/services/OutdoorItemRemoval";
+import ConstructionDebrisRemoval from "./pages/services/ConstructionDebrisRemoval";
+import EstateCleanoutServices from "./pages/services/EstateCleanoutServices";
+
 // Neighborhood pages
 import OverTheRhine from "./pages/neighborhoods/OverTheRhine";
 import Downtown from "./pages/neighborhoods/Downtown";
@@ -56,6 +64,14 @@ const App = () => (
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/accessibility" element={<Accessibility />} />
+        
+        {/* Service category pages */}
+        <Route path="/services/furniture-junk-removal" element={<FurnitureJunkRemoval />} />
+        <Route path="/services/appliance-removal" element={<ApplianceRemoval />} />
+        <Route path="/services/electronic-waste-removal" element={<ElectronicWasteRemoval />} />
+        <Route path="/services/outdoor-item-removal" element={<OutdoorItemRemoval />} />
+        <Route path="/services/construction-debris-removal" element={<ConstructionDebrisRemoval />} />
+        <Route path="/services/estate-cleanout-services" element={<EstateCleanoutServices />} />
         
         {/* Neighborhood SEO pages */}
         <Route path="/junk-removal-over-the-rhine" element={<OverTheRhine />} />

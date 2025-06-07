@@ -1,12 +1,14 @@
 
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 const ServiceCategories = () => {
   const categories = [
     {
       title: "Furniture & Home Items",
       icon: "🪑",
+      path: "/services/furniture-junk-removal",
       items: [
         "Sofas, chairs, and recliners",
         "Tables, desks, and dressers",
@@ -19,6 +21,7 @@ const ServiceCategories = () => {
     {
       title: "Appliances",
       icon: "🧊",
+      path: "/services/appliance-removal",
       items: [
         "Refrigerators and freezers",
         "Washers and dryers",
@@ -31,6 +34,7 @@ const ServiceCategories = () => {
     {
       title: "Electronics & Technology",
       icon: "📺",
+      path: "/services/electronic-waste-removal",
       items: [
         "Televisions and monitors",
         "Computers and laptops",
@@ -43,18 +47,20 @@ const ServiceCategories = () => {
     {
       title: "Yard & Outdoor Items",
       icon: "🌿",
+      path: "/services/outdoor-item-removal",
       items: [
         "Tree branches and brush",
-        "Leaves and grass clippings",
+        "Shed",
         "Patio furniture",
         "Grills and outdoor equipment",
         "Pool equipment",
-        "Landscaping materials"
+        "Jacuzzi"
       ]
     },
     {
       title: "Construction & Renovation",
       icon: "🔨",
+      path: "/services/construction-debris-removal",
       items: [
         "Drywall and lumber",
         "Flooring materials",
@@ -67,6 +73,7 @@ const ServiceCategories = () => {
     {
       title: "Estate & Business Cleanouts",
       icon: "🏠",
+      path: "/services/estate-cleanout-services",
       items: [
         "Complete home cleanouts",
         "Office furniture and equipment",
@@ -91,22 +98,24 @@ const ServiceCategories = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {categories.map((category) => (
-            <Card key={category.title} className="card-shadow hover:shadow-xl transition-all duration-300">
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <span className="text-4xl mr-3">{category.icon}</span>
-                  <h3 className="heading-sm">{category.title}</h3>
-                </div>
-                <ul className="space-y-2">
-                  {category.items.map((item, index) => (
-                    <li key={index} className="flex items-center text-gray-700">
-                      <span className="w-2 h-2 bg-brand-green rounded-full mr-3 flex-shrink-0"></span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
+            <Link key={category.title} to={category.path}>
+              <Card className="card-shadow hover:shadow-xl transition-all duration-300 cursor-pointer">
+                <CardContent className="p-6">
+                  <div className="flex items-center mb-4">
+                    <span className="text-4xl mr-3">{category.icon}</span>
+                    <h3 className="heading-sm">{category.title}</h3>
+                  </div>
+                  <ul className="space-y-2">
+                    {category.items.map((item, index) => (
+                      <li key={index} className="flex items-center text-gray-700">
+                        <span className="w-2 h-2 bg-brand-green rounded-full mr-3 flex-shrink-0"></span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            </Link>
           ))}
         </div>
 

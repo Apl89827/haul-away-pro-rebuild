@@ -22,3 +22,142 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "SEO Title", name: "seoTitle", widget: "string", required: false }
       - { label: "SEO Description", name: "seoDescription", widget: "text", required: false }
+
+  - name: "services"
+    label: "Service Pages"
+    folder: "content/services"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Hero Title", name: "heroTitle", widget: "string" }
+      - { label: "Hero Description", name: "heroDescription", widget: "text" }
+      - { label: "Hero Image", name: "heroImage", widget: "image", required: false }
+      - { label: "Main Description", name: "mainDescription", widget: "text" }
+      - { label: "Items We Remove", name: "itemsList", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
+      - { label: "Service Benefits", name: "benefits", widget: "list", 
+          fields: [
+            { label: "Title", name: "title", widget: "string" },
+            { label: "Description", name: "description", widget: "text" },
+            { label: "Icon", name: "icon", widget: "select", options: ["CheckCircle", "Clock", "Shield", "Truck", "Recycle", "TreePine", "Waves", "Sun"] }
+          ]
+        }
+      - { label: "SEO Title", name: "seoTitle", widget: "string", required: false }
+      - { label: "SEO Description", name: "seoDescription", widget: "text", required: false }
+
+  - name: "faqs"
+    label: "FAQs"
+    folder: "content/faqs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Question", name: "question", widget: "string" }
+      - { label: "Answer", name: "answer", widget: "text" }
+      - { label: "Category", name: "category", widget: "select", options: ["General", "Pricing", "Services", "Process", "Environmental"] }
+      - { label: "Order", name: "order", widget: "number", default: 1 }
+
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "content/testimonials"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Customer Name", name: "name", widget: "string" }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Review Text", name: "review", widget: "text" }
+      - { label: "Rating", name: "rating", widget: "select", options: ["1", "2", "3", "4", "5"], default: "5" }
+      - { label: "Service Type", name: "serviceType", widget: "string", required: false }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+
+  - name: "pricing"
+    label: "Pricing Information"
+    files:
+      - label: "Pricing Details"
+        name: "pricing"
+        file: "content/pricing/pricing.md"
+        fields:
+          - { label: "Minimum Service Price", name: "minimumPrice", widget: "string", default: "$99" }
+          - { label: "Minimum Service Description", name: "minimumDescription", widget: "text" }
+          - { label: "Pricing Factors", name: "pricingFactors", widget: "list", field: { label: "Factor", name: "factor", widget: "string" } }
+          - { label: "What's Included", name: "whatsIncluded", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
+          - { label: "Pricing Benefits", name: "benefits", widget: "list",
+              fields: [
+                { label: "Title", name: "title", widget: "string" },
+                { label: "Description", name: "description", widget: "text" }
+              ]
+            }
+
+  - name: "contact"
+    label: "Contact Information"
+    files:
+      - label: "Contact Details"
+        name: "contact"
+        file: "content/contact/contact.md"
+        fields:
+          - { label: "Primary Phone", name: "primaryPhone", widget: "string" }
+          - { label: "Secondary Phone", name: "secondaryPhone", widget: "string", required: false }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Business Hours", name: "businessHours", widget: "string" }
+          - { label: "Service Areas", name: "serviceAreas", widget: "list", field: { label: "Area", name: "area", widget: "string" } }
+          - { label: "Emergency Contact", name: "emergencyContact", widget: "string", required: false }
+
+  - name: "seo"
+    label: "SEO Settings"
+    files:
+      - label: "Global SEO"
+        name: "global-seo"
+        file: "content/seo/global.md"
+        fields:
+          - { label: "Site Title", name: "siteTitle", widget: "string" }
+          - { label: "Site Description", name: "siteDescription", widget: "text" }
+          - { label: "Default Meta Image", name: "defaultMetaImage", widget: "image" }
+          - { label: "Keywords", name: "keywords", widget: "list", field: { label: "Keyword", name: "keyword", widget: "string" } }
+          - { label: "Google Analytics ID", name: "googleAnalyticsId", widget: "string", required: false }
+          - { label: "Google Tag Manager ID", name: "googleTagManagerId", widget: "string", required: false }
+
+  - name: "pages"
+    label: "Page Content"
+    files:
+      - label: "Homepage"
+        name: "homepage"
+        file: "content/pages/homepage.md"
+        fields:
+          - { label: "Hero Title", name: "heroTitle", widget: "string" }
+          - { label: "Hero Subtitle", name: "heroSubtitle", widget: "text" }
+          - { label: "Hero CTA Text", name: "heroCta", widget: "string" }
+          - { label: "Why Choose Us Title", name: "whyChooseTitle", widget: "string" }
+          - { label: "Why Choose Us Items", name: "whyChooseItems", widget: "list",
+              fields: [
+                { label: "Title", name: "title", widget: "string" },
+                { label: "Description", name: "description", widget: "text" },
+                { label: "Icon", name: "icon", widget: "string" }
+              ]
+            }
+          - { label: "Trust Bar Companies", name: "trustBarCompanies", widget: "list", field: { label: "Company", name: "company", widget: "string" } }
+
+      - label: "About Page"
+        name: "about"
+        file: "content/pages/about.md"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Hero Description", name: "heroDescription", widget: "text" }
+          - { label: "Company Story", name: "companyStory", widget: "markdown" }
+          - { label: "Years in Business", name: "yearsInBusiness", widget: "string" }
+          - { label: "Jobs Completed", name: "jobsCompleted", widget: "string" }
+          - { label: "Customer Satisfaction", name: "customerSatisfaction", widget: "string" }
+
+  - name: "neighborhoods"
+    label: "Neighborhood Pages"
+    folder: "content/neighborhoods"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Neighborhood Name", name: "name", widget: "string" }
+      - { label: "Page Title", name: "title", widget: "string" }
+      - { label: "Hero Description", name: "heroDescription", widget: "text" }
+      - { label: "Local Information", name: "localInfo", widget: "markdown" }
+      - { label: "Service Highlights", name: "serviceHighlights", widget: "list", field: { label: "Highlight", name: "highlight", widget: "string" } }
+      - { label: "Local Keywords", name: "localKeywords", widget: "list", field: { label: "Keyword", name: "keyword", widget: "string" } }
+      - { label: "SEO Title", name: "seoTitle", widget: "string", required: false }
+      - { label: "SEO Description", name: "seoDescription", widget: "text", required: false }

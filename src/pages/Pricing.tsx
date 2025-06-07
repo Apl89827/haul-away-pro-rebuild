@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from "react-router-dom";
 import Header from '@/components/layout/Header';
@@ -27,9 +26,7 @@ const PricingPage = () => {
 
   const pricingFactors = [
     "Volume of items being removed",
-    "Type of materials (some items have disposal fees)",
-    "Difficulty of removal (stairs, tight spaces, etc.)",
-    "Location and accessibility"
+    "Type of materials (some items have disposal fees)"
   ];
 
   const whatWeInclude = [

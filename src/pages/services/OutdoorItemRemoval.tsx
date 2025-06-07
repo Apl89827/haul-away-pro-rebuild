@@ -3,8 +3,29 @@ import React from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { CheckCircle, TreePine, Waves, Sun } from 'lucide-react';
+import { useMeta } from '@/hooks/useMeta';
+import BreadcrumbStructuredData from '@/components/seo/BreadcrumbStructuredData';
+import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema';
+import CanonicalUrl from '@/components/seo/CanonicalUrl';
+import PreloadResources from '@/components/seo/PreloadResources';
 
 const OutdoorItemRemoval = () => {
+  useMeta({
+    title: "Outdoor Item Removal Cincinnati | Shed, Jacuzzi & Patio Furniture | Haul Away Pro",
+    description: "Professional outdoor item removal in Cincinnati. We remove sheds, jacuzzis, patio furniture, grills, and all outdoor equipment. Same-day service available. Get free estimate!",
+    keywords: "outdoor item removal Cincinnati, shed removal, jacuzzi removal, patio furniture removal, grill removal, outdoor equipment disposal, hot tub removal",
+    ogTitle: "Outdoor Item Removal Cincinnati | Shed, Jacuzzi & Patio Furniture",
+    ogDescription: "Professional outdoor item removal in Cincinnati. Sheds, jacuzzis, patio furniture and more. Same-day service available.",
+    canonicalUrl: "https://haulawaypro.com/services/outdoor-item-removal",
+    ogImage: "https://haulawaypro.com/lovable-uploads/f73755ea-bdd1-4f3e-b325-6447f9e68ea1.png"
+  });
+
+  const breadcrumbItems = [
+    { name: "Home", url: "/" },
+    { name: "Services", url: "/services" },
+    { name: "Outdoor Item Removal", url: "/services/outdoor-item-removal" }
+  ];
+
   const outdoorItems = [
     "Tree branches and brush",
     "Shed removal",
@@ -26,6 +47,10 @@ const OutdoorItemRemoval = () => {
 
   return (
     <>
+      <PreloadResources />
+      <CanonicalUrl url="/services/outdoor-item-removal" />
+      <BreadcrumbStructuredData items={breadcrumbItems} />
+      <LocalBusinessSchema servicePage="Outdoor Item Removal" />
       <Header />
       <main>
         {/* Hero Section */}

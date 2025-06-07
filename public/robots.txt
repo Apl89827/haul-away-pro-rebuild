@@ -1,14 +1,38 @@
+
+User-agent: *
+Allow: /
+
+# Prioritize important pages for crawling
+Allow: /services/
+Allow: /junk-removal-*
+Allow: /how-it-works
+Allow: /service-areas
+
+# Block unnecessary pages from crawling
+Disallow: /booking-facebook
+Disallow: /booking-google
+Disallow: /admin/
+Disallow: /*?*
+Disallow: /404
+
+# Special rules for search engines
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 2
 
+# Social media crawlers
 User-agent: Twitterbot
 Allow: /
 
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
-Allow: /
+# Sitemap location
+Sitemap: https://haulawaypro.com/sitemap.xml
+
+# Cache directive
+Cache-delay: 86400

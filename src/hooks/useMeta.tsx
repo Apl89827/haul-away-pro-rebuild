@@ -9,6 +9,8 @@ interface MetaData {
   ogDescription?: string;
   ogImage?: string;
   canonicalUrl?: string;
+  noindex?: boolean;
+  jsonLd?: object;
 }
 
 export const useMeta = (meta: MetaData) => {
@@ -47,6 +49,12 @@ export const useMeta = (meta: MetaData) => {
       ogDescription.setAttribute('content', meta.ogDescription);
     }
 
+    // Update Open Graph image
+    let ogImage = document.querySelector('meta[property="og:image"]');
+    if (ogImage && meta.ogImage) {
+      ogImage.setAttribute('content', meta.ogImage);
+    }
+
     // Update canonical URL
     let canonical = document.querySelector('link[rel="canonical"]');
     if (!canonical && meta.canonicalUrl) {
@@ -56,6 +64,28 @@ export const useMeta = (meta: MetaData) => {
     }
     if (canonical && meta.canonicalUrl) {
       canonical.setAttribute('href', meta.canonicalUrl);
+    }
+
+    // Handle noindex
+    let robots = document.querySelector('meta[name="robots"]');
+    if (!robots) {
+      robots = document.createElement('meta');
+      robots.setAttribute('name', 'robots');
+      document.head.appendChild(robots);
+    }
+    
+    if (meta.noindex) {
+      robots.setAttribute('content', 'noindex, nofollow');
+    } else {
+      robots.setAttribute('content', 'index, follow');
+    }
+
+    // Add JSON-LD if provided
+    if (meta.jsonLd) {
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.innerHTML = JSON.stringify(meta.jsonLd, null, 2);
+      document.head.appendChild(script);
     }
   }, [meta]);
 };

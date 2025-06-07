@@ -80,27 +80,27 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4 text-white">Services</h3>
             <ul className="space-y-2 text-white/80">
               <li>
-                <Link to="/services#furniture" className="hover:text-white transition-colors">
+                <Link to="/services/furniture-junk-removal" className="hover:text-white transition-colors">
                   Furniture Removal
                 </Link>
               </li>
               <li>
-                <Link to="/services#appliances" className="hover:text-white transition-colors">
+                <Link to="/services/appliance-removal" className="hover:text-white transition-colors">
                   Appliance Removal
                 </Link>
               </li>
               <li>
-                <Link to="/services#electronics" className="hover:text-white transition-colors">
+                <Link to="/services/electronic-waste-removal" className="hover:text-white transition-colors">
                   Electronics Recycling
                 </Link>
               </li>
               <li>
-                <Link to="/services#yard-waste" className="hover:text-white transition-colors">
-                  Yard Waste Removal
+                <Link to="/services/outdoor-item-removal" className="hover:text-white transition-colors">
+                  Outdoor Item Removal
                 </Link>
               </li>
               <li>
-                <Link to="/services#estate" className="hover:text-white transition-colors">
+                <Link to="/services/estate-cleanout-services" className="hover:text-white transition-colors">
                   Estate Cleanouts
                 </Link>
               </li>

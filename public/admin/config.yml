@@ -3,6 +3,10 @@ backend:
   name: git-gateway
   branch: main
 
+# This allows you to test the CMS locally without needing to authenticate.
+# It stores content in your browser's local storage.
+local_backend: true
+
 media_folder: "public/uploads"
 public_folder: "/uploads"
 

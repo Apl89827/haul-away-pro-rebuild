@@ -5,7 +5,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content Manager</title>
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      // Only load the Netlify Identity widget on the live site, not on localhost.
+      if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
+        const script = document.createElement('script');
+        script.src = "https://identity.netlify.com/v1/netlify-identity-widget.js";
+        document.head.appendChild(script);
+      }
+    </script>
   </head>
   <body>
     <!-- Include the script that builds the page and powers Decap CMS -->

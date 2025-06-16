@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -47,6 +48,11 @@ import DiningRoomSetRemovalCincinnati from "./pages/services/DiningRoomSetRemova
 import ExerciseEquipmentRemovalCincinnati from "./pages/services/ExerciseEquipmentRemovalCincinnati";
 import HotTubRemovalCincinnati from "./pages/services/HotTubRemovalCincinnati";
 import PianoRemovalCincinnati from "./pages/services/PianoRemovalCincinnati";
+import BedFrameRemovalCincinnati from "./pages/services/BedFrameRemovalCincinnati";
+import BookshelfRemovalCincinnati from "./pages/services/BookshelfRemovalCincinnati";
+import WardrobeRemovalCincinnati from "./pages/services/WardrobeRemovalCincinnati";
+import CabinetRemovalCincinnati from "./pages/services/CabinetRemovalCincinnati";
+import PoolTableRemovalCincinnati from "./pages/services/PoolTableRemovalCincinnati";
 
 // Neighborhood pages
 import OverTheRhine from "./pages/neighborhoods/OverTheRhine";
@@ -111,6 +117,11 @@ const App = () => (
         <Route path="/exercise-equipment-removal-cincinnati" element={<ExerciseEquipmentRemovalCincinnati />} />
         <Route path="/hot-tub-removal-cincinnati" element={<HotTubRemovalCincinnati />} />
         <Route path="/piano-removal-cincinnati" element={<PianoRemovalCincinnati />} />
+        <Route path="/bed-frame-removal-cincinnati" element={<BedFrameRemovalCincinnati />} />
+        <Route path="/bookshelf-removal-cincinnati" element={<BookshelfRemovalCincinnati />} />
+        <Route path="/wardrobe-removal-cincinnati" element={<WardrobeRemovalCincinnati />} />
+        <Route path="/cabinet-removal-cincinnati" element={<CabinetRemovalCincinnati />} />
+        <Route path="/pool-table-removal-cincinnati" element={<PoolTableRemovalCincinnati />} />
         
         {/* Neighborhood SEO pages */}
         <Route path="/junk-removal-over-the-rhine" element={<OverTheRhine />} />

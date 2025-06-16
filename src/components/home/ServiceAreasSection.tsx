@@ -1,23 +1,10 @@
 
 import React from "react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { MapPin } from "lucide-react";
 
 const ServiceAreasSection = () => {
-  const areas = [
-    "Cincinnati",
-    "West Chester",
-    "Mason",
-    "Springdale",
-    "Fairfield",
-    "Sharonville",
-    "Blue Ash",
-    "Loveland",
-    "Montgomery",
-    "Milford",
-    "Anderson Township",
-    "Kenwood",
-    "Hyde Park"
-  ];
-
   return (
     <section className="section bg-brand-lightBlue">
       <div className="container-custom">
@@ -45,15 +32,16 @@ const ServiceAreasSection = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-8">
-          {areas.map((area) => (
-            <div key={area} className="bg-white rounded-md p-3 text-center shadow-sm">
-              {area}
-            </div>
-          ))}
+        <div className="text-center">
+          <Link to="/service-areas">
+            <Button className="btn-primary text-lg inline-flex items-center gap-2">
+              <MapPin className="h-5 w-5" />
+              View All Service Areas
+            </Button>
+          </Link>
         </div>
         
-        <p className="text-center text-gray-600">
+        <p className="text-center text-gray-600 mt-6">
           Don't see your area listed? Contact us to check if we service your location!
         </p>
       </div>

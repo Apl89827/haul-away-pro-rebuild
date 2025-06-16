@@ -25,6 +25,19 @@ const routesToPrerender = [
   '/privacy',
   '/terms',
   '/accessibility',
+  // Service category pages
+  '/services/furniture-junk-removal',
+  '/services/appliance-removal',
+  '/services/electronic-waste-removal',
+  '/services/outdoor-item-removal',
+  '/services/construction-debris-removal',
+  '/services/estate-cleanout-services',
+  // NEW: Phase 2 Secondary Category Pages
+  '/residential-junk-removal-cincinnati',
+  '/commercial-junk-removal-cincinnati',
+  '/estate-cleanout-services-cincinnati',
+  '/light-demolition-services-cincinnati',
+  '/appliance-furniture-removal-cincinnati',
   // Neighborhood SEO pages
   '/junk-removal-over-the-rhine',
   '/junk-removal-downtown-cincinnati',

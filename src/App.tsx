@@ -30,6 +30,13 @@ import OutdoorItemRemoval from "./pages/services/OutdoorItemRemoval";
 import ConstructionDebrisRemoval from "./pages/services/ConstructionDebrisRemoval";
 import EstateCleanoutServices from "./pages/services/EstateCleanoutServices";
 
+// NEW: Phase 2 Secondary Category Pages
+import ResidentialJunkRemovalCincinnati from "./pages/services/ResidentialJunkRemovalCincinnati";
+import CommercialJunkRemovalCincinnati from "./pages/services/CommercialJunkRemovalCincinnati";
+import EstateCleanoutServicesCincinnati from "./pages/services/EstateCleanoutServicesCincinnati";
+import LightDemolitionServicesCincinnati from "./pages/services/LightDemolitionServicesCincinnati";
+import ApplianceFurnitureRemovalCincinnati from "./pages/services/ApplianceFurnitureRemovalCincinnati";
+
 // Neighborhood pages
 import OverTheRhine from "./pages/neighborhoods/OverTheRhine";
 import Downtown from "./pages/neighborhoods/Downtown";
@@ -74,6 +81,13 @@ const App = () => (
         <Route path="/services/outdoor-item-removal" element={<OutdoorItemRemoval />} />
         <Route path="/services/construction-debris-removal" element={<ConstructionDebrisRemoval />} />
         <Route path="/services/estate-cleanout-services" element={<EstateCleanoutServices />} />
+        
+        {/* NEW: Secondary category pages for Phase 2 SEO strategy */}
+        <Route path="/residential-junk-removal-cincinnati" element={<ResidentialJunkRemovalCincinnati />} />
+        <Route path="/commercial-junk-removal-cincinnati" element={<CommercialJunkRemovalCincinnati />} />
+        <Route path="/estate-cleanout-services-cincinnati" element={<EstateCleanoutServicesCincinnati />} />
+        <Route path="/light-demolition-services-cincinnati" element={<LightDemolitionServicesCincinnati />} />
+        <Route path="/appliance-furniture-removal-cincinnati" element={<ApplianceFurnitureRemovalCincinnati />} />
         
         {/* Neighborhood SEO pages */}
         <Route path="/junk-removal-over-the-rhine" element={<OverTheRhine />} />

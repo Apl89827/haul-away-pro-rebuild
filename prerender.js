@@ -38,6 +38,12 @@ const routesToPrerender = [
   '/estate-cleanout-services-cincinnati',
   '/light-demolition-services-cincinnati',
   '/appliance-furniture-removal-cincinnati',
+  // NEW: Phase 3 Specific Service Pages
+  '/couch-sofa-removal-cincinnati',
+  '/mattress-removal-cincinnati',
+  '/refrigerator-disposal-cincinnati',
+  '/washer-dryer-removal-cincinnati',
+  '/television-removal-cincinnati',
   // Neighborhood SEO pages
   '/junk-removal-over-the-rhine',
   '/junk-removal-downtown-cincinnati',

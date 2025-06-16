@@ -37,6 +37,13 @@ import EstateCleanoutServicesCincinnati from "./pages/services/EstateCleanoutSer
 import LightDemolitionServicesCincinnati from "./pages/services/LightDemolitionServicesCincinnati";
 import ApplianceFurnitureRemovalCincinnati from "./pages/services/ApplianceFurnitureRemovalCincinnati";
 
+// NEW: Phase 3 Specific Service Pages
+import CouchSofaRemovalCincinnati from "./pages/services/CouchSofaRemovalCincinnati";
+import MattressRemovalCincinnati from "./pages/services/MattressRemovalCincinnati";
+import RefrigeratorDisposalCincinnati from "./pages/services/RefrigeratorDisposalCincinnati";
+import WasherDryerRemovalCincinnati from "./pages/services/WasherDryerRemovalCincinnati";
+import TelevisionRemovalCincinnati from "./pages/services/TelevisionRemovalCincinnati";
+
 // Neighborhood pages
 import OverTheRhine from "./pages/neighborhoods/OverTheRhine";
 import Downtown from "./pages/neighborhoods/Downtown";
@@ -88,6 +95,13 @@ const App = () => (
         <Route path="/estate-cleanout-services-cincinnati" element={<EstateCleanoutServicesCincinnati />} />
         <Route path="/light-demolition-services-cincinnati" element={<LightDemolitionServicesCincinnati />} />
         <Route path="/appliance-furniture-removal-cincinnati" element={<ApplianceFurnitureRemovalCincinnati />} />
+        
+        {/* NEW: Phase 3 Specific Service Pages */}
+        <Route path="/couch-sofa-removal-cincinnati" element={<CouchSofaRemovalCincinnati />} />
+        <Route path="/mattress-removal-cincinnati" element={<MattressRemovalCincinnati />} />
+        <Route path="/refrigerator-disposal-cincinnati" element={<RefrigeratorDisposalCincinnati />} />
+        <Route path="/washer-dryer-removal-cincinnati" element={<WasherDryerRemovalCincinnati />} />
+        <Route path="/television-removal-cincinnati" element={<TelevisionRemovalCincinnati />} />
         
         {/* Neighborhood SEO pages */}
         <Route path="/junk-removal-over-the-rhine" element={<OverTheRhine />} />

@@ -145,6 +145,78 @@
     <priority>0.7</priority>
   </url>
   
+  <!-- Phase 2 Secondary Category Pages -->
+  <url>
+    <loc>https://haulawaypro.netlify.app/residential-junk-removal-cincinnati</loc>
+    <lastmod>2024-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.netlify.app/commercial-junk-removal-cincinnati</loc>
+    <lastmod>2024-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.netlify.app/estate-cleanout-services-cincinnati</loc>
+    <lastmod>2024-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.netlify.app/light-demolition-services-cincinnati</loc>
+    <lastmod>2024-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.netlify.app/appliance-furniture-removal-cincinnati</loc>
+    <lastmod>2024-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Phase 3 Specific Service Pages -->
+  <url>
+    <loc>https://haulawaypro.netlify.app/couch-sofa-removal-cincinnati</loc>
+    <lastmod>2024-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.netlify.app/mattress-removal-cincinnati</loc>
+    <lastmod>2024-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.netlify.app/refrigerator-disposal-cincinnati</loc>
+    <lastmod>2024-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.netlify.app/washer-dryer-removal-cincinnati</loc>
+    <lastmod>2024-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.netlify.app/television-removal-cincinnati</loc>
+    <lastmod>2024-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
   <!-- Neighborhood SEO pages -->
   <url>
     <loc>https://haulawaypro.netlify.app/junk-removal-over-the-rhine</loc>

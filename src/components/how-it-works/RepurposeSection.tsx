@@ -91,16 +91,16 @@ const RepurposeSection = () => {
             <div className="bg-white rounded-lg p-8 card-shadow">
               <img 
                 alt="HaulAway PRO junk removal truck at donation drop-off facility" 
-                className="w-full h-48 object-cover rounded-lg mb-6" 
+                className="w-full h-64 object-contain rounded-lg mb-8 bg-gray-50" 
                 src="/lovable-uploads/bbd75837-0d8d-46dd-b630-0e2bd854a10c.png" 
               />
               
-              <h4 className="heading-sm mb-4 text-brand-darkBlue">Our Donation Partners</h4>
-              <div className="grid grid-cols-1 gap-2">
+              <h4 className="heading-sm mb-6 text-brand-darkBlue">Our Donation Partners</h4>
+              <div className="grid grid-cols-1 gap-3">
                 {donationPartners.map((partner, index) => (
-                  <div key={index} className="flex items-center gap-2 text-sm text-gray-700">
-                    <div className="w-1.5 h-1.5 bg-brand-green rounded-full"></div>
-                    {partner}
+                  <div key={index} className="flex items-center gap-3 text-sm text-gray-700 py-1">
+                    <div className="w-2 h-2 bg-brand-green rounded-full flex-shrink-0"></div>
+                    <span className="font-medium">{partner}</span>
                   </div>
                 ))}
               </div>

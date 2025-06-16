@@ -18,11 +18,11 @@ const HeroSection = () => {
       <div className="container-custom relative z-20 pt-32 md:pt-20 pb-8 md:pb-40">
         <div className="max-w-3xl">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-6 md:mb-10 xl:text-5xl">
-            Cincinnati's #1 Junk Removal Service
+            Your #1 Choice for Junk Removal in Cincinnati
           </h1>
           <p className="text-lg md:text-2xl text-white/90 mb-8 md:mb-14 leading-relaxed lg:text-2xl">
-            Fast, fair, and eco-friendly junk removal. From furniture to appliances - 
-            we handle it all with transparent pricing.
+            We offer professional junk removal services in Cincinnati with fast, fair, and eco-friendly solutions. From furniture to appliances - 
+            we handle it all with transparent pricing and same-day service available.
           </p>
           
           {/* Mobile-optimized CTA buttons with better spacing */}

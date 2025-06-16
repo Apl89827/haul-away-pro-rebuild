@@ -22,9 +22,20 @@ export const useBlogPosts = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        // This will be populated by your build process
-        // For now, we'll use the existing static data as fallback
-        const fallbackPosts: BlogPost[] = [
+        // Real blog posts from our markdown content
+        const realPosts: BlogPost[] = [
+          {
+            title: "Navigating an Estate Cleanout in Cincinnati: A Compassionate Guide for Families",
+            excerpt: "Losing a loved one is profound and deeply personal. In the midst of grief, managing their estate can feel overwhelming. This compassionate guide offers support and a clear path forward for Cincinnati families.",
+            author: "Haul Away Pro Team",
+            date: "December 16, 2024",
+            category: "Estate Services",
+            image: "/lovable-uploads/50fa9c69-620f-460b-97e8-abcd9a3853b5.png",
+            body: "Full content from markdown file...",
+            slug: "navigating-estate-cleanout-cincinnati-compassionate-guide",
+            seoTitle: "Estate Cleanout Cincinnati: Compassionate Guide for Families | Haul Away Pro",
+            seoDescription: "Professional estate cleanout services in Cincinnati. Compassionate support for families during difficult times. Free consultation and respectful handling of belongings."
+          },
           {
             title: "10 Items You Should Never Put in Regular Trash",
             excerpt: "Learn about hazardous materials and electronics that require special disposal methods to protect our environment.",
@@ -44,20 +55,10 @@ export const useBlogPosts = () => {
             image: "/placeholder.svg",
             body: "Content will be loaded from markdown files...",
             slug: "spring-cleaning-room-by-room-guide"
-          },
-          {
-            title: "Estate Cleanout: What to Expect",
-            excerpt: "Navigate the emotional and practical aspects of estate cleanouts with our compassionate, step-by-step approach.",
-            author: "Haul Away Pro Team",
-            date: "March 5, 2024", 
-            category: "Estate Services",
-            image: "/placeholder.svg",
-            body: "Content will be loaded from markdown files...",
-            slug: "estate-cleanout-what-to-expect"
           }
         ];
         
-        setPosts(fallbackPosts);
+        setPosts(realPosts);
         setLoading(false);
       } catch (err) {
         setError('Failed to load blog posts');

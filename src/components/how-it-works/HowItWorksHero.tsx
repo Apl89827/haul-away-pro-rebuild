@@ -1,9 +1,12 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Phone, CheckCircle } from "lucide-react";
+
 const HowItWorksHero = () => {
-  return <section className="pt-32 pb-20 bg-gradient-to-br from-brand-lightBlue via-white to-brand-gray">
+  return (
+    <section className="pt-32 pb-20 bg-gradient-to-br from-brand-lightBlue via-white to-brand-gray">
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Content */}
@@ -19,10 +22,17 @@ const HowItWorksHero = () => {
             
             {/* Key benefits */}
             <div className="space-y-3 mb-8">
-              {["Same-day service available", "Upfront, all-inclusive pricing", "Fully insured professionals", "Eco-friendly disposal & donation"].map((benefit, index) => <div key={index} className="flex items-center gap-3">
+              {[
+                "Same-day service available",
+                "Upfront, all-inclusive pricing", 
+                "Fully insured professionals",
+                "Eco-friendly disposal & donation"
+              ].map((benefit, index) => (
+                <div key={index} className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-brand-green flex-shrink-0" />
                   <span className="text-gray-700">{benefit}</span>
-                </div>)}
+                </div>
+              ))}
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -41,7 +51,11 @@ const HowItWorksHero = () => {
           {/* Right side - Hero Image */}
           <div className="relative">
             <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-              <img src="/lovable-uploads/50fa9c69-620f-460b-97e8-abcd9a3853b5.png" alt="HaulAway PRO professional junk removal truck - Same-day service in Greater Cincinnati" className="w-full h-80 object-contain rounded-lg mb-6 bg-gray-50" />
+              <img 
+                src="/lovable-uploads/0f74e61c-3d29-4c7b-802b-413818b9735d.png" 
+                alt="HaulAway PRO professional junk removal truck - Same-day service in Greater Cincinnati" 
+                className="w-full h-80 object-contain rounded-lg mb-6 bg-gray-50" 
+              />
               <h3 className="heading-sm mb-2 text-brand-darkBlue">Professional & Reliable</h3>
               <p className="text-gray-600">
                 Our branded trucks and uniformed team arrive on time with modern equipment 
@@ -51,6 +65,8 @@ const HowItWorksHero = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default HowItWorksHero;

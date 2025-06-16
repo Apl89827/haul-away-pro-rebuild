@@ -32,7 +32,7 @@ User-agent: facebookexternalhit
 Allow: /
 
 # Sitemap location
-Sitemap: https://haulawaypro.com/sitemap.xml
+Sitemap: https://haulawaypro.netlify.app/sitemap.xml
 
 # Cache directive
 Cache-delay: 86400

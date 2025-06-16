@@ -62,7 +62,7 @@ const PricingHero = () => {
                 <div className="text-sm text-gray-600">Happy Customers</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-brand-blue mb-1">4.9★</div>
+                <div className="text-2xl font-bold text-brand-blue mb-1">5★</div>
                 <div className="text-sm text-gray-600">Average Rating</div>
               </div>
             </div>

@@ -12,6 +12,18 @@ const ContactInfo = () => {
       <div className="container-custom h-full flex flex-col justify-center">
         <h2 className="heading-lg mb-8">Get In Touch</h2>
         
+        {/* Returning Customer Section - Moved above contact info */}
+        <div className="mb-8 pb-8 border-b border-white/20">
+          <h3 className="text-lg font-semibold text-white mb-3">Returning Customer?</h3>
+          <p className="text-white/80 mb-4">Access your customer portal to view past services, schedule follow-ups, or manage your account.</p>
+          <button 
+            onClick={handlePortalClick}
+            className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-full transition-colors w-full"
+          >
+            LOG IN TO PORTAL
+          </button>
+        </div>
+        
         <div className="space-y-6">
           <div className="flex items-start gap-4">
             <Phone className="h-6 w-6 mt-1 text-brand-green" />
@@ -54,18 +66,6 @@ const ContactInfo = () => {
               <p className="text-sm text-white/70">Including Butler and Warren Counties</p>
             </div>
           </div>
-        </div>
-
-        {/* Returning Customer Section */}
-        <div className="mt-8 pt-8 border-t border-white/20">
-          <h3 className="text-lg font-semibold text-white mb-3">Returning Customer?</h3>
-          <p className="text-white/80 mb-4">Access your customer portal to view past services, schedule follow-ups, or manage your account.</p>
-          <button 
-            onClick={handlePortalClick}
-            className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-full transition-colors w-full"
-          >
-            LOG IN TO PORTAL
-          </button>
         </div>
       </div>
     </section>

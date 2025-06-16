@@ -1,4 +1,3 @@
-
 import fs from 'node:fs';
 import path from 'node:path';
 import url from 'node:url';
@@ -54,7 +53,13 @@ const routesToPrerender = [
   '/junk-removal-walnut-hills',
   '/junk-removal-blue-ash',
   '/junk-removal-mason',
-  '/junk-removal-west-chester'
+  '/junk-removal-west-chester',
+  // NEW: Additional Phase 3 Specific Service Pages
+  '/desk-office-furniture-removal-cincinnati',
+  '/dining-room-set-removal-cincinnati',
+  '/exercise-equipment-removal-cincinnati',
+  '/hot-tub-removal-cincinnati',
+  '/piano-removal-cincinnati'
 ];
 
 // Function to ensure directory exists

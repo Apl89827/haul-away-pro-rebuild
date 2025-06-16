@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -43,6 +42,11 @@ import MattressRemovalCincinnati from "./pages/services/MattressRemovalCincinnat
 import RefrigeratorDisposalCincinnati from "./pages/services/RefrigeratorDisposalCincinnati";
 import WasherDryerRemovalCincinnati from "./pages/services/WasherDryerRemovalCincinnati";
 import TelevisionRemovalCincinnati from "./pages/services/TelevisionRemovalCincinnati";
+import DeskOfficeFurnitureRemovalCincinnati from "./pages/services/DeskOfficeFurnitureRemovalCincinnati";
+import DiningRoomSetRemovalCincinnati from "./pages/services/DiningRoomSetRemovalCincinnati";
+import ExerciseEquipmentRemovalCincinnati from "./pages/services/ExerciseEquipmentRemovalCincinnati";
+import HotTubRemovalCincinnati from "./pages/services/HotTubRemovalCincinnati";
+import PianoRemovalCincinnati from "./pages/services/PianoRemovalCincinnati";
 
 // Neighborhood pages
 import OverTheRhine from "./pages/neighborhoods/OverTheRhine";
@@ -102,6 +106,11 @@ const App = () => (
         <Route path="/refrigerator-disposal-cincinnati" element={<RefrigeratorDisposalCincinnati />} />
         <Route path="/washer-dryer-removal-cincinnati" element={<WasherDryerRemovalCincinnati />} />
         <Route path="/television-removal-cincinnati" element={<TelevisionRemovalCincinnati />} />
+        <Route path="/desk-office-furniture-removal-cincinnati" element={<DeskOfficeFurnitureRemovalCincinnati />} />
+        <Route path="/dining-room-set-removal-cincinnati" element={<DiningRoomSetRemovalCincinnati />} />
+        <Route path="/exercise-equipment-removal-cincinnati" element={<ExerciseEquipmentRemovalCincinnati />} />
+        <Route path="/hot-tub-removal-cincinnati" element={<HotTubRemovalCincinnati />} />
+        <Route path="/piano-removal-cincinnati" element={<PianoRemovalCincinnati />} />
         
         {/* Neighborhood SEO pages */}
         <Route path="/junk-removal-over-the-rhine" element={<OverTheRhine />} />

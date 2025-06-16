@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -84,6 +83,32 @@ const ResidentialJunkRemovalCincinnati = () => {
                 <p className="text-lg text-gray-700 leading-relaxed mb-4">
                   Our general household item removal service covers everything that doesn't fit into specific categories, making us your one-stop solution for residential cleanouts in Cincinnati. We remove boxes of miscellaneous items, old clothing, books, toys, kitchenware, decorations, and countless other household goods. Our team sorts through items to identify donation opportunities, ensuring usable goods reach local Cincinnati charities rather than landfills. We handle seasonal cleanouts, moving preparation, and decluttering projects of any size. Whether you're preparing for a move, organizing an estate, or simply need to clear accumulated items, we provide efficient removal services. Our comprehensive approach includes sorting, loading, transportation, and proper disposal or donation of all items, leaving your home clean and organized.
                 </p>
+              </div>
+
+              <div className="bg-brand-lightBlue rounded-lg p-6 mb-8">
+                <h2 className="text-2xl font-bold text-brand-darkBlue mb-4">Our Specialized Residential Services</h2>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h3 className="font-semibold text-brand-darkBlue mb-2">Furniture Removal</h3>
+                    <ul className="space-y-1 text-sm">
+                      <li><a href="/couch-sofa-removal-cincinnati" className="text-brand-blue hover:underline">Couch & Sofa Removal</a></li>
+                      <li><a href="/mattress-removal-cincinnati" className="text-brand-blue hover:underline">Mattress Removal</a></li>
+                      <li><a href="/dining-room-set-removal-cincinnati" className="text-brand-blue hover:underline">Dining Room Set Removal</a></li>
+                      <li><a href="/desk-office-furniture-removal-cincinnati" className="text-brand-blue hover:underline">Desk & Office Furniture</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-brand-darkBlue mb-2">Appliance & Specialty Items</h3>
+                    <ul className="space-y-1 text-sm">
+                      <li><a href="/refrigerator-disposal-cincinnati" className="text-brand-blue hover:underline">Refrigerator Disposal</a></li>
+                      <li><a href="/washer-dryer-removal-cincinnati" className="text-brand-blue hover:underline">Washer & Dryer Removal</a></li>
+                      <li><a href="/television-removal-cincinnati" className="text-brand-blue hover:underline">Television Removal</a></li>
+                      <li><a href="/exercise-equipment-removal-cincinnati" className="text-brand-blue hover:underline">Exercise Equipment</a></li>
+                      <li><a href="/hot-tub-removal-cincinnati" className="text-brand-blue hover:underline">Hot Tub Removal</a></li>
+                      <li><a href="/piano-removal-cincinnati" className="text-brand-blue hover:underline">Piano Removal</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
 
             </div>

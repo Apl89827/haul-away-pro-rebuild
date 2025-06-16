@@ -19,7 +19,7 @@ const ServiceAreasSection = () => {
         <div className="mb-12 max-w-4xl mx-auto">
           <div className="bg-white rounded-lg p-6">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d472379.22106238076!2d-84.3982185!3d39.37692295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dc6f226382aa093%3A0xbe7b2fe630d2e4b3!2sHaulAway%20Pro!5e1!3m2!1sen!2sus!4v1748813812965!5m2!1sen!2sus" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d472379.22106238076!2d-84.3982185!3d39.37692295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dc6f226382aa093%3A0xbe7b2fe630d2e4b3!2sHaulAway%20Pro!5e0!3m2!1sen!2sus!4v1748813812965!5m2!1sen!2sus" 
               width="100%" 
               height="400" 
               style={{ border: 0 }} 

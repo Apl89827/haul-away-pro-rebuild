@@ -76,7 +76,7 @@ const PricingTestimonials = () => {
         <div className="text-center mt-8">
           <div className="inline-flex items-center gap-2 bg-brand-lightBlue px-4 py-2 rounded-lg">
             <Star className="h-5 w-5 text-yellow-400 fill-current" />
-            <span className="font-semibold text-brand-darkBlue">4.9/5 stars</span>
+            <span className="font-semibold text-brand-darkBlue">5.0/5 stars</span>
             <span className="text-gray-600">from 200+ verified reviews</span>
           </div>
         </div>

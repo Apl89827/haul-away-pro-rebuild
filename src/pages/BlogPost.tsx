@@ -16,7 +16,7 @@ const BlogPost = () => {
     title: "Navigating an Estate Cleanout in Cincinnati: A Compassionate Guide for Families",
     excerpt: "Losing a loved one is profound and deeply personal. In the midst of grief, managing their estate can feel overwhelming. This compassionate guide offers support and a clear path forward for Cincinnati families.",
     author: "Haul Away Pro Team",
-    date: "December 16, 2024",
+    date: "June 16, 2025",
     category: "Estate Services",
     image: "/lovable-uploads/6afd18b0-de05-484b-b268-028fb7439465.png",
     seoTitle: "Estate Cleanout Cincinnati: Compassionate Guide for Families | Haul Away Pro",

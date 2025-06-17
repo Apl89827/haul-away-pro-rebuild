@@ -10,6 +10,9 @@ import { useMeta } from '@/hooks/useMeta';
 const BlogPost = () => {
   const { slug } = useParams();
 
+  // Check if this is the estate cleanout post specifically
+  const isEstateCleanoutPost = slug === 'estate-cleanout-cincinnati' || window.location.pathname === '/blog/estate-cleanout-cincinnati';
+  
   // For now, we'll show the estate cleanout post content
   // In a real implementation, this would fetch based on the slug
   const post = {

@@ -44,7 +44,7 @@ export const useBlogPosts = () => {
             category: "Estate Services",
             image: "/lovable-uploads/6afd18b0-de05-484b-b268-028fb7439465.png",
             body: "Full content from markdown file...",
-            slug: "navigating-estate-cleanout-cincinnati-compassionate-guide",
+            slug: "estate-cleanout-cincinnati",
             seoTitle: "Estate Cleanout Cincinnati: Compassionate Guide for Families | Haul Away Pro",
             seoDescription: "Professional estate cleanout services in Cincinnati. Compassionate support for families during difficult times. Free consultation and respectful handling of belongings."
           }

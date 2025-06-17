@@ -47,16 +47,6 @@ export const useBlogPosts = () => {
             slug: "navigating-estate-cleanout-cincinnati-compassionate-guide",
             seoTitle: "Estate Cleanout Cincinnati: Compassionate Guide for Families | Haul Away Pro",
             seoDescription: "Professional estate cleanout services in Cincinnati. Compassionate support for families during difficult times. Free consultation and respectful handling of belongings."
-          },
-          {
-            title: "10 Items You Should Never Put in Regular Trash",
-            excerpt: "Learn about hazardous materials and electronics that require special disposal methods to protect our environment.",
-            author: "Haul Away Pro Team",
-            date: "March 15, 2024",
-            category: "Environmental",
-            image: "/placeholder.svg",
-            body: "Content will be loaded from markdown files...",
-            slug: "10-items-never-put-regular-trash"
           }
         ];
         

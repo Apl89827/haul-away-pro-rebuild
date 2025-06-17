@@ -17,6 +17,7 @@ import ServiceAreas from "./pages/ServiceAreas";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import SpringCleaningBlog from "./pages/SpringCleaningBlog";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import Accessibility from "./pages/Accessibility";
@@ -87,6 +88,7 @@ const App = () => (
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
+        <Route path="/blog/spring-cleaning-room-by-room-guide-cincinnati" element={<SpringCleaningBlog />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/accessibility" element={<Accessibility />} />

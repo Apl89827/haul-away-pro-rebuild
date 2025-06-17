@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import Header from '@/components/layout/Header';
@@ -19,7 +18,7 @@ const BlogPost = () => {
     author: "Haul Away Pro Team",
     date: "December 16, 2024",
     category: "Estate Services",
-    image: "/lovable-uploads/50fa9c69-620f-460b-97e8-abcd9a3853b5.png",
+    image: "/lovable-uploads/6afd18b0-de05-484b-b268-028fb7439465.png",
     seoTitle: "Estate Cleanout Cincinnati: Compassionate Guide for Families | Haul Away Pro",
     seoDescription: "Professional estate cleanout services in Cincinnati. Compassionate support for families during difficult times. Free consultation and respectful handling of belongings."
   };

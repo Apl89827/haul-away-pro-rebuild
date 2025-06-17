@@ -55,9 +55,6 @@ import WardrobeRemovalCincinnati from "./pages/services/WardrobeRemovalCincinnat
 import CabinetRemovalCincinnati from "./pages/services/CabinetRemovalCincinnati";
 import PoolTableRemovalCincinnati from "./pages/services/PoolTableRemovalCincinnati";
 
-// NEW: Phase 3 Comprehensive Estate Cleanout Services
-import ComprehensiveEstateCleanoutServices from "./pages/services/ComprehensiveEstateCleanoutServices";
-
 // Neighborhood pages
 import OverTheRhine from "./pages/neighborhoods/OverTheRhine";
 import Downtown from "./pages/neighborhoods/Downtown";
@@ -127,9 +124,6 @@ const App = () => (
         <Route path="/wardrobe-removal-cincinnati" element={<WardrobeRemovalCincinnati />} />
         <Route path="/cabinet-removal-cincinnati" element={<CabinetRemovalCincinnati />} />
         <Route path="/pool-table-removal-cincinnati" element={<PoolTableRemovalCincinnati />} />
-        
-        {/* NEW: Phase 3 Comprehensive Estate Cleanout Services */}
-        <Route path="/comprehensive-estate-cleanout-services" element={<ComprehensiveEstateCleanoutServices />} />
         
         {/* Neighborhood SEO pages */}
         <Route path="/junk-removal-over-the-rhine" element={<OverTheRhine />} />

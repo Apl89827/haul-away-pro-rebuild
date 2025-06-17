@@ -30,7 +30,7 @@ export const useBlogPosts = () => {
             author: "Haul Away Pro Team",
             date: "December 16, 2024",
             category: "Estate Services",
-            image: "/lovable-uploads/50fa9c69-620f-460b-97e8-abcd9a3853b5.png",
+            image: "/lovable-uploads/6afd18b0-de05-484b-b268-028fb7439465.png",
             body: "Full content from markdown file...",
             slug: "navigating-estate-cleanout-cincinnati-compassionate-guide",
             seoTitle: "Estate Cleanout Cincinnati: Compassionate Guide for Families | Haul Away Pro",

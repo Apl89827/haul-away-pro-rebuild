@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 const ServicesSection = () => {
@@ -50,7 +51,9 @@ const ServicesSection = () => {
           <p className="mb-6 text-lg">
             Not sure if we take your items? We probably do!
           </p>
-          <Button className="btn-primary">Call If You Have A Question About Your Items</Button>
+          <a href="tel:5137128077">
+            <Button className="btn-primary">Call If You Have A Question About Your Items</Button>
+          </a>
         </div>
       </div>
     </section>;

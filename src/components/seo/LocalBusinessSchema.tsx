@@ -10,6 +10,24 @@ const LocalBusinessSchema: React.FC<LocalBusinessSchemaProps> = ({
   servicePage, 
   neighborhood 
 }) => {
+  // All 59 service areas from ServiceAreasList
+  const allServiceAreas = [
+    // Cincinnati Neighborhoods
+    "Over-the-Rhine, OH", "Downtown Cincinnati, OH", "The Banks, OH", "Newport, KY", "Covington, KY",
+    "Hyde Park, OH", "Oakley, OH", "Mount Adams, OH", "Clifton, OH", "Walnut Hills, OH",
+    "Mount Auburn, OH", "Corryville, OH", "University of Cincinnati, OH", "Northside, OH", "Camp Washington, OH",
+    "Queensgate, OH", "West End, OH", "East Walnut Hills, OH", "Evanston, OH", "Avondale, OH",
+    "Bond Hill, OH", "Roselawn, OH", "Golf Manor, OH", "Pleasant Ridge, OH", "Kennedy Heights, OH",
+    "Silverton, OH", "Deer Park, OH", "Blue Ash, OH", "Montgomery, OH", "Symmes Township, OH",
+    "Anderson Township, OH", "Mariemont, OH", "Terrace Park, OH", "Indian Hill, OH", "Madeira, OH",
+    "Wyoming, OH", "Lockland, OH", "Elmwood Place, OH", "Saint Bernard, OH", "Norwood, OH",
+    "Cheviot, OH", "Delhi Township, OH", "Green Township, OH", "Colerain Township, OH", "Springfield Township, OH",
+    "Finneytown, OH", "Forest Park, OH", "Springdale, OH", "Sharonville, OH", "Evendale, OH",
+    // Nearby Areas
+    "Mason, OH", "West Chester, OH", "Fairfield, OH", "Hamilton, OH", "Loveland, OH",
+    "Milford, OH", "Kenwood, OH", "Sycamore Township, OH", "Deerfield Township, OH"
+  ];
+
   const baseSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -31,23 +49,20 @@ const LocalBusinessSchema: React.FC<LocalBusinessSchemaProps> = ({
       "latitude": 39.1031,
       "longitude": -84.5120
     },
-    "areaServed": [
-      {
-        "@type": "City",
-        "name": "Cincinnati, OH"
-      },
-      {
-        "@type": "City", 
-        "name": "Blue Ash, OH"
-      },
-      {
-        "@type": "City",
-        "name": "Mason, OH"
-      },
-      {
-        "@type": "City",
-        "name": "West Chester, OH"
-      }
+    "areaServed": allServiceAreas.map(area => ({
+      "@type": "City",
+      "name": area
+    })),
+    "serviceType": [
+      "Junk Removal",
+      "Furniture Removal",
+      "Appliance Removal",
+      "Electronic Waste Removal",
+      "Construction Debris Removal",
+      "Estate Cleanout Services",
+      "Commercial Junk Removal",
+      "Residential Junk Removal",
+      "Light Demolition Services"
     ],
     "openingHours": "Mo-Su 07:00-21:00",
     "priceRange": "$$",

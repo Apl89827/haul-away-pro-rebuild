@@ -3,357 +3,854 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
   <url>
-    <loc>https://haulawaypro.netlify.app/</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <!-- Main service pages -->
   <url>
-    <loc>https://haulawaypro.netlify.app/how-it-works</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/how-it-works</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/services</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/services</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/pricing</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/pricing</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/booking</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/booking</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/booking-facebook</loc>
-    <lastmod>2024-12-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://haulawaypro.netlify.app/booking-google</loc>
-    <lastmod>2024-12-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://haulawaypro.netlify.app/projects</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/projects</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/service-areas</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/service-areas</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/contact</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/contact</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/blog</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/blog</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <!-- Legal pages -->
   <url>
-    <loc>https://haulawaypro.netlify.app/privacy</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/privacy</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/terms</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/terms</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/accessibility</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/accessibility</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   
-  <!-- Service category pages -->
+  <!-- Phase 1 Service category pages -->
   <url>
-    <loc>https://haulawaypro.netlify.app/services/furniture-junk-removal</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/services/furniture-junk-removal</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/services/appliance-removal</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/services/appliance-removal</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/services/electronic-waste-removal</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/services/electronic-waste-removal</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/services/outdoor-item-removal</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/services/outdoor-item-removal</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/services/construction-debris-removal</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/services/construction-debris-removal</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/services/estate-cleanout-services</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/services/estate-cleanout-services</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <!-- Phase 2 Secondary Category Pages -->
   <url>
-    <loc>https://haulawaypro.netlify.app/residential-junk-removal-cincinnati</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/residential-junk-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/commercial-junk-removal-cincinnati</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/commercial-junk-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/estate-cleanout-services-cincinnati</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/estate-cleanout-services-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/light-demolition-services-cincinnati</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/light-demolition-services-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/appliance-furniture-removal-cincinnati</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/appliance-furniture-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- Phase 3 Specific Service Pages -->
   <url>
-    <loc>https://haulawaypro.netlify.app/couch-sofa-removal-cincinnati</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/couch-sofa-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/mattress-removal-cincinnati</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/mattress-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/refrigerator-disposal-cincinnati</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/refrigerator-disposal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/washer-dryer-removal-cincinnati</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/washer-dryer-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/television-removal-cincinnati</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/television-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/desk-office-furniture-removal-cincinnati</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/desk-office-furniture-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/dining-room-set-removal-cincinnati</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/dining-room-set-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/exercise-equipment-removal-cincinnati</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/exercise-equipment-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/hot-tub-removal-cincinnati</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/hot-tub-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/piano-removal-cincinnati</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/piano-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/bed-frame-removal-cincinnati</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/bed-frame-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/bookshelf-removal-cincinnati</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/bookshelf-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/wardrobe-removal-cincinnati</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/wardrobe-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/cabinet-removal-cincinnati</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/cabinet-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/pool-table-removal-cincinnati</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/pool-table-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
-  <!-- Neighborhood SEO pages -->
+  <!-- Additional Appliance Service Pages -->
   <url>
-    <loc>https://haulawaypro.netlify.app/junk-removal-over-the-rhine</loc>
+    <loc>https://haulawaypro.com/refrigerator-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/mattress-box-spring-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/large-furniture-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/dishwasher-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/stove-oven-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/water-heater-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/air-conditioner-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Commercial Service Pages -->
+  <url>
+    <loc>https://haulawaypro.com/office-furniture-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/retail-fixture-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/restaurant-equipment-disposal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/construction-debris-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/warehouse-cleanout-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Estate Cleanout Service Pages -->
+  <url>
+    <loc>https://haulawaypro.com/full-estate-cleanout-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/probate-property-cleanout-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/hoarding-cleanout-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/deceased-family-cleanout-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/estate-sale-cleanup-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Light Demolition Service Pages -->
+  <url>
+    <loc>https://haulawaypro.com/interior-wall-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/deck-demolition-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/shed-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/fence-removal-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/small-structure-demolition-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://haulawaypro.com/blog/navigating-estate-cleanout-cincinnati-compassionate-guide</loc>
     <lastmod>2024-12-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- ALL 59 Neighborhood SEO pages -->
+  <!-- Cincinnati Neighborhoods -->
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-over-the-rhine</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/junk-removal-downtown-cincinnati</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/junk-removal-downtown-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/junk-removal-hyde-park</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/junk-removal-the-banks</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/junk-removal-oakley</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/junk-removal-newport</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/junk-removal-mount-adams</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/junk-removal-covington</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/junk-removal-clifton</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/junk-removal-hyde-park</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/junk-removal-walnut-hills</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/junk-removal-oakley</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/junk-removal-blue-ash</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/junk-removal-mount-adams</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/junk-removal-mason</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/junk-removal-clifton</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://haulawaypro.netlify.app/junk-removal-west-chester</loc>
-    <lastmod>2024-12-16</lastmod>
+    <loc>https://haulawaypro.com/junk-removal-walnut-hills</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-mount-auburn</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-corryville</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-university-of-cincinnati</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-northside</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-camp-washington</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-queensgate</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-west-end</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-east-walnut-hills</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-evanston</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-avondale</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-bond-hill</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-roselawn</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-golf-manor</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-pleasant-ridge</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-kennedy-heights</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-silverton</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-deer-park</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-blue-ash</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-montgomery</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-symmes-township</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-anderson-township</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-mariemont</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-terrace-park</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-indian-hill</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-madeira</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-wyoming</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-lockland</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-elmwood-place</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-saint-bernard</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-norwood</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-cheviot</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-delhi-township</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-green-township</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-colerain-township</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-springfield-township</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-finneytown</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-forest-park</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-springdale</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-sharonville</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-evendale</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Nearby Areas -->
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-mason</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-west-chester</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-fairfield</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-hamilton</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-loveland</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-milford</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-kenwood</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-sycamore-township</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://haulawaypro.com/junk-removal-deerfield-township</loc>
+    <lastmod>2024-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

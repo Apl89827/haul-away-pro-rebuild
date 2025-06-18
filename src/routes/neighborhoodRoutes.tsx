@@ -62,19 +62,17 @@ import DeerfieldTownship from "@/pages/neighborhoods/DeerfieldTownship";
 
 export const neighborhoodRoutes = (
   <>
+    {/* Cincinnati Neighborhoods - URLs match formatNeighborhoodSlug output */}
     <Route path="/junk-removal-over-the-rhine" element={<OverTheRhine />} />
     <Route path="/junk-removal-downtown-cincinnati" element={<Downtown />} />
+    <Route path="/junk-removal-the-banks" element={<TheBanks />} />
+    <Route path="/junk-removal-newport" element={<Newport />} />
+    <Route path="/junk-removal-covington" element={<Covington />} />
     <Route path="/junk-removal-hyde-park" element={<HydePark />} />
     <Route path="/junk-removal-oakley" element={<Oakley />} />
     <Route path="/junk-removal-mount-adams" element={<MountAdams />} />
     <Route path="/junk-removal-clifton" element={<Clifton />} />
     <Route path="/junk-removal-walnut-hills" element={<WalnutHills />} />
-    <Route path="/junk-removal-blue-ash" element={<BlueAsh />} />
-    <Route path="/junk-removal-mason" element={<Mason />} />
-    <Route path="/junk-removal-west-chester" element={<WestChester />} />
-    <Route path="/junk-removal-newport" element={<Newport />} />
-    <Route path="/junk-removal-covington" element={<Covington />} />
-    <Route path="/junk-removal-the-banks" element={<TheBanks />} />
     <Route path="/junk-removal-mount-auburn" element={<MountAuburn />} />
     <Route path="/junk-removal-corryville" element={<Corryville />} />
     <Route path="/junk-removal-university-of-cincinnati" element={<UniversityOfCincinnati />} />
@@ -92,6 +90,7 @@ export const neighborhoodRoutes = (
     <Route path="/junk-removal-kennedy-heights" element={<KennedyHeights />} />
     <Route path="/junk-removal-silverton" element={<Silverton />} />
     <Route path="/junk-removal-deer-park" element={<DeerPark />} />
+    <Route path="/junk-removal-blue-ash" element={<BlueAsh />} />
     <Route path="/junk-removal-montgomery" element={<Montgomery />} />
     <Route path="/junk-removal-symmes-township" element={<SymmesTownship />} />
     <Route path="/junk-removal-anderson-township" element={<AndersonTownship />} />
@@ -114,8 +113,12 @@ export const neighborhoodRoutes = (
     <Route path="/junk-removal-springdale" element={<Springdale />} />
     <Route path="/junk-removal-sharonville" element={<Sharonville />} />
     <Route path="/junk-removal-evendale" element={<Evendale />} />
-    <Route path="/junk-removal-hamilton" element={<Hamilton />} />
+
+    {/* Nearby Areas - URLs match formatNeighborhoodSlug output */}
+    <Route path="/junk-removal-mason" element={<Mason />} />
+    <Route path="/junk-removal-west-chester" element={<WestChester />} />
     <Route path="/junk-removal-fairfield" element={<Fairfield />} />
+    <Route path="/junk-removal-hamilton" element={<Hamilton />} />
     <Route path="/junk-removal-loveland" element={<Loveland />} />
     <Route path="/junk-removal-milford" element={<Milford />} />
     <Route path="/junk-removal-kenwood" element={<Kenwood />} />

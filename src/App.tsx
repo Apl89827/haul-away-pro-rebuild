@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -68,6 +67,13 @@ import ProbatePropertyCleanoutCincinnati from "./pages/services/ProbatePropertyC
 import HoardingCleanoutCincinnati from "./pages/services/HoardingCleanoutCincinnati";
 import DeceasedFamilyCleanoutCincinnati from "./pages/services/DeceasedFamilyCleanoutCincinnati";
 import EstateSaleCleanupCincinnati from "./pages/services/EstateSaleCleanupCincinnati";
+
+// NEW: Phase 3 Light Demolition Service Pages
+import InteriorWallRemovalCincinnati from "./pages/services/InteriorWallRemovalCincinnati";
+import DeckDemolitionCincinnati from "./pages/services/DeckDemolitionCincinnati";
+import ShedRemovalCincinnati from "./pages/services/ShedRemovalCincinnati";
+import FenceRemovalCincinnati from "./pages/services/FenceRemovalCincinnati";
+import SmallStructureDemolitionCincinnati from "./pages/services/SmallStructureDemolitionCincinnati";
 
 // Neighborhood pages
 import OverTheRhine from "./pages/neighborhoods/OverTheRhine";
@@ -153,6 +159,13 @@ const App = () => (
         <Route path="/hoarding-cleanout-cincinnati" element={<HoardingCleanoutCincinnati />} />
         <Route path="/deceased-family-cleanout-cincinnati" element={<DeceasedFamilyCleanoutCincinnati />} />
         <Route path="/estate-sale-cleanup-cincinnati" element={<EstateSaleCleanupCincinnati />} />
+        
+        {/* NEW: Phase 3 Light Demolition Service Pages */}
+        <Route path="/interior-wall-removal-cincinnati" element={<InteriorWallRemovalCincinnati />} />
+        <Route path="/deck-demolition-cincinnati" element={<DeckDemolitionCincinnati />} />
+        <Route path="/shed-removal-cincinnati" element={<ShedRemovalCincinnati />} />
+        <Route path="/fence-removal-cincinnati" element={<FenceRemovalCincinnati />} />
+        <Route path="/small-structure-demolition-cincinnati" element={<SmallStructureDemolitionCincinnati />} />
         
         {/* Neighborhood SEO pages */}
         <Route path="/junk-removal-over-the-rhine" element={<OverTheRhine />} />

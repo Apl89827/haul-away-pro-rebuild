@@ -66,13 +66,13 @@ const ProjectsGrid = () => {
     },
     {
       id: 7,
-      title: "Apartment Move-Out - Over-the-Rhine",
-      description: "Helped a tenant clear out their apartment quickly for move-out. Removed furniture, appliances, and personal items.",
-      beforeImage: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop",
-      afterImage: "https://images.unsplash.com/photo-1560448204-444034e4603c?w=600&h=400&fit=crop",
-      location: "Over-the-Rhine, Cincinnati",
-      category: "Apartment Cleanout",
-      duration: "6 hours"
+      title: "House Cleanout - Anderson Township",
+      description: "Completely cleared out a severely cluttered bedroom filled with clothes, personal items, and household belongings. Transformed the space from an overwhelming mess into a clean, ready-to-use room.",
+      beforeImage: "/lovable-uploads/6cbf7605-03a1-4a5e-acef-a063828f71f4.png",
+      afterImage: "/lovable-uploads/df8b8633-114a-4d30-b544-bd36718c23fe.png",
+      location: "Anderson Township, OH",
+      category: "House Cleanout",
+      duration: "1 day"
     }
   ];
 

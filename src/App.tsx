@@ -55,6 +55,13 @@ import WardrobeRemovalCincinnati from "./pages/services/WardrobeRemovalCincinnat
 import CabinetRemovalCincinnati from "./pages/services/CabinetRemovalCincinnati";
 import PoolTableRemovalCincinnati from "./pages/services/PoolTableRemovalCincinnati";
 
+// NEW: Phase 3 Commercial Service Pages
+import OfficeFurnitureRemovalCincinnati from "./pages/services/OfficeFurnitureRemovalCincinnati";
+import RetailFixtureRemovalCincinnati from "./pages/services/RetailFixtureRemovalCincinnati";
+import RestaurantEquipmentDisposalCincinnati from "./pages/services/RestaurantEquipmentDisposalCincinnati";
+import ConstructionDebrisRemovalCincinnati from "./pages/services/ConstructionDebrisRemovalCincinnati";
+import WarehouseCleanoutCincinnati from "./pages/services/WarehouseCleanoutCincinnati";
+
 // Neighborhood pages
 import OverTheRhine from "./pages/neighborhoods/OverTheRhine";
 import Downtown from "./pages/neighborhoods/Downtown";
@@ -125,6 +132,13 @@ const App = () => (
         <Route path="/wardrobe-removal-cincinnati" element={<WardrobeRemovalCincinnati />} />
         <Route path="/cabinet-removal-cincinnati" element={<CabinetRemovalCincinnati />} />
         <Route path="/pool-table-removal-cincinnati" element={<PoolTableRemovalCincinnati />} />
+        
+        {/* NEW: Phase 3 Commercial Service Pages */}
+        <Route path="/office-furniture-removal-cincinnati" element={<OfficeFurnitureRemovalCincinnati />} />
+        <Route path="/retail-fixture-removal-cincinnati" element={<RetailFixtureRemovalCincinnati />} />
+        <Route path="/restaurant-equipment-disposal-cincinnati" element={<RestaurantEquipmentDisposalCincinnati />} />
+        <Route path="/construction-debris-removal-cincinnati" element={<ConstructionDebrisRemovalCincinnati />} />
+        <Route path="/warehouse-cleanout-cincinnati" element={<WarehouseCleanoutCincinnati />} />
         
         {/* Neighborhood SEO pages */}
         <Route path="/junk-removal-over-the-rhine" element={<OverTheRhine />} />

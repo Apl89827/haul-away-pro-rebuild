@@ -56,6 +56,16 @@ const ProjectsGrid = () => {
     },
     {
       id: 6,
+      title: "Pool Removal - Hamilton",
+      description: "Removed an old above-ground pool filled with debris and miscellaneous items from a residential backyard. Cleaned up the entire area and restored the yard space for the homeowner.",
+      beforeImage: "/lovable-uploads/24d16cfa-a2f0-4a24-9f12-658bc58fad09.png",
+      afterImage: "/lovable-uploads/fd1e5499-e1b5-4f60-8336-32aca7363317.png",
+      location: "Hamilton, OH",
+      category: "Pool Removal",
+      duration: "1 day"
+    },
+    {
+      id: 7,
       title: "Apartment Move-Out - Over-the-Rhine",
       description: "Helped a tenant clear out their apartment quickly for move-out. Removed furniture, appliances, and personal items.",
       beforeImage: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop",

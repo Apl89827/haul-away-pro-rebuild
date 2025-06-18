@@ -74,7 +74,7 @@ const ApplianceFurnitureRemovalCincinnati = () => {
                 <p className="text-lg text-gray-700 leading-relaxed mb-4">
                   Our sofa and couch removal service in Cincinnati handles furniture of all sizes, from small loveseats to large sectional sofas. We carefully remove upholstered furniture from living rooms, family rooms, and other spaces without damaging walls, floors, or doorways. Our experienced team uses furniture pads and protective equipment to prevent scratches and dents during removal. We can disassemble large sectional sofas when necessary to navigate narrow spaces and stairs. Our service includes evaluation of furniture condition for donation opportunities to local Cincinnati charities, ensuring usable pieces find new homes rather than ending up in landfills. We coordinate with upholstery recycling facilities that can process fabric and foam components separately from wood frames. Whether you're redecorating, moving, or dealing with damaged furniture, our professional removal service handles the heavy lifting and logistics while maintaining respect for your property.
                 </p>
-                <a href="/sofa-couch-removal-cincinnati" className="text-brand-blue hover:text-brand-darkBlue font-semibold">
+                <a href="/couch-sofa-removal-cincinnati" className="text-brand-blue hover:text-brand-darkBlue font-semibold">
                   Learn More About Sofa & Couch Removal →
                 </a>
               </div>

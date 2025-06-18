@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -53,6 +54,11 @@ import BookshelfRemovalCincinnati from "./pages/services/BookshelfRemovalCincinn
 import WardrobeRemovalCincinnati from "./pages/services/WardrobeRemovalCincinnati";
 import CabinetRemovalCincinnati from "./pages/services/CabinetRemovalCincinnati";
 import PoolTableRemovalCincinnati from "./pages/services/PoolTableRemovalCincinnati";
+
+// NEW: Phase 3 Appliance & Furniture Service Pages
+import RefrigeratorRemovalCincinnati from "./pages/services/RefrigeratorRemovalCincinnati";
+import MattressBoxSpringRemovalCincinnati from "./pages/services/MattressBoxSpringRemovalCincinnati";
+import LargeFurnitureRemovalCincinnati from "./pages/services/LargeFurnitureRemovalCincinnati";
 
 // NEW: Phase 3 Commercial Service Pages
 import OfficeFurnitureRemovalCincinnati from "./pages/services/OfficeFurnitureRemovalCincinnati";
@@ -145,6 +151,11 @@ const App = () => (
         <Route path="/wardrobe-removal-cincinnati" element={<WardrobeRemovalCincinnati />} />
         <Route path="/cabinet-removal-cincinnati" element={<CabinetRemovalCincinnati />} />
         <Route path="/pool-table-removal-cincinnati" element={<PoolTableRemovalCincinnati />} />
+        
+        {/* NEW: Phase 3 Appliance & Furniture Service Pages */}
+        <Route path="/refrigerator-removal-cincinnati" element={<RefrigeratorRemovalCincinnati />} />
+        <Route path="/mattress-box-spring-removal-cincinnati" element={<MattressBoxSpringRemovalCincinnati />} />
+        <Route path="/large-furniture-removal-cincinnati" element={<LargeFurnitureRemovalCincinnati />} />
         
         {/* NEW: Phase 3 Commercial Service Pages */}
         <Route path="/office-furniture-removal-cincinnati" element={<OfficeFurnitureRemovalCincinnati />} />

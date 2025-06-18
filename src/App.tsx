@@ -62,6 +62,13 @@ import RestaurantEquipmentDisposalCincinnati from "./pages/services/RestaurantEq
 import ConstructionDebrisRemovalCincinnati from "./pages/services/ConstructionDebrisRemovalCincinnati";
 import WarehouseCleanoutCincinnati from "./pages/services/WarehouseCleanoutCincinnati";
 
+// NEW: Phase 3 Estate Cleanout Service Pages
+import FullEstateCleanoutCincinnati from "./pages/services/FullEstateCleanoutCincinnati";
+import ProbatePropertyCleanoutCincinnati from "./pages/services/ProbatePropertyCleanoutCincinnati";
+import HoardingCleanoutCincinnati from "./pages/services/HoardingCleanoutCincinnati";
+import DeceasedFamilyCleanoutCincinnati from "./pages/services/DeceasedFamilyCleanoutCincinnati";
+import EstateSaleCleanupCincinnati from "./pages/services/EstateSaleCleanupCincinnati";
+
 // Neighborhood pages
 import OverTheRhine from "./pages/neighborhoods/OverTheRhine";
 import Downtown from "./pages/neighborhoods/Downtown";
@@ -139,6 +146,13 @@ const App = () => (
         <Route path="/restaurant-equipment-disposal-cincinnati" element={<RestaurantEquipmentDisposalCincinnati />} />
         <Route path="/construction-debris-removal-cincinnati" element={<ConstructionDebrisRemovalCincinnati />} />
         <Route path="/warehouse-cleanout-cincinnati" element={<WarehouseCleanoutCincinnati />} />
+        
+        {/* NEW: Phase 3 Estate Cleanout Service Pages */}
+        <Route path="/full-estate-cleanout-cincinnati" element={<FullEstateCleanoutCincinnati />} />
+        <Route path="/probate-property-cleanout-cincinnati" element={<ProbatePropertyCleanoutCincinnati />} />
+        <Route path="/hoarding-cleanout-cincinnati" element={<HoardingCleanoutCincinnati />} />
+        <Route path="/deceased-family-cleanout-cincinnati" element={<DeceasedFamilyCleanoutCincinnati />} />
+        <Route path="/estate-sale-cleanup-cincinnati" element={<EstateSaleCleanupCincinnati />} />
         
         {/* Neighborhood SEO pages */}
         <Route path="/junk-removal-over-the-rhine" element={<OverTheRhine />} />

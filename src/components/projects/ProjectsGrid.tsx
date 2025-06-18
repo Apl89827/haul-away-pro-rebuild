@@ -36,13 +36,13 @@ const ProjectsGrid = () => {
     },
     {
       id: 4,
-      title: "Garage Cleanout - Mason",
-      description: "Turned an overcrowded garage back into a functional space. Removed old appliances, furniture, and organized remaining items.",
-      beforeImage: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&h=400&fit=crop",
-      afterImage: "https://images.unsplash.com/photo-1560185009-5b539f6f83e0?w=600&h=400&fit=crop",
-      location: "Mason, OH",
+      title: "Garage Cleanout - Finneytown",
+      description: "Transformed a cluttered basement garage space filled with stored items, equipment, and miscellaneous belongings into a clean, organized area ready for use.",
+      beforeImage: "/lovable-uploads/df2f36c6-319b-49b1-a1e1-ab8a78114d28.png",
+      afterImage: "/lovable-uploads/aa9d9d0b-770d-4996-84ce-b33df5c306ad.png",
+      location: "Finneytown, OH",
       category: "Garage Cleanout",
-      duration: "4 hours"
+      duration: "1 day"
     },
     {
       id: 5,

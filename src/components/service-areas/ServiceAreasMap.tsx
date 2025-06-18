@@ -1,10 +1,7 @@
-
 import React from "react";
 import { MapPin, Clock, Phone } from "lucide-react";
-
 const ServiceAreasMap = () => {
-  return (
-    <section className="section bg-brand-gray">
+  return <section className="section bg-brand-gray">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="heading-lg mb-4">Service Area Coverage</h2>
@@ -24,7 +21,7 @@ const ServiceAreasMap = () => {
                     <MapPin className="h-5 w-5" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg">HaulAway Pro Service Area</h3>
+                    <h3 className="font-semibold text-lg text-slate-50">HaulAway Pro Service Area</h3>
                     <p className="text-white/80 text-sm">Greater Cincinnati & Surrounding Areas</p>
                   </div>
                 </div>
@@ -37,17 +34,9 @@ const ServiceAreasMap = () => {
 
             {/* Map Container */}
             <div className="relative">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d472379.22106238076!2d-84.3982185!3d39.37692295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dc6f226382aa093%3A0xbe7b2fe630d2e4b3!2sHaulAway%20Pro!5e0!3m2!1sen!2sus!4v1748813812965!5m2!1sen!2sus" 
-                width="100%" 
-                height="400" 
-                style={{ border: 0 }} 
-                allowFullScreen={true}
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-                className="w-full"
-                title="HaulAway Pro Service Area Map"
-              />
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d472379.22106238076!2d-84.3982185!3d39.37692295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dc6f226382aa093%3A0xbe7b2fe630d2e4b3!2sHaulAway%20Pro!5e0!3m2!1sen!2sus!4v1748813812965!5m2!1sen!2sus" width="100%" height="400" style={{
+              border: 0
+            }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="w-full" title="HaulAway Pro Service Area Map" />
               
               {/* Map Overlay with Service Info */}
               <div className="absolute bottom-4 left-4 right-4">
@@ -62,10 +51,7 @@ const ServiceAreasMap = () => {
                         <p className="text-gray-600 text-xs">Call for immediate scheduling</p>
                       </div>
                     </div>
-                    <a 
-                      href="tel:5137128077" 
-                      className="flex items-center gap-2 bg-brand-blue text-white px-4 py-2 rounded-md hover:bg-brand-darkBlue transition-colors text-sm font-medium"
-                    >
+                    <a href="tel:5137128077" className="flex items-center gap-2 bg-brand-blue text-white px-4 py-2 rounded-md hover:bg-brand-darkBlue transition-colors text-sm font-medium">
                       <Phone className="h-3 w-3" />
                       Call Now
                     </a>
@@ -94,8 +80,6 @@ const ServiceAreasMap = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ServiceAreasMap;

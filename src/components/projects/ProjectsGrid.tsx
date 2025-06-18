@@ -46,13 +46,13 @@ const ProjectsGrid = () => {
     },
     {
       id: 5,
-      title: "Attic Clearance - Oakley",
-      description: "Cleared decades of stored items from a cramped attic space. Found some valuable antiques that we helped the family preserve.",
-      beforeImage: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop",
-      afterImage: "https://images.unsplash.com/photo-1560185008-b033106af5d3?w=600&h=400&fit=crop",
-      location: "Oakley, Cincinnati",
-      category: "Attic Cleanout",
-      duration: "1 day"
+      title: "Apartment Cleanout - Batavia",
+      description: "Cleared out cluttered outdoor deck area filled with bags, boxes, and miscellaneous items. Transformed the space back into a clean, usable outdoor area for the tenants.",
+      beforeImage: "/lovable-uploads/9b888145-8903-470d-8ac8-a9b131f39942.png",
+      afterImage: "/lovable-uploads/99d82d32-b460-4eef-bb39-e952c7133337.png",
+      location: "Batavia, OH",
+      category: "Apartment Cleanout",
+      duration: "4 hours"
     },
     {
       id: 6,

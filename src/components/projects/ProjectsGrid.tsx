@@ -1,4 +1,3 @@
-
 import React from "react";
 import ProjectCard from "./ProjectCard";
 
@@ -46,7 +45,7 @@ const ProjectsGrid = () => {
     },
     {
       id: 5,
-      title: "Apartment Cleanout - Batavia",
+      title: "Apartment complex cleanout - batavia",
       description: "Cleared out cluttered outdoor deck area filled with bags, boxes, and miscellaneous items. Transformed the space back into a clean, usable outdoor area for the tenants.",
       beforeImage: "/lovable-uploads/9b888145-8903-470d-8ac8-a9b131f39942.png",
       afterImage: "/lovable-uploads/99d82d32-b460-4eef-bb39-e952c7133337.png",

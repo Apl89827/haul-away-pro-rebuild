@@ -9,8 +9,8 @@ import { useMeta } from '@/hooks/useMeta';
 const BookshelfRemovalCincinnati = () => {
   useMeta({
     title: "Bookshelf Removal Cincinnati | HaulAway Pro",
-    description: "Professional bookshelf and bookcase removal services in Cincinnati. We safely remove all types of shelving units including built-in bookcases and library furniture. Same-day service available.",
-    keywords: "bookshelf removal Cincinnati, bookcase removal Cincinnati, library furniture removal Cincinnati, shelving unit removal Cincinnati",
+    description: "Professional bookshelf and library furniture removal services in Cincinnati. We remove bookcases, shelving units, and storage furniture. Same-day service available.",
+    keywords: "bookshelf removal Cincinnati, bookcase removal Cincinnati, shelving unit removal Cincinnati, library furniture removal Cincinnati",
     canonicalUrl: "https://haulawaypro.netlify.app/bookshelf-removal-cincinnati"
   });
 
@@ -26,7 +26,7 @@ const BookshelfRemovalCincinnati = () => {
                 Bookshelf Removal in Cincinnati
               </h1>
               <p className="text-xl mb-8 leading-relaxed text-gray-100">
-                Professional bookshelf and bookcase removal services throughout Cincinnati. We carefully remove all types of shelving units, from small bookcases to large built-in library systems, with attention to preserving your books and home.
+                Professional bookshelf and library furniture removal services throughout Cincinnati. We carefully remove bookcases, shelving units, and storage furniture with expert handling and eco-friendly disposal.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -47,39 +47,39 @@ const BookshelfRemovalCincinnati = () => {
             <div className="max-w-4xl mx-auto">
               <div className="prose prose-lg max-w-none">
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  HaulAway Pro offers expert bookshelf and bookcase removal services throughout Cincinnati, understanding that these furniture pieces often hold both functional and sentimental value. Our experienced team carefully handles the removal process, ensuring that any books or personal items are safely preserved while efficiently removing the shelving units themselves. We use appropriate protective materials and disassembly techniques to prevent damage to surrounding walls, floors, and other furniture during the removal process.
+                  HaulAway Pro specializes in professional bookshelf and library furniture removal services throughout Cincinnati, understanding that these storage pieces often contain valuable books and personal collections that require careful handling. Our experienced team provides comprehensive service that includes assistance with book organization and temporary storage solutions if needed during your transition. We use protective materials and proper techniques to ensure safe removal of tall, heavy bookshelves without damage to your books, walls, or flooring.
                 </p>
 
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Our bookshelf removal service encompasses all types of library and storage furniture including freestanding bookcases, built-in shelving systems, modular shelving units, entertainment centers with shelving, corner bookcases, ladder shelves, and specialty library furniture. Whether you're reorganizing your home library, downsizing your book collection, or renovating your study space, we handle projects ranging from single bookcase removal to complete home library clearouts with professional attention to detail.
+                  Our bookshelf removal service covers all types of storage furniture including traditional bookcases, modular shelving systems, built-in library units, entertainment centers, display cases, and custom storage solutions. Whether you're downsizing your library, renovating your home office, or clearing out inherited collections, we handle storage furniture of all sizes and configurations. Our team can carefully disassemble large modular systems and navigate challenging removal situations including narrow hallways, stairs, and rooms with limited access.
                 </p>
 
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Environmental stewardship is central to our bookshelf removal approach. We actively seek donation opportunities for quality bookcases to local Cincinnati schools, libraries, community centers, and families who could benefit from additional storage and organization solutions. Well-constructed shelving units that can serve educational and organizational purposes in other homes are carefully transported to appropriate recipients. For shelving that cannot be donated, we ensure proper disposal through certified facilities where materials like wood and metal hardware are recycled.
+                  Environmental stewardship and community benefit guide our bookshelf disposal process. We evaluate all shelving units for donation opportunities to local Cincinnati schools, libraries, community centers, and literacy programs that can benefit from quality storage furniture. Functional bookshelves can provide years of use for educational programs and community organizations. For shelving that cannot be donated, we ensure responsible disposal through certified facilities where materials like wood, metal hardware, and composite materials are properly recycled.
                 </p>
 
                 <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                  Our Cincinnati bookshelf removal service includes assistance with book packing and organization if needed, helping you transition your library to new storage solutions. We provide clear, upfront pricing with no hidden costs and can often accommodate same-day service requests. Our fully licensed and insured team treats your books and home with respect throughout the entire process. Trust HaulAway Pro for thoughtful, efficient, and environmentally responsible bookshelf removal services in Cincinnati.
+                  Our Cincinnati bookshelf removal service includes careful pre-removal planning, assistance with book handling if needed, expert disassembly when required, and complete cleanup after removal. We provide transparent pricing with detailed estimates and can often accommodate same-day service for urgent removals. Our fully licensed and insured team respects the value of your book collections and treats every piece of furniture with appropriate care. Trust HaulAway Pro for professional, careful, and environmentally responsible bookshelf removal services in Cincinnati.
                 </p>
 
                 <div className="bg-brand-lightBlue rounded-lg p-6 mb-8">
-                  <h2 className="text-2xl font-bold text-brand-darkBlue mb-4">Why Choose Our Bookshelf Removal Service?</h2>
+                  <h2 className="text-2xl font-bold text-brand-darkBlue mb-4">Storage Furniture We Remove</h2>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-brand-green mt-1 flex-shrink-0" />
-                      <span>Careful handling of books and personal items</span>
+                      <span>Traditional bookcases and library furniture</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-brand-green mt-1 flex-shrink-0" />
-                      <span>Donation to Cincinnati schools and libraries</span>
+                      <span>Modular shelving and storage systems</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-brand-green mt-1 flex-shrink-0" />
-                      <span>Professional disassembly of built-in units</span>
+                      <span>Entertainment centers and media storage</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-brand-green mt-1 flex-shrink-0" />
-                      <span>Complete home library clearout services</span>
+                      <span>Display cases and custom storage solutions</span>
                     </li>
                   </ul>
                 </div>
@@ -91,9 +91,9 @@ const BookshelfRemovalCincinnati = () => {
         {/* CTA Section */}
         <section className="section bg-brand-darkBlue text-white">
           <div className="container-custom text-center">
-            <h2 className="heading-lg mb-4 text-white">Ready to Remove Your Bookcases?</h2>
+            <h2 className="heading-lg mb-4 text-white">Need Bookshelf Removal?</h2>
             <p className="text-xl mb-8 text-gray-200">
-              Professional bookshelf removal with careful book handling in Cincinnati
+              Professional storage furniture removal with careful book handling in Cincinnati
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

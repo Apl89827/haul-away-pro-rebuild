@@ -9,7 +9,7 @@ import { useMeta } from '@/hooks/useMeta';
 const ExerciseEquipmentRemovalCincinnati = () => {
   useMeta({
     title: "Exercise Equipment Removal Cincinnati | HaulAway Pro",
-    description: "Professional exercise equipment removal services in Cincinnati. We safely remove treadmills, ellipticals, weight machines, and home gym equipment. Same-day service available.",
+    description: "Professional exercise equipment removal services in Cincinnati. We remove treadmills, weight machines, home gyms, and all fitness equipment. Same-day service available.",
     keywords: "exercise equipment removal Cincinnati, treadmill removal Cincinnati, home gym removal Cincinnati, fitness equipment disposal Cincinnati",
     canonicalUrl: "https://haulawaypro.netlify.app/exercise-equipment-removal-cincinnati"
   });
@@ -26,7 +26,7 @@ const ExerciseEquipmentRemovalCincinnati = () => {
                 Exercise Equipment Removal in Cincinnati
               </h1>
               <p className="text-xl mb-8 leading-relaxed text-gray-100">
-                Professional exercise equipment removal services throughout Cincinnati. We safely remove treadmills, ellipticals, weight machines, and complete home gym setups with proper equipment and expertise.
+                Professional exercise equipment removal services throughout Cincinnati. We safely remove treadmills, weight machines, home gyms, and all types of fitness equipment with specialized handling and eco-friendly disposal.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -47,39 +47,39 @@ const ExerciseEquipmentRemovalCincinnati = () => {
             <div className="max-w-4xl mx-auto">
               <div className="prose prose-lg max-w-none">
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  HaulAway Pro specializes in professional exercise equipment removal services throughout Cincinnati, handling the unique challenges that come with removing heavy, bulky fitness equipment. Our experienced team understands that exercise equipment often requires special handling due to its weight, size, and electronic components. We use proper lifting equipment, dollies, and protective materials to safely remove fitness equipment from basements, home gyms, and upper floors without causing damage to your property.
+                  HaulAway Pro specializes in professional exercise equipment removal services throughout Cincinnati, handling the unique challenges that come with removing heavy, bulky fitness equipment from homes and businesses. Our experienced team understands that exercise equipment often requires disassembly and special handling techniques due to weight, size, and mechanical complexity. We use proper lifting equipment, dollies, and protective materials to safely remove fitness equipment from basements, spare bedrooms, garages, and home gym spaces without damaging floors, walls, or stairways.
                 </p>
 
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Our exercise equipment removal service covers all types of fitness equipment including treadmills, elliptical machines, stationary bikes, rowing machines, weight benches, multi-station home gyms, free weights, and commercial-grade fitness equipment. Whether you're upgrading your home gym, moving to a new home, or simply reclaiming space, we handle both individual pieces and complete gym clearouts. Our team can disconnect and safely remove electronic equipment while properly disposing of any hazardous materials like batteries or hydraulic fluids.
+                  Our exercise equipment removal service covers all types of fitness equipment including treadmills, elliptical machines, stationary bikes, rowing machines, weight machines, multi-station home gyms, free weights, benches, and complete home gym setups. Whether you're upgrading equipment, moving to a smaller space, dealing with broken machines, or clearing out a commercial gym, we handle equipment of all sizes and complexity levels. Our team can carefully disassemble multi-piece equipment and safely navigate challenging removal situations common with heavy fitness equipment.
                 </p>
 
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Environmental responsibility is a priority in our exercise equipment removal process. We work with local Cincinnati fitness centers, community centers, and charitable organizations to donate functional equipment that can benefit others pursuing their fitness goals. Equipment in good working condition is often welcomed by schools, churches, and nonprofit organizations. For equipment that cannot be donated, we ensure responsible disposal through certified recycling facilities where metals, plastics, and electronic components are processed according to environmental guidelines.
+                  Environmental responsibility and community benefit guide our exercise equipment disposal process. We evaluate all equipment for donation opportunities to local Cincinnati schools, community centers, youth organizations, and fitness programs that can benefit from quality exercise equipment. Working fitness equipment can provide years of use for community programs promoting health and wellness. For equipment that cannot be donated due to age or condition, we ensure responsible disposal through certified facilities where materials like steel, aluminum, and electronic components are properly recycled.
                 </p>
 
                 <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                  Our Cincinnati exercise equipment removal service includes careful assessment of removal logistics, including measuring doorways and planning the safest extraction route. We provide transparent pricing based on the complexity of the removal and offer same-day service when possible. Our fully licensed and insured team is equipped with the specialized tools needed for heavy equipment removal and maintains the highest safety standards throughout the process. Trust HaulAway Pro for professional, safe, and environmentally responsible exercise equipment removal in Cincinnati.
+                  Our Cincinnati exercise equipment removal service includes pre-removal assessment, careful disassembly when needed, safe removal using appropriate equipment, and complete cleanup of your space. We provide transparent pricing with detailed estimates that account for equipment complexity and access challenges. Our fully licensed and insured team prioritizes safety throughout the removal process due to the substantial weight and size of most fitness equipment. Trust HaulAway Pro for professional, safe, and environmentally responsible exercise equipment removal services in Cincinnati.
                 </p>
 
                 <div className="bg-brand-lightBlue rounded-lg p-6 mb-8">
-                  <h2 className="text-2xl font-bold text-brand-darkBlue mb-4">Why Choose Our Exercise Equipment Removal Service?</h2>
+                  <h2 className="text-2xl font-bold text-brand-darkBlue mb-4">Exercise Equipment We Remove</h2>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-brand-green mt-1 flex-shrink-0" />
-                      <span>Specialized equipment for heavy fitness machine removal</span>
+                      <span>Treadmills and cardio machines</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-brand-green mt-1 flex-shrink-0" />
-                      <span>Donation to Cincinnati fitness centers and organizations</span>
+                      <span>Weight machines and multi-station gyms</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-brand-green mt-1 flex-shrink-0" />
-                      <span>Safe removal from basements and upper floors</span>
+                      <span>Free weights and exercise benches</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-brand-green mt-1 flex-shrink-0" />
-                      <span>Complete home gym clearout services</span>
+                      <span>Complete home gym setups</span>
                     </li>
                   </ul>
                 </div>

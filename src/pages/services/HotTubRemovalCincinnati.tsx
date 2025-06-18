@@ -9,7 +9,7 @@ import { useMeta } from '@/hooks/useMeta';
 const HotTubRemovalCincinnati = () => {
   useMeta({
     title: "Hot Tub Removal Cincinnati | HaulAway Pro",
-    description: "Professional hot tub and spa removal services in Cincinnati. We safely remove and dispose of hot tubs, spas, and jacuzzis with specialized equipment. Same-day service available.",
+    description: "Professional hot tub and spa removal services in Cincinnati. We safely disconnect and remove hot tubs, spas, and jacuzzis with specialized equipment. Same-day service available.",
     keywords: "hot tub removal Cincinnati, spa removal Cincinnati, jacuzzi removal Cincinnati, hot tub disposal Cincinnati",
     canonicalUrl: "https://haulawaypro.netlify.app/hot-tub-removal-cincinnati"
   });
@@ -26,7 +26,7 @@ const HotTubRemovalCincinnati = () => {
                 Hot Tub Removal in Cincinnati
               </h1>
               <p className="text-xl mb-8 leading-relaxed text-gray-100">
-                Professional hot tub and spa removal services throughout Cincinnati. We handle the complete removal process including disconnection, drainage, and disposal with specialized equipment and expertise.
+                Professional hot tub and spa removal services throughout Cincinnati. We safely disconnect, drain, and remove hot tubs, spas, and jacuzzis with specialized equipment and expert techniques.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -47,39 +47,39 @@ const HotTubRemovalCincinnati = () => {
             <div className="max-w-4xl mx-auto">
               <div className="prose prose-lg max-w-none">
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  HaulAway Pro provides comprehensive hot tub removal services throughout Cincinnati, specializing in the safe and efficient removal of hot tubs, spas, and jacuzzis of all sizes. Our experienced team understands the complexities involved in hot tub removal, including proper disconnection of electrical and plumbing systems, complete water drainage, and the logistics of removing these extremely heavy units from challenging locations like decks, patios, and tight backyard spaces.
+                  HaulAway Pro provides professional hot tub removal services throughout Cincinnati, specializing in the safe disconnection, draining, and removal of hot tubs, spas, and jacuzzis from residential properties. Our experienced team understands the complexities involved in hot tub removal, including proper electrical disconnection, water drainage, and the substantial weight and size challenges these units present. We coordinate with licensed electricians when necessary to ensure safe disconnection of electrical systems and follow all local codes and safety requirements.
                 </p>
 
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Our hot tub removal service covers all types of spa equipment including portable hot tubs, built-in spas, swim spas, inflatable hot tubs, and commercial spa equipment. Whether your hot tub is located on a deck, in a basement, or in a backyard with limited access, we have the specialized equipment and expertise to handle the removal safely. We coordinate with qualified electricians and plumbers when necessary to ensure proper disconnection of utilities, and we handle all aspects of the removal process from start to finish.
+                  Our hot tub removal service covers all types of spa systems including portable hot tubs, in-ground spas, above-ground hot tubs, swim spas, and custom-built spa installations. Whether your hot tub is located on a deck, patio, in a backyard, or integrated into a pool area, we have the equipment and expertise to safely remove it. Our team uses specialized lifting equipment, cranes when necessary, and protective materials to prevent damage to your property during the removal process. We can navigate challenging access situations including tight gates, stairs, and landscaped areas.
                 </p>
 
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Environmental responsibility is crucial in our hot tub removal process due to the various materials involved. We carefully separate and recycle materials including the fiberglass shell, metal components, pumps, and electronic systems. Hot tub chemicals and water are disposed of according to Cincinnati environmental regulations. When possible, working hot tubs in good condition are donated to organizations that can refurbish them for community use, though this is less common due to the specialized nature of spa equipment.
+                  Environmental stewardship guides our hot tub disposal process. We carefully evaluate each unit for potential donation or resale opportunities, particularly for newer hot tubs in good working condition. Quality units can provide years of enjoyment for new owners while keeping them out of landfills. For hot tubs that cannot be donated, we ensure responsible disposal through certified facilities where materials like acrylic shells, insulation, pumps, and metal components are properly separated and recycled. This approach minimizes environmental impact while recovering valuable materials.
                 </p>
 
                 <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                  Our Cincinnati hot tub removal service includes site assessment, utility disconnection coordination, complete removal, and thorough cleanup of the removal area. We provide detailed estimates that account for access challenges and any special equipment needed. Our fully licensed and insured team prioritizes safety throughout the removal process and can often accommodate same-day service for urgent removals. Trust HaulAway Pro for professional, safe, and environmentally responsible hot tub removal services in Cincinnati.
+                  Our Cincinnati hot tub removal service includes complete project coordination, safe electrical disconnection, water drainage, careful removal, and thorough cleanup of the installation area. We provide detailed estimates that account for access challenges and removal complexity, with no hidden fees. Our fully licensed and insured team prioritizes safety throughout the process due to the electrical, plumbing, and weight considerations involved in hot tub removal. Trust HaulAway Pro for professional, safe, and environmentally responsible hot tub removal services in Cincinnati.
                 </p>
 
                 <div className="bg-brand-lightBlue rounded-lg p-6 mb-8">
-                  <h2 className="text-2xl font-bold text-brand-darkBlue mb-4">Why Choose Our Hot Tub Removal Service?</h2>
+                  <h2 className="text-2xl font-bold text-brand-darkBlue mb-4">Our Hot Tub Removal Process</h2>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-brand-green mt-1 flex-shrink-0" />
-                      <span>Specialized equipment for heavy spa removal</span>
+                      <span>Safe electrical disconnection by certified technicians</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-brand-green mt-1 flex-shrink-0" />
-                      <span>Utility disconnection coordination</span>
+                      <span>Complete water drainage and preparation</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-brand-green mt-1 flex-shrink-0" />
-                      <span>Environmentally responsible disposal</span>
+                      <span>Specialized lifting equipment for safe removal</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-brand-green mt-1 flex-shrink-0" />
-                      <span>Complete site cleanup after removal</span>
+                      <span>Eco-friendly disposal and recycling</span>
                     </li>
                   </ul>
                 </div>
@@ -93,7 +93,7 @@ const HotTubRemovalCincinnati = () => {
           <div className="container-custom text-center">
             <h2 className="heading-lg mb-4 text-white">Ready to Remove Your Hot Tub?</h2>
             <p className="text-xl mb-8 text-gray-200">
-              Professional hot tub removal with specialized equipment in Cincinnati
+              Professional hot tub removal with safe disconnection and specialized equipment
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

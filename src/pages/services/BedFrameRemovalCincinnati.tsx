@@ -9,8 +9,8 @@ import { useMeta } from '@/hooks/useMeta';
 const BedFrameRemovalCincinnati = () => {
   useMeta({
     title: "Bed Frame Removal Cincinnati | HaulAway Pro",
-    description: "Professional bed frame removal services in Cincinnati. We safely remove all types of bed frames including platform beds, metal frames, and wooden headboards. Same-day service available.",
-    keywords: "bed frame removal Cincinnati, mattress frame removal Cincinnati, headboard removal Cincinnati, bedroom furniture removal Cincinnati",
+    description: "Professional bed frame removal services in Cincinnati. We remove all types of bed frames, headboards, footboards, and bedroom furniture. Same-day service available.",
+    keywords: "bed frame removal Cincinnati, headboard removal Cincinnati, bedroom furniture removal Cincinnati, bed disposal Cincinnati",
     canonicalUrl: "https://haulawaypro.netlify.app/bed-frame-removal-cincinnati"
   });
 
@@ -26,7 +26,7 @@ const BedFrameRemovalCincinnati = () => {
                 Bed Frame Removal in Cincinnati
               </h1>
               <p className="text-xl mb-8 leading-relaxed text-gray-100">
-                Professional bed frame removal services throughout Cincinnati. We safely remove all types of bed frames, headboards, and bedroom furniture with careful handling to prevent damage to your home.
+                Professional bed frame removal services throughout Cincinnati. We safely remove bed frames, headboards, footboards, and complete bedroom sets with careful handling and eco-friendly disposal.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -47,39 +47,39 @@ const BedFrameRemovalCincinnati = () => {
             <div className="max-w-4xl mx-auto">
               <div className="prose prose-lg max-w-none">
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  HaulAway Pro provides comprehensive bed frame removal services throughout Cincinnati, specializing in the safe and efficient removal of all types of bedroom furniture. Our experienced team understands that bed frames can be challenging to remove due to their size, weight, and the need to navigate stairs and tight spaces. We use proper disassembly techniques and protective equipment to ensure your bed frame is removed without damage to walls, floors, or other furniture in your home.
+                  HaulAway Pro provides professional bed frame removal services throughout Cincinnati, handling all types of bedroom furniture from simple metal frames to elaborate wooden bedroom sets. Our experienced team understands that bed frames can be challenging to remove due to their size, weight, and the tight spaces of bedrooms. We use proper disassembly techniques and protective materials to ensure safe removal without damaging bedroom walls, floors, or other furniture during the process.
                 </p>
 
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Our bed frame removal service covers all types of sleeping furniture including platform beds, sleigh beds, canopy beds, bunk beds, adjustable bed frames, metal bed frames, wooden headboards, footboards, and complete bedroom sets. Whether you're upgrading to a new bedroom set, moving to a smaller space, or dealing with damaged furniture, we handle projects of all sizes with professional care. Our team can disassemble complex bed frames and reassemble them if needed for donation purposes.
+                  Our bed frame removal service covers all types of bedroom furniture including platform beds, sleigh beds, four-poster beds, bunk beds, adjustable bed frames, metal bed frames, wooden bed frames, headboards, footboards, and complete bedroom sets. Whether you're upgrading to a new bedroom set, moving to a smaller space, or clearing out guest rooms, we handle bedroom furniture of all sizes and styles. Our team can carefully disassemble complex bed frames and navigate challenging removal situations including narrow stairways and tight bedroom doorways.
                 </p>
 
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Environmental responsibility guides our bed frame removal process. We carefully evaluate each piece for donation opportunities to local Cincinnati furniture banks, homeless shelters, and families transitioning into permanent housing. Quality bed frames that can provide comfort to others are donated whenever possible, supporting community members in need while extending the furniture's useful life. For frames that cannot be donated, we ensure responsible disposal through certified facilities where materials like wood and metal are recycled.
+                  Environmental responsibility drives our bed frame disposal process. We evaluate all bedroom furniture for donation opportunities to local Cincinnati families, charitable organizations, and transitional housing programs. Quality bed frames and bedroom furniture can provide comfort and stability for individuals and families establishing new homes. We work with local charities and furniture assistance programs to identify recipients who can benefit from donated bedroom furniture. For items that cannot be donated, we ensure responsible disposal through certified facilities where materials like wood and metal are properly recycled.
                 </p>
 
                 <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                  Our Cincinnati bed frame removal service includes complete bedroom cleanout if needed, allowing you to refresh your entire sleeping space. We provide transparent pricing with detailed estimates and often offer same-day service for urgent removals. Our fully licensed and insured team maintains professionalism throughout the process and ensures complete cleanup after removal. Trust HaulAway Pro for reliable, careful, and environmentally conscious bed frame removal services in Cincinnati.
+                  Our Cincinnati bed frame removal service includes careful assessment of removal challenges, expert disassembly when needed, safe removal from bedrooms, and complete cleanup after pickup. We provide transparent pricing with detailed estimates and can often accommodate same-day service for urgent removals. Our fully licensed and insured team maintains the highest standards of care and respects your home throughout the entire process. Trust HaulAway Pro for reliable, careful, and environmentally responsible bed frame removal services in Cincinnati.
                 </p>
 
                 <div className="bg-brand-lightBlue rounded-lg p-6 mb-8">
-                  <h2 className="text-2xl font-bold text-brand-darkBlue mb-4">Why Choose Our Bed Frame Removal Service?</h2>
+                  <h2 className="text-2xl font-bold text-brand-darkBlue mb-4">Bedroom Items We Remove</h2>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-brand-green mt-1 flex-shrink-0" />
-                      <span>Professional disassembly and careful handling</span>
+                      <span>Bed frames and platform beds</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-brand-green mt-1 flex-shrink-0" />
-                      <span>Donation to Cincinnati families and shelters</span>
+                      <span>Headboards and footboards</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-brand-green mt-1 flex-shrink-0" />
-                      <span>Complete bedroom furniture removal</span>
+                      <span>Bunk beds and loft beds</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-brand-green mt-1 flex-shrink-0" />
-                      <span>Same-day service often available</span>
+                      <span>Complete bedroom furniture sets</span>
                     </li>
                   </ul>
                 </div>

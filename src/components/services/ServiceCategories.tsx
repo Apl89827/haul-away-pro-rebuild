@@ -6,29 +6,68 @@ import { Link } from "react-router-dom";
 const ServiceCategories = () => {
   const categories = [
     {
-      title: "Furniture & Home Items",
-      icon: "🪑",
-      path: "/services/furniture-junk-removal",
+      title: "Residential Junk Removal",
+      icon: "🏠",
+      path: "/residential-junk-removal-cincinnati",
       items: [
-        "Sofas, chairs, and recliners",
-        "Tables, desks, and dressers",
-        "Mattresses and box springs",
-        "Cabinets and bookcases",
-        "Lamps and decorative items",
-        "Rugs and carpeting"
+        "Complete home cleanouts",
+        "Furniture and appliance removal",
+        "Basement and attic clearing",
+        "Garage cleanouts",
+        "Single item pickups",
+        "Same-day service available"
       ]
     },
     {
-      title: "Appliances",
+      title: "Commercial Junk Removal",
+      icon: "🏢",
+      path: "/commercial-junk-removal-cincinnati",
+      items: [
+        "Office furniture and equipment",
+        "Retail fixtures removal",
+        "Restaurant equipment disposal",
+        "Construction debris removal",
+        "Warehouse cleanouts",
+        "Scheduled pickup service"
+      ]
+    },
+    {
+      title: "Appliance & Furniture Removal",
       icon: "🧊",
-      path: "/services/appliance-removal",
+      path: "/appliance-furniture-removal-cincinnati",
       items: [
         "Refrigerators and freezers",
         "Washers and dryers",
-        "Dishwashers",
-        "Stoves and ovens",
-        "Water heaters",
-        "Air conditioners"
+        "Mattresses and box springs",
+        "Large furniture pieces",
+        "EPA-compliant disposal",
+        "Donation coordination"
+      ]
+    },
+    {
+      title: "Estate Cleanout Services",
+      icon: "🏛️",
+      path: "/estate-cleanout-services-cincinnati",
+      items: [
+        "Complete property clearing",
+        "Probate property cleanouts",
+        "Deceased family cleanouts",
+        "Estate sale cleanup",
+        "Hoarding cleanouts",
+        "Compassionate service"
+      ]
+    },
+    {
+      title: "Light Demolition Services",
+      icon: "🔨",
+      path: "/light-demolition-services-cincinnati",
+      items: [
+        "Interior wall removal",
+        "Deck demolition",
+        "Shed removal",
+        "Fence removal",
+        "Small structure demolition",
+        "Debris removal included"
       ]
     },
     {
@@ -41,46 +80,7 @@ const ServiceCategories = () => {
         "Printers and office equipment",
         "Stereo systems",
         "Gaming consoles",
-        "Cell phones and tablets"
-      ]
-    },
-    {
-      title: "Yard & Outdoor Items",
-      icon: "🌿",
-      path: "/services/outdoor-item-removal",
-      items: [
-        "Tree branches and brush",
-        "Shed",
-        "Patio furniture",
-        "Grills and outdoor equipment",
-        "Pool equipment",
-        "Jacuzzi"
-      ]
-    },
-    {
-      title: "Construction & Renovation",
-      icon: "🔨",
-      path: "/services/construction-debris-removal",
-      items: [
-        "Drywall and lumber",
-        "Flooring materials",
-        "Concrete and brick",
-        "Roofing materials",
-        "Windows and doors",
-        "Renovation debris"
-      ]
-    },
-    {
-      title: "Estate & Business Cleanouts",
-      icon: "🏠",
-      path: "/services/estate-cleanout-services",
-      items: [
-        "Complete home cleanouts",
-        "Office furniture and equipment",
-        "Retail fixtures",
-        "Storage unit cleanouts",
-        "Basement and attic clearing",
-        "Garage cleanouts"
+        "Certified data destruction"
       ]
     }
   ];
@@ -89,17 +89,17 @@ const ServiceCategories = () => {
     <section className="section bg-white">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="heading-lg mb-4">We Take Almost Everything</h2>
+          <h2 className="heading-lg mb-4">Comprehensive Junk Removal Services</h2>
           <p className="text-lg text-gray-600">
-            Our experienced team can handle virtually any non-hazardous item. 
-            From single pieces to complete property cleanouts, we've got you covered.
+            From residential cleanouts to commercial projects, we handle all types of junk removal 
+            with professional service and environmental responsibility.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {categories.map((category) => (
             <Link key={category.title} to={category.path}>
-              <Card className="card-shadow hover:shadow-xl transition-all duration-300 cursor-pointer">
+              <Card className="card-shadow hover:shadow-xl transition-all duration-300 cursor-pointer h-full">
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
                     <span className="text-4xl mr-3">{category.icon}</span>
@@ -128,10 +128,10 @@ const ServiceCategories = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="tel:5138762858" 
+                href="tel:5137128077" 
                 className="btn-primary"
               >
-                Call (513) 876-2858
+                Call (513) 712-8077
               </a>
               <a 
                 href="/booking" 

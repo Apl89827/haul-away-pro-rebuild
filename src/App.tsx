@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -59,6 +58,12 @@ import PoolTableRemovalCincinnati from "./pages/services/PoolTableRemovalCincinn
 import RefrigeratorRemovalCincinnati from "./pages/services/RefrigeratorRemovalCincinnati";
 import MattressBoxSpringRemovalCincinnati from "./pages/services/MattressBoxSpringRemovalCincinnati";
 import LargeFurnitureRemovalCincinnati from "./pages/services/LargeFurnitureRemovalCincinnati";
+
+// NEW: Additional Appliance Service Pages
+import DishwasherRemovalCincinnati from "./pages/services/DishwasherRemovalCincinnati";
+import StoveOvenRemovalCincinnati from "./pages/services/StoveOvenRemovalCincinnati";
+import WaterHeaterRemovalCincinnati from "./pages/services/WaterHeaterRemovalCincinnati";
+import AirConditionerRemovalCincinnati from "./pages/services/AirConditionerRemovalCincinnati";
 
 // NEW: Phase 3 Commercial Service Pages
 import OfficeFurnitureRemovalCincinnati from "./pages/services/OfficeFurnitureRemovalCincinnati";
@@ -156,6 +161,12 @@ const App = () => (
         <Route path="/refrigerator-removal-cincinnati" element={<RefrigeratorRemovalCincinnati />} />
         <Route path="/mattress-box-spring-removal-cincinnati" element={<MattressBoxSpringRemovalCincinnati />} />
         <Route path="/large-furniture-removal-cincinnati" element={<LargeFurnitureRemovalCincinnati />} />
+        
+        {/* NEW: Additional Appliance Service Pages */}
+        <Route path="/dishwasher-removal-cincinnati" element={<DishwasherRemovalCincinnati />} />
+        <Route path="/stove-oven-removal-cincinnati" element={<StoveOvenRemovalCincinnati />} />
+        <Route path="/water-heater-removal-cincinnati" element={<WaterHeaterRemovalCincinnati />} />
+        <Route path="/air-conditioner-removal-cincinnati" element={<AirConditionerRemovalCincinnati />} />
         
         {/* NEW: Phase 3 Commercial Service Pages */}
         <Route path="/office-furniture-removal-cincinnati" element={<OfficeFurnitureRemovalCincinnati />} />

@@ -16,13 +16,13 @@ const ProjectsGrid = () => {
     },
     {
       id: 2,
-      title: "Basement Transformation - Blue Ash",
-      description: "Transformed a cluttered basement into a usable space. Removed old furniture, exercise equipment, and years of stored items.",
-      beforeImage: "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=600&h=400&fit=crop",
-      afterImage: "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=600&h=400&fit=crop",
-      location: "Blue Ash, OH",
-      category: "Basement Cleanout",
-      duration: "1 day"
+      title: "Construction Debris Removal - Loveland",
+      description: "Removed old deck materials and construction debris from a residential property. Cleared scattered wood planks, railings, and demolished deck components to restore the yard space.",
+      beforeImage: "/lovable-uploads/75e8bacd-66d7-495f-92be-50e9dbf729a6.png",
+      afterImage: "/lovable-uploads/07bcfce8-bfae-46fb-a1f3-a5a4bdfe5b72.png",
+      location: "Loveland, OH",
+      category: "Construction Debris",
+      duration: "4 hours"
     },
     {
       id: 3,

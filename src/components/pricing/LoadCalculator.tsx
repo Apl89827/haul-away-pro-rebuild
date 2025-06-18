@@ -38,23 +38,29 @@ const LoadCalculator = () => {
 
   const getTruckSize = () => {
     if (totalSpace === 0) return "No items selected";
-    if (totalSpace <= 10) return "Single Item Pickup";
+    if (totalSpace <= 10) return "Minimum Load";
     if (totalSpace <= 12.5) return "1/8 Truck Load";
     if (totalSpace <= 25) return "1/4 Truck Load";
+    if (totalSpace <= 37.5) return "3/8 Truck Load";
     if (totalSpace <= 50) return "1/2 Truck Load";
+    if (totalSpace <= 62.5) return "5/8 Truck Load";
     if (totalSpace <= 75) return "3/4 Truck Load";
+    if (totalSpace <= 87.5) return "7/8 Truck Load";
     return "Full Truck Load";
   };
 
   const getEstimatedPrice = () => {
     const truckSize = getTruckSize();
     if (truckSize === "No items selected") return "Select items to see estimate";
-    if (truckSize === "Single Item Pickup") return "$99 - $149";
-    if (truckSize === "1/8 Truck Load") return "$149 - $199";
-    if (truckSize === "1/4 Truck Load") return "$199 - $299";
-    if (truckSize === "1/2 Truck Load") return "$299 - $449";
-    if (truckSize === "3/4 Truck Load") return "$449 - $599";
-    return "$599 - $749";
+    if (truckSize === "Minimum Load") return "$99";
+    if (truckSize === "1/8 Truck Load") return "$200";
+    if (truckSize === "1/4 Truck Load") return "$300";
+    if (truckSize === "3/8 Truck Load") return "$400";
+    if (truckSize === "1/2 Truck Load") return "$450";
+    if (truckSize === "5/8 Truck Load") return "$500";
+    if (truckSize === "3/4 Truck Load") return "$550";
+    if (truckSize === "7/8 Truck Load") return "$600";
+    return "$650";
   };
 
   const resetCalculator = () => {
@@ -149,7 +155,7 @@ const LoadCalculator = () => {
 
                   <div className="bg-white p-4 rounded-lg">
                     <div className="text-lg font-semibold text-gray-800 mb-1">
-                      Estimated Price Range
+                      Estimated Price
                     </div>
                     <div className="text-2xl font-bold text-brand-green">
                       {getEstimatedPrice()}

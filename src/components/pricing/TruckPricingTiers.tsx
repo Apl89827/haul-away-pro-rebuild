@@ -6,17 +6,19 @@ import { Truck } from "lucide-react";
 const TruckPricingTiers = () => {
   const pricingTiers = [
     {
-      name: "Single Item",
+      name: "Minimum Load",
       description: "Perfect for one piece of furniture or appliance",
-      examples: ["Refrigerator", "Couch", "Washer/Dryer", "Desk"],
+      examples: ["Single refrigerator", "One couch", "Washer or dryer", "Small desk"],
       truckFill: "10%",
+      price: "$99",
       popular: false
     },
     {
       name: "1/8 Truck Load",
       description: "Small cleanouts and a few items",
-      examples: ["Small furniture set", "Appliances", "Boxes of items", "Small room cleanout"],
+      examples: ["Small furniture set", "2-3 appliances", "Several boxes", "Small room items"],
       truckFill: "12.5%",
+      price: "$200",
       popular: false
     },
     {
@@ -24,13 +26,31 @@ const TruckPricingTiers = () => {
       description: "Medium-sized projects",
       examples: ["Bedroom set", "Office furniture", "Multiple appliances", "Small garage cleanout"],
       truckFill: "25%",
+      price: "$300",
       popular: true
+    },
+    {
+      name: "3/8 Truck Load",
+      description: "Larger room cleanouts",
+      examples: ["Living room furniture", "Kitchen appliances", "Home office cleanout", "Moderate decluttering"],
+      truckFill: "37.5%",
+      price: "$400",
+      popular: false
     },
     {
       name: "1/2 Truck Load",
       description: "Large room or garage cleanouts",
       examples: ["Full room cleanout", "Garage clearing", "Construction debris", "Estate items"],
       truckFill: "50%",
+      price: "$450",
+      popular: false
+    },
+    {
+      name: "5/8 Truck Load",
+      description: "Multi-room cleanout projects",
+      examples: ["Two-room cleanout", "Large garage project", "Basement clearing", "Major furniture removal"],
+      truckFill: "62.5%",
+      price: "$500",
       popular: false
     },
     {
@@ -38,6 +58,15 @@ const TruckPricingTiers = () => {
       description: "Major cleanout projects",
       examples: ["Multi-room cleanout", "Large renovation debris", "Business cleanout", "Major decluttering"],
       truckFill: "75%",
+      price: "$550",
+      popular: false
+    },
+    {
+      name: "7/8 Truck Load",
+      description: "Near-complete home cleanouts",
+      examples: ["Most of house cleanout", "Large estate clearing", "Major renovation", "Commercial project"],
+      truckFill: "87.5%",
+      price: "$600",
       popular: false
     },
     {
@@ -45,6 +74,7 @@ const TruckPricingTiers = () => {
       description: "Complete home or business cleanouts",
       examples: ["Whole house cleanout", "Complete renovation", "Large estate cleanout", "Commercial cleanout"],
       truckFill: "100%",
+      price: "$650",
       popular: false
     }
   ];
@@ -75,6 +105,11 @@ const TruckPricingTiers = () => {
               )}
               
               <CardContent className={`p-6 ${tier.popular ? 'pt-12' : ''}`}>
+                {/* Price Badge */}
+                <div className="absolute top-4 right-4 bg-brand-green text-white px-3 py-1 rounded-full text-sm font-bold">
+                  {tier.price}
+                </div>
+
                 {/* Truck Illustration */}
                 <div className="relative mb-6">
                   <div className="bg-gray-100 rounded-lg p-4 flex items-center justify-center h-24">

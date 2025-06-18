@@ -17,7 +17,7 @@ const FaqSection = () => {
     {
       question: "How does your pricing work?",
       answer:
-        "Our pricing is volume-based, which means you only pay for the space your items take up in our truck. We offer free, no-obligation estimates, and our prices start at $99 for small loads."
+        "Our pricing is volume-based, which means you only pay for the space your items take up in our truck. We offer free, no-obligation estimates, and our prices start at $99 for minimum loads and go up to $650 for full truck loads."
     },
     {
       question: "Do I need to be present for the pickup?",

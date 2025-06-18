@@ -24,7 +24,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
       <div className="relative">
         <div 
-          className="relative h-80 overflow-hidden cursor-pointer"
+          className="relative aspect-[3/4] overflow-hidden cursor-pointer"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
@@ -32,7 +32,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           <img
             src={project.beforeImage}
             alt={`${project.title} - Before`}
-            className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-500 ${
+            className={`absolute inset-0 w-full h-full object-contain bg-gray-100 transition-opacity duration-500 ${
               isHovered ? 'opacity-0' : 'opacity-100'
             }`}
           />
@@ -41,14 +41,10 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           <img
             src={project.afterImage}
             alt={`${project.title} - After`}
-            className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-500 ${
+            className={`absolute inset-0 w-full h-full object-contain bg-gray-100 transition-opacity duration-500 ${
               isHovered ? 'opacity-100' : 'opacity-0'
             }`}
           />
-          
-          {/* Top and bottom banners for landscape photos */}
-          <div className="absolute top-0 left-0 right-0 h-8 bg-gradient-to-b from-black/30 to-transparent"></div>
-          <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-black/30 to-transparent"></div>
           
           {/* Before/After Labels */}
           <div className="absolute top-4 left-4">

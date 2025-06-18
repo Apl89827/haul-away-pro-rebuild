@@ -26,13 +26,13 @@ const ProjectsGrid = () => {
     },
     {
       id: 3,
-      title: "Office Building Cleanout - Downtown",
-      description: "Cleared out an entire office floor including furniture, electronics, and filing cabinets. All electronics were recycled responsibly.",
-      beforeImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop",
-      afterImage: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=600&h=400&fit=crop",
-      location: "Downtown Cincinnati",
-      category: "Commercial Cleanout",
-      duration: "3 days"
+      title: "Commercial Junk Removal - Sharonville",
+      description: "Cleared out commercial junk and debris from a loading dock area. Removed cardboard boxes, tubes, metal mesh, and various commercial waste items to restore the workspace.",
+      beforeImage: "/lovable-uploads/72852415-73b7-4e71-b443-29a12ed2a596.png",
+      afterImage: "/lovable-uploads/618a2d7c-20b3-422c-ac20-51980d2f4cc0.png",
+      location: "Sharonville, OH",
+      category: "Commercial Junk",
+      duration: "3 hours"
     },
     {
       id: 4,

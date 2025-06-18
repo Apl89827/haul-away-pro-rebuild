@@ -1,4 +1,3 @@
-
 import React from "react";
 import ProjectCard from "./ProjectCard";
 
@@ -6,13 +5,13 @@ const ProjectsGrid = () => {
   const projects = [
     {
       id: 1,
-      title: "Complete Estate Cleanout - Hyde Park",
-      description: "Cleared out a 3-bedroom home filled with decades of belongings. Our team carefully sorted through items, donated what we could, and responsibly disposed of the rest.",
-      beforeImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop",
-      afterImage: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&h=400&fit=crop",
-      location: "Hyde Park, Cincinnati",
-      category: "Estate Cleanout",
-      duration: "2 days"
+      title: "Shed Demo - Cincinnati",
+      description: "Completely demolished and removed an old wooden shed structure from a residential backyard. Cleared all debris and materials, leaving the concrete pad clean and ready for the homeowner's next project.",
+      beforeImage: "/lovable-uploads/0796a4c1-a6b9-43e3-9802-814d814fe0ba.png",
+      afterImage: "/lovable-uploads/74ebdce5-f24d-4d48-ac5a-02a0e5e27a5b.png",
+      location: "Cincinnati, OH",
+      category: "Shed Demo",
+      duration: "1 day"
     },
     {
       id: 2,

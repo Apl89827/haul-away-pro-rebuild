@@ -6,7 +6,6 @@ import ServiceAreasHero from '@/components/service-areas/ServiceAreasHero';
 import ServiceAreasList from '@/components/service-areas/ServiceAreasList';
 import ServiceAreasMap from '@/components/service-areas/ServiceAreasMap';
 import ServiceAreasCtaSection from '@/components/service-areas/ServiceAreasCtaSection';
-import ServiceAreasQA from '@/components/service-areas/ServiceAreasQA';
 import BreadcrumbStructuredData from '@/components/seo/BreadcrumbStructuredData';
 import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema';
 import CanonicalUrl from '@/components/seo/CanonicalUrl';
@@ -29,9 +28,6 @@ const ServiceAreas = () => {
     { name: "Service Areas", url: "/service-areas" }
   ];
 
-  // Show QA component in development
-  const showQA = window.location.hostname === 'localhost' || window.location.hostname.includes('lovable');
-
   return (
     <>
       <PreloadResources />
@@ -42,7 +38,6 @@ const ServiceAreas = () => {
       <main>
         <ServiceAreasHero />
         <ServiceAreasList />
-        {showQA && <ServiceAreasQA />}
         <ServiceAreasMap />
         <ServiceAreasCtaSection />
       </main>
